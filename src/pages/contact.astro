@@ -1,0 +1,271 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Contact | ${SITE_TITLE}`} description="Get in touch with Andy Heald at Sportivity Consultants. Based in Greater Manchester, operating nationally." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<!-- Page Hero -->
+			<section class="page-hero">
+				<div class="container">
+					<p class="eyebrow">Contact</p>
+					<h1>Let's start a conversation.</h1>
+					<p class="lede">Whether you have a specific challenge in mind or just want to explore how Sportivity might help, get in touch — there's no obligation.</p>
+				</div>
+			</section>
+
+			<!-- Contact + Form -->
+			<section class="contact-body">
+				<div class="container">
+					<div class="contact-grid">
+						<!-- Contact details -->
+						<div class="contact-details">
+							<h2>Get in touch directly</h2>
+							<div class="contact-item">
+								<p class="contact-label">Email</p>
+								<p><a href="mailto:andy@sportivityconsultants.com">andy@sportivityconsultants.com</a></p>
+							</div>
+							<div class="contact-item">
+								<p class="contact-label">Phone</p>
+								<p><a href="tel:+447920008421">07920 008 421</a></p>
+							</div>
+							<div class="contact-item">
+								<p class="contact-label">LinkedIn</p>
+								<p><a href="https://www.linkedin.com/in/andy-heald-sportivity/" target="_blank" rel="noopener">Andy Heald on LinkedIn</a></p>
+							</div>
+							<div class="contact-item">
+								<p class="contact-label">Location</p>
+								<p>Greater Manchester · Operating nationally</p>
+							</div>
+
+							<div class="book-cta-box">
+								<h3>Prefer to just book a call?</h3>
+								<p>Book a free 60-minute consultation directly in Andy's calendar.</p>
+								<a href="https://app.usemotion.com/meet/andy-heald/consultancy?d=60" class="btn btn-primary" target="_blank" rel="noopener">Book a Free Consultation</a>
+							</div>
+						</div>
+
+						<!-- Form -->
+						<div class="form-wrap">
+							<h2>Send a message</h2>
+							<form action="https://formspree.io/f/mojznozd" method="POST">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" id="name" name="name" required>
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" id="email" name="email" required>
+								</div>
+								<div class="field">
+									<label for="organisation">Organisation</label>
+									<input type="text" id="organisation" name="organisation">
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea id="message" name="message" rows="6" required></textarea>
+								</div>
+								<button type="submit" class="btn btn-primary">Send Message</button>
+								<p class="form-note">We'll reply within one working day.</p>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.container {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 0 1.5rem;
+	}
+
+	/* Page Hero */
+	.page-hero {
+		background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+		padding: 4rem 1.5rem 3rem;
+		text-align: center;
+		border-bottom: 4px solid var(--accent);
+	}
+	.eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: 0.85rem;
+		font-weight: 700;
+		color: var(--accent);
+		margin: 0 0 1rem;
+	}
+	.page-hero h1 {
+		font-size: clamp(2rem, 4vw, 2.75rem);
+		line-height: 1.2;
+		margin: 0 auto 1.5rem;
+		color: #111;
+		max-width: 700px;
+		letter-spacing: -0.02em;
+	}
+	.page-hero .lede {
+		font-size: 1.1rem;
+		line-height: 1.55;
+		color: #444;
+		margin: 0 auto;
+		max-width: 660px;
+	}
+
+	/* Contact Body */
+	.contact-body {
+		padding: 4rem 0;
+		background: #fff;
+	}
+	.contact-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	.contact-details h2,
+	.form-wrap h2 {
+		font-size: 1.5rem;
+		margin: 0 0 1.75rem;
+		color: #111;
+	}
+
+	/* Contact details */
+	.contact-item {
+		margin-bottom: 1.5rem;
+	}
+	.contact-label {
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		font-size: 0.75rem;
+		font-weight: 700;
+		color: var(--accent);
+		margin: 0 0 0.25rem;
+	}
+	.contact-item p {
+		margin: 0;
+		color: #333;
+		font-size: 1.05rem;
+	}
+	.contact-item a {
+		color: #333;
+		text-decoration: none;
+		border-bottom: 1px solid #ddd;
+		transition: border-color 0.2s ease;
+	}
+	.contact-item a:hover {
+		border-bottom-color: var(--accent);
+	}
+
+	/* Booking box */
+	.book-cta-box {
+		margin-top: 2.5rem;
+		padding: 1.75rem;
+		background: #111;
+		color: #fff;
+		border-radius: 4px;
+	}
+	.book-cta-box h3 {
+		color: #fff;
+		font-size: 1.15rem;
+		margin: 0 0 0.5rem;
+	}
+	.book-cta-box p {
+		color: #d4d4d8;
+		margin: 0 0 1.25rem;
+		font-size: 0.95rem;
+	}
+
+	/* Form */
+	.field {
+		margin-bottom: 1.25rem;
+	}
+	.field label {
+		display: block;
+		font-size: 0.9rem;
+		font-weight: 600;
+		color: #333;
+		margin-bottom: 0.4rem;
+	}
+	.field input,
+	.field textarea {
+		width: 100%;
+		padding: 0.7rem 0.85rem;
+		font-size: 1rem;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		font-family: inherit;
+		color: #111;
+		background: #fff;
+		transition: border-color 0.2s ease;
+		box-sizing: border-box;
+	}
+	.field input:focus,
+	.field textarea:focus {
+		outline: none;
+		border-color: var(--accent);
+	}
+	.field textarea {
+		resize: vertical;
+		min-height: 120px;
+	}
+	.form-note {
+		font-size: 0.85rem;
+		color: #666;
+		margin: 0.75rem 0 0;
+	}
+
+	/* Buttons */
+	.btn {
+		display: inline-block;
+		padding: 0.85rem 1.75rem;
+		font-weight: 600;
+		font-size: 1rem;
+		text-decoration: none;
+		border-radius: 4px;
+		transition: all 0.2s ease;
+		border: 2px solid transparent;
+		cursor: pointer;
+		font-family: inherit;
+	}
+	.btn-primary {
+		background: var(--accent);
+		color: #fff;
+		border-color: var(--accent);
+	}
+	.btn-primary:hover {
+		background: var(--accent-dark);
+		border-color: var(--accent-dark);
+	}
+
+	@media (max-width: 760px) {
+		.contact-grid {
+			grid-template-columns: 1fr;
+			gap: 3rem;
+		}
+		.page-hero {
+			padding: 3rem 1rem 2.5rem;
+		}
+		.contact-body {
+			padding: 3rem 0;
+		}
+	}
+</style>

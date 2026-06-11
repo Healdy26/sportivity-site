@@ -1,8 +1,8 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
@@ -13,37 +13,344 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<!-- Hero -->
+			<section class="hero">
+				<div class="hero-inner">
+					<h1>Creating Exceptional Leaders for Smarter Businesses and a Healthier, Happier World</h1>
+					<p class="lede">Leadership development, strategic consultancy, coaching and organisational support for people and organisations that want to make a meaningful difference.</p>
+					<div class="cta-row">
+						<a href="https://app.usemotion.com/meet/andy-heald/consultancy?d=60" class="btn btn-primary" target="_blank" rel="noopener">Book a Free Consultation</a>
+						<a href="/services" class="btn btn-secondary">Explore Services</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Three Pillars -->
+			<section class="pillars">
+				<div class="container">
+					<div class="pillar-grid">
+						<div class="pillar">
+							<h3>Better Leaders</h3>
+							<p>Coaching, mentoring, development and education that build the confidence, clarity and capability today's leaders need.</p>
+						</div>
+						<div class="pillar">
+							<h3>Smarter Businesses</h3>
+							<p>Strategy, governance, quality assurance and workforce development that strengthen performance and long-term sustainability.</p>
+						</div>
+						<div class="pillar">
+							<h3>Healthier, Happier World</h3>
+							<p>Working at the intersection of sport, education and wellbeing to create positive impact for people, organisations and communities.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Services Preview -->
+			<section class="services-preview">
+				<div class="container">
+					<header class="section-header">
+						<h2>What we do</h2>
+						<p>Six areas of practical, evidence-based support — designed to fit how your organisation actually works.</p>
+					</header>
+					<div class="services-grid">
+						<article class="service">
+							<h3>Leadership Development &amp; Executive Coaching</h3>
+							<p>Helping leaders, managers and professionals develop confidence, clarity and capability through coaching, mentoring and structured personal development.</p>
+						</article>
+						<article class="service">
+							<h3>Strategic Consultancy &amp; Organisational Development</h3>
+							<p>Making sense of complex challenges, identifying opportunities and implementing practical solutions that improve performance and sustainability.</p>
+						</article>
+						<article class="service">
+							<h3>Quality Assurance &amp; Governance</h3>
+							<p>Designing quality systems, governance frameworks and evidence-based approaches that strengthen confidence and accountability.</p>
+						</article>
+						<article class="service">
+							<h3>Workforce Development &amp; Qualifications</h3>
+							<p>Developing qualifications, learning pathways, assessment models and workforce standards that build professional excellence.</p>
+						</article>
+						<article class="service">
+							<h3>Bid Strategy &amp; Growth Support</h3>
+							<p>Strategic support for funding applications, tenders, business cases and partnership opportunities that drive growth and impact.</p>
+						</article>
+						<article class="service">
+							<h3>Digital Skills, Innovation &amp; Future Readiness</h3>
+							<p>Helping organisations understand emerging trends, develop digital capability and prepare their workforce for a rapidly changing future.</p>
+						</article>
+					</div>
+					<div class="section-cta">
+						<a href="/services" class="btn btn-secondary">See all services</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- What Makes Sportivity Different -->
+			<section class="different">
+				<div class="container">
+					<header class="section-header">
+						<h2>What makes Sportivity different</h2>
+					</header>
+					<div class="different-grid">
+						<div class="different-item">
+							<p class="dont">We don't just solve problems.</p>
+							<p class="do">We help people become better equipped to solve future problems themselves.</p>
+						</div>
+						<div class="different-item">
+							<p class="dont">We don't sell theory.</p>
+							<p class="do">We combine academic insight, business experience and practical application.</p>
+						</div>
+						<div class="different-item">
+							<p class="dont">We don't create dependency.</p>
+							<p class="do">We build capability, confidence and leadership.</p>
+						</div>
+						<div class="different-item">
+							<p class="dont">We don't focus solely on business outcomes.</p>
+							<p class="do">We believe stronger leadership creates smarter businesses, healthier communities and happier people.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Final CTA -->
+			<section class="final-cta">
+				<div class="container">
+					<h2>Let's talk about your next step.</h2>
+					<p>Book a free, no-obligation consultation — we'll talk through what you're trying to achieve and how Sportivity can help.</p>
+					<a href="https://app.usemotion.com/meet/andy-heald/consultancy?d=60" class="btn btn-light" target="_blank" rel="noopener">Book a Free Consultation</a>
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	main {
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.container {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 0 1.5rem;
+	}
+
+	/* Hero */
+	.hero {
+		background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+		padding: 5rem 1.5rem 4rem;
+		text-align: center;
+		border-bottom: 4px solid var(--accent);
+	}
+	.hero-inner {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.hero h1 {
+		font-size: clamp(2rem, 5vw, 3.25rem);
+		line-height: 1.15;
+		margin: 0 0 1.5rem;
+		color: #111;
+		letter-spacing: -0.02em;
+	}
+	.hero .lede {
+		font-size: 1.2rem;
+		line-height: 1.55;
+		color: #444;
+		margin: 0 auto 2.25rem;
+		max-width: 720px;
+	}
+	.cta-row {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	/* Buttons */
+	.btn {
+		display: inline-block;
+		padding: 0.85rem 1.75rem;
+		font-weight: 600;
+		font-size: 1rem;
+		text-decoration: none;
+		border-radius: 4px;
+		transition: all 0.2s ease;
+		border: 2px solid transparent;
+	}
+	.btn-primary {
+		background: var(--accent);
+		color: #fff;
+		border-color: var(--accent);
+	}
+	.btn-primary:hover {
+		background: var(--accent-dark);
+		border-color: var(--accent-dark);
+	}
+	.btn-secondary {
+		background: transparent;
+		color: #111;
+		border-color: #111;
+	}
+	.btn-secondary:hover {
+		background: #111;
+		color: #fff;
+	}
+	.btn-light {
+		background: #fff;
+		color: var(--accent);
+		border-color: #fff;
+	}
+	.btn-light:hover {
+		background: #111;
+		color: #fff;
+		border-color: #111;
+	}
+
+	/* Pillars */
+	.pillars {
+		background: #111;
+		color: #fff;
+		padding: 4rem 0;
+	}
+	.pillar-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 2rem;
+	}
+	.pillar {
+		text-align: center;
+		padding: 1rem;
+	}
+	.pillar h3 {
+		color: var(--accent);
+		font-size: 1.5rem;
+		margin: 0 0 0.75rem;
+	}
+	.pillar p {
+		color: #d4d4d8;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	/* Services Preview */
+	.services-preview {
+		padding: 5rem 0;
+		background: #fff;
+	}
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+	.section-header h2 {
+		font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+		margin: 0 0 1rem;
+		color: #111;
+	}
+	.section-header p {
+		font-size: 1.1rem;
+		color: #555;
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+	}
+	.service {
+		padding: 1.75rem;
+		border: 1px solid #e5e5e5;
+		border-top: 4px solid var(--accent);
+		background: #fff;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+	.service:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+	}
+	.service h3 {
+		font-size: 1.1rem;
+		margin: 0 0 0.75rem;
+		color: #111;
+		line-height: 1.3;
+	}
+	.service p {
+		color: #555;
+		line-height: 1.6;
+		margin: 0;
+		font-size: 0.95rem;
+	}
+	.section-cta {
+		text-align: center;
+		margin-top: 3rem;
+	}
+
+	/* What Makes Sportivity Different */
+	.different {
+		background: #f5f5f5;
+		padding: 5rem 0;
+	}
+	.different-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.different-item {
+		background: #fff;
+		padding: 2rem;
+		border-left: 4px solid var(--accent);
+	}
+	.different-item .dont {
+		font-weight: 700;
+		color: #111;
+		margin: 0 0 0.75rem;
+		font-size: 1.05rem;
+	}
+	.different-item .do {
+		color:#444;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	/* Final CTA */
+	.final-cta {
+		background: var(--accent);
+		color: #fff;
+		padding: 4rem 1.5rem;
+		text-align: center;
+	}
+	.final-cta h2 {
+		color: #fff;
+		font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+		margin: 0 0 1rem;
+	}
+	.final-cta p {
+		font-size: 1.15rem;
+		max-width: 600px;
+		margin: 0 auto 2rem;
+		opacity: 0.95;
+	}
+
+	/* Mobile */
+	@media (max-width: 640px) {
+		.hero {
+			padding: 3rem 1rem 2.5rem;
+		}
+		.cta-row {
+			flex-direction: column;
+			width: 100%;
+			max-width: 320px;
+			margin: 0 auto;
+		}
+		.btn {
+			width: 100%;
+			text-align: center;
+		}
+	}
+</style>

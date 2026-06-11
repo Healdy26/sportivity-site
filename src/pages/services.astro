@@ -1,0 +1,284 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+
+const services = [
+	{
+		title: 'Leadership Development & Executive Coaching',
+		intro: 'Supporting leaders, managers and professionals to develop confidence, clarity and capability through coaching, mentoring and structured personal development.',
+		points: [
+			'1:1 executive coaching for senior leaders',
+			'Group coaching for leadership teams',
+			'Structured development programmes',
+			'Mentoring for new and aspiring managers',
+		],
+		pillar: 'Better Leaders',
+	},
+	{
+		title: 'Strategic Consultancy & Organisational Development',
+		intro: 'Helping organisations make sense of complex challenges, identify opportunities and implement practical solutions that improve performance and long-term sustainability.',
+		points: [
+			'Organisational strategy and planning',
+			'Change management and transformation',
+			'Stakeholder engagement and partnership development',
+			'Performance review and improvement',
+		],
+		pillar: 'Smarter Businesses',
+	},
+	{
+		title: 'Quality Assurance & Governance',
+		intro: 'Designing quality systems, governance frameworks and evidence-based approaches that strengthen confidence, accountability and organisational effectiveness.',
+		points: [
+			'Quality framework design and review',
+			'Governance and accountability structures',
+			'Evidence-based assurance processes',
+			'External validation and audit support',
+		],
+		pillar: 'Smarter Businesses',
+	},
+	{
+		title: 'Workforce Development & Qualifications',
+		intro: 'Supporting organisations to develop qualifications, learning pathways, assessment models and workforce standards that build capability and professional excellence.',
+		points: [
+			'Qualification and curriculum design',
+			'Assessment and learning pathway development',
+			'Workforce standards and competency frameworks',
+			'Professional standards development',
+		],
+		pillar: 'Better Leaders',
+	},
+	{
+		title: 'Bid Strategy & Growth Support',
+		intro: 'Providing strategic support for funding applications, tenders, business cases and partnership opportunities that help organisations grow and create greater impact.',
+		points: [
+			'Bid and tender strategy',
+			'Funding application development',
+			'Business case writing',
+			'Partnership and consortium support',
+		],
+		pillar: 'Smarter Businesses',
+	},
+	{
+		title: 'Digital Skills, Innovation & Future Readiness',
+		intro: 'Helping organisations understand emerging trends, develop digital capability and prepare their workforce for a rapidly changing future.',
+		points: [
+			'Digital capability assessment',
+			'AI and emerging technology adoption',
+			'Workforce future-readiness planning',
+			'Innovation strategy and pilot design',
+		],
+		pillar: 'Healthier, Happier World',
+	},
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Services | ${SITE_TITLE}`} description="Leadership development, strategic consultancy, quality assurance, workforce development, bid strategy, and digital innovation services from Sportivity Consultants." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<!-- Page Hero -->
+			<section class="page-hero">
+				<div class="container">
+					<p class="eyebrow">Services</p>
+					<h1>Practical, evidence-based support — designed to fit how your organisation actually works.</h1>
+					<p class="lede">Six areas of focus, all underpinned by one belief: stronger leadership creates smarter businesses, healthier communities and happier people.</p>
+				</div>
+			</section>
+
+			<!-- Services List -->
+			<section class="services">
+				<div class="container">
+					{services.map((service, i) => (
+						<article class="service-row" id={`service-${i + 1}`}>
+							<div class="service-content">
+								<p class="pillar-tag">{service.pillar}</p>
+								<h2>{service.title}</h2>
+								<p class="service-intro">{service.intro}</p>
+								<ul class="service-points">
+									{service.points.map((point) => (
+										<li>{point}</li>
+									))}
+								</ul>
+							</div>
+						</article>
+					))}
+				</div>
+			</section>
+
+			<!-- Final CTA -->
+			<section class="final-cta">
+				<div class="container">
+					<h2>Not sure which is right for you?</h2>
+					<p>Book a free, no-obligation consultation — we'll talk through what you're trying to achieve and identify the best way Sportivity can help.</p>
+					<a href="https://app.usemotion.com/meet/andy-heald/consultancy?d=60" class="btn btn-light" target="_blank" rel="noopener">Book a Free Consultation</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.container {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 0 1.5rem;
+	}
+
+	/* Page Hero */
+	.page-hero {
+		background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+		padding: 4rem 1.5rem 3rem;
+		text-align: center;
+		border-bottom: 4px solid var(--accent);
+	}
+	.eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: 0.85rem;
+		font-weight: 700;
+		color: var(--accent);
+		margin: 0 0 1rem;
+	}
+	.page-hero h1 {
+		font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+		line-height: 1.25;
+		margin: 0 auto 1.5rem;
+		color: #111;
+		max-width: 800px;
+		letter-spacing: -0.02em;
+	}
+	.page-hero .lede {
+		font-size: 1.1rem;
+		line-height: 1.55;
+		color: #444;
+		margin: 0 auto;
+		max-width: 700px;
+	}
+
+	/* Services List */
+	.services {
+		padding: 4rem 0;
+		background: #fff;
+	}
+	.service-row {
+		padding: 2.5rem 0;
+		border-bottom: 1px solid #eee;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	.service-row:last-child {
+		border-bottom: none;
+	}
+	.service-row:first-child {
+		padding-top: 0;
+	}
+	.pillar-tag {
+		display: inline-block;
+		background: var(--accent);
+		color: #fff;
+		padding: 0.25rem 0.75rem;
+		font-size: 0.75rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		border-radius: 3px;
+		margin: 0 0 1rem;
+	}
+	.service-row h2 {
+		font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+		margin: 0 0 0.75rem;
+		color: #111;
+		line-height: 1.3;
+	}
+	.service-intro {
+		font-size: 1.05rem;
+		line-height: 1.65;
+		color: #333;
+		margin: 0 0 1.25rem;
+	}
+	.service-points {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.service-points li {
+		font-size: 0.98rem;
+		line-height: 1.55;
+		color: #444;
+		padding: 0.35rem 0 0.35rem 1.5rem;
+		position: relative;
+	}
+	.service-points li::before {
+		content: "→";
+		color: var(--accent);
+		position: absolute;
+		left: 0;
+		font-weight: 700;
+	}
+
+	/* Buttons */
+	.btn {
+		display: inline-block;
+		padding: 0.85rem 1.75rem;
+		font-weight: 600;
+		font-size: 1rem;
+		text-decoration: none;
+		border-radius: 4px;
+		transition: all 0.2s ease;
+		border: 2px solid transparent;
+	}
+	.btn-light {
+		background: #fff;
+		color: var(--accent);
+		border-color: #fff;
+	}
+	.btn-light:hover {
+		background: #111;
+		color: #fff;
+		border-color: #111;
+	}
+
+	/* Final CTA */
+	.final-cta {
+		background: var(--accent);
+		color: #fff;
+		padding: 4rem 1.5rem;
+		text-align: center;
+	}
+	.final-cta h2 {
+		color: #fff;
+		font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+		margin: 0 0 1rem;
+	}
+	.final-cta p {
+		font-size: 1.15rem;
+		max-width: 600px;
+		margin: 0 auto 2rem;
+		opacity: 0.95;
+	}
+
+	@media (max-width: 640px) {
+		.page-hero {
+			padding: 3rem 1rem 2.5rem;
+		}
+		.services {
+			padding: 3rem 0;
+		}
+		.service-row {
+			padding: 2rem 0;
+		}
+	}
+</style>
