@@ -86,7 +86,7 @@ So I've built CQI. Continuous Quality Improvement. It's a system that observes a
 
 The providers who can already prove their quality will walk into the new conversation. The ones who can't will be left outside it, explaining why they never measured it.
 
-If that's you, or it's a school wondering how on earth you check the people delivering on your field, this is exactly the kind of quality assurance and governance work I do, day in, day out (it's one of my services: https://www.sportivityconsultants.com/services#service-3). Reply to this email, or book a free chat below.
+If that's you, or it's a school wondering how on earth you check the people delivering on your field, this is exactly the kind of quality assurance and governance work I do, day in, day out. You can see the full CQI framework here: https://www.sportivityconsultants.com/cqi. Reply to this email, or book a free chat below.
 
 ### Before you go
 

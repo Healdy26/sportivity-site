@@ -5,8 +5,8 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE } from '../consts';
 
 // PASTE YOUR STRIPE PAYMENT LINK AND PRICE HERE TO GO LIVE.
-const STRIPE_LINK = '';
-const PRICE = ''; // e.g. '£149'
+const STRIPE_LINK = 'https://buy.stripe.com/14A5kwcZfddkg1T4Llasg02';
+const PRICE = '£250'; // one-off payment
 
 const buyConfigured = STRIPE_LINK !== '';
 const buyHref = buyConfigured ? STRIPE_LINK : '/contact/';
@@ -124,7 +124,7 @@ const description =
 			<section class="final-cta">
 				<div class="container">
 					<h2>Get the CQI framework</h2>
-					<p>The full framework and resource pack, licensed by Sportivity Consultants. Get organised before the new system lands.</p>
+					<p>The full framework and resource pack, licensed by Sportivity Consultants. A one-off payment, yours to keep. Get organised before the new system lands.</p>
 					<a href={buyHref} class="btn btn-light" {...(buyConfigured ? { target: '_blank', rel: 'noopener' } : {})}>{buyLabel}</a>
 					{!buyConfigured && <p class="note light">Checkout link coming shortly.</p>}
 				</div>
