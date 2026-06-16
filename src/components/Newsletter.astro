@@ -1,12 +1,6 @@
 ---
-// Newsletter signup — embeds the HubSpot form inside an on-brand section.
-// Values taken from the HubSpot form embed code (Share > Embed).
-const HUBSPOT_PORTAL_ID = '148710435';
-const HUBSPOT_FORM_ID = '23e2085d-381c-4019-bd87-46646bf9d635';
-const HUBSPOT_REGION = 'eu1';
-
-const configured = HUBSPOT_PORTAL_ID !== '' && HUBSPOT_FORM_ID !== '';
-const loaderSrc = `https://js-${HUBSPOT_REGION}.hsforms.net/forms/embed/${HUBSPOT_PORTAL_ID}.js`;
+// Newsletter call-to-action band. The actual HubSpot form lives on /newsletter.
+// Shown on the homepage, blog index, and the end of every blog post.
 ---
 
 <section class="newsletter">
@@ -18,24 +12,9 @@ const loaderSrc = `https://js-${HUBSPOT_REGION}.hsforms.net/forms/embed/${HUBSPO
 			focus, performing in the room, better leadership, and the models, frameworks
 			and AI ideas worth your time. No fluff, no spam, unsubscribe anytime.
 		</p>
-
-		{configured ? (
-			<div class="newsletter-card">
-				<div
-					class="hs-form-frame"
-					data-region={HUBSPOT_REGION}
-					data-form-id={HUBSPOT_FORM_ID}
-					data-portal-id={HUBSPOT_PORTAL_ID}
-				>
-				</div>
-			</div>
-		) : (
-			<p class="pending">Newsletter sign-up is launching shortly.</p>
-		)}
+		<a href="/newsletter" class="btn-subscribe">Subscribe to the newsletter</a>
 	</div>
 </section>
-
-{configured && <script is:inline defer src={loaderSrc}></script>}
 
 <style>
 	.newsletter {
@@ -69,18 +48,20 @@ const loaderSrc = `https://js-${HUBSPOT_REGION}.hsforms.net/forms/embed/${HUBSPO
 		margin: 0 auto 2rem;
 		max-width: 560px;
 	}
-	.newsletter-card {
-		background: #fff;
-		border-radius: 12px;
-		padding: 2rem;
-		max-width: 480px;
-		margin: 0 auto;
-		text-align: left;
-		box-shadow: var(--box-shadow);
+	.btn-subscribe {
+		display: inline-block;
+		padding: 0.85rem 2rem;
+		font-weight: 600;
+		font-size: 1rem;
+		text-decoration: none;
+		border-radius: 4px;
+		background: var(--accent);
+		color: #fff;
+		border: 2px solid var(--accent);
+		transition: background 0.2s ease, border-color 0.2s ease;
 	}
-	.pending {
-		color: #888;
-		font-style: italic;
-		margin: 0;
+	.btn-subscribe:hover {
+		background: var(--accent-dark);
+		border-color: var(--accent-dark);
 	}
 </style>

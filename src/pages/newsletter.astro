@@ -1,0 +1,101 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+
+// HubSpot form embed values (Share > Embed).
+const HUBSPOT_PORTAL_ID = '148710435';
+const HUBSPOT_FORM_ID = '23e2085d-381c-4019-bd87-46646bf9d635';
+const HUBSPOT_REGION = 'eu1';
+const loaderSrc = `https://js-${HUBSPOT_REGION}.hsforms.net/forms/embed/${HUBSPOT_PORTAL_ID}.js`;
+
+const title = `Subscribe | ${SITE_TITLE}`;
+const description =
+	'Sign up for the monthly Sportivity newsletter: practical leadership, productivity and AI strategies for SME owners and directors.';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="signup">
+				<div class="signup-inner">
+					<p class="eyebrow">The monthly edge</p>
+					<h1>Sharper leadership, once a month.</h1>
+					<p class="lede">
+						Practical strategies for SME owners and directors: productivity, clarity and
+						focus, performing in the room, better leadership, and the models, frameworks
+						and AI ideas worth your time. No fluff, no spam, unsubscribe anytime.
+					</p>
+
+					<div class="signup-card">
+						<div
+							class="hs-form-frame"
+							data-region={HUBSPOT_REGION}
+							data-form-id={HUBSPOT_FORM_ID}
+							data-portal-id={HUBSPOT_PORTAL_ID}
+						>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+		<script is:inline defer src={loaderSrc}></script>
+	</body>
+</html>
+
+<style>
+	main {
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.signup {
+		background: #111;
+		color: #fff;
+		padding: 4.5rem 1.5rem 5rem;
+		text-align: center;
+	}
+	.signup-inner {
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	.eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: 0.85rem;
+		font-weight: 700;
+		color: var(--accent);
+		margin: 0 0 1rem;
+	}
+	.signup h1 {
+		color: #fff;
+		font-size: clamp(1.85rem, 4vw, 2.75rem);
+		margin: 0 0 1rem;
+		letter-spacing: -0.02em;
+		line-height: 1.15;
+	}
+	.signup .lede {
+		font-size: 1.1rem;
+		line-height: 1.6;
+		color: #d4d4d8;
+		margin: 0 auto 2.5rem;
+		max-width: 560px;
+	}
+	.signup-card {
+		background: #fff;
+		border-radius: 12px;
+		padding: 2rem;
+		max-width: 480px;
+		margin: 0 auto;
+		text-align: left;
+		box-shadow: var(--box-shadow);
+	}
+</style>
