@@ -2,7 +2,7 @@
 title: 'The Monthly Edge: Busy Is Not the Same as Good'
 description: "The first issue of The Monthly Edge. How I run five roles on four hours of focus, using AI properly, psychological safety, and why the scrapped Sport Premium just made quality everything."
 pubDate: 'Jun 16 2026'
-heroImage: '../assets/blog-placeholder-1.jpg'
+heroImage: '../assets/the-monthly-edge.png'
 type: 'newsletter'
 ---
 
