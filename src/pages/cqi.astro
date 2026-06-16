@@ -1,0 +1,200 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+
+// PASTE YOUR STRIPE PAYMENT LINK AND PRICE HERE TO GO LIVE.
+const STRIPE_LINK = '';
+const PRICE = ''; // e.g. '£149'
+
+const buyConfigured = STRIPE_LINK !== '';
+const buyHref = buyConfigured ? STRIPE_LINK : '/contact/';
+const buyLabel = buyConfigured
+	? `Get CQI${PRICE ? ` — ${PRICE}` : ''}`
+	: 'Enquire about CQI';
+
+const included = [
+	'Framework Guide — the model, the evidence base and how to run it',
+	'Lesson Observation Record — gateway, four scored areas and the weighted score',
+	'Grade Descriptors — the standard for every grade, the moderation backbone',
+	'Assessor Conversation Guide — scripts, questioning and the feedback model',
+	'SMART Target Planner & CPD Log — targets mapped to CIMSPA competencies',
+	'Quality Impact Report template — the proof pack for heads and commissioners',
+	'School & pupil voice surveys — the termly check that closes the loop',
+];
+
+const title = `CQI: Quality Assurance for Children's Coaching | ${SITE_TITLE}`;
+const description =
+	'CQI is the quality assurance framework for anyone coaching children, in schools, holiday clubs and beyond. Built on Ofsted and CIMSPA standards. Created by Andy Heald.';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<!-- Hero -->
+			<section class="hero">
+				<div class="container">
+					<p class="eyebrow">CQI · Continuous Quality Improvement</p>
+					<h1>Prove your coaching is good. Don't just say it.</h1>
+					<p class="lede">
+						CQI is the quality assurance framework for anyone who coaches children. In
+						schools, in holiday clubs, on a wet field on a Tuesday. Built on the Ofsted
+						toolkit and the CIMSPA standards, it turns "we think we're decent" into
+						"here's exactly how we know."
+					</p>
+					<div class="cta-row">
+						<a href={buyHref} class="btn btn-primary" {...(buyConfigured ? { target: '_blank', rel: 'noopener' } : {})}>{buyLabel}</a>
+						<a href="#whats-included" class="btn btn-secondary">See what's included</a>
+					</div>
+					{!buyConfigured && <p class="note">Checkout link coming shortly.</p>}
+				</div>
+			</section>
+
+			<!-- Why now -->
+			<section class="block">
+				<div class="container narrow">
+					<h2>Why this matters now</h2>
+					<p>The PE and Sport Premium has been scrapped. From 2027 the new Partnerships Network names "expert and quality assured coaches" as part of the offer, and nobody has yet defined what "quality assured" actually means or how you prove it.</p>
+					<p>At the same time, Ofsted's renewed framework holds schools accountable for the quality of every lesson, including the ones delivered by external coaches. Schools have a duty to monitor that provision. Most have no system for it.</p>
+					<p>So the bar has moved. The providers who can already evidence their quality walk into the new conversation. The ones who can't will be left outside it, explaining why they never measured it.</p>
+				</div>
+			</section>
+
+			<!-- What CQI is -->
+			<section class="block alt">
+				<div class="container narrow">
+					<h2>What CQI is</h2>
+					<p>One framework, two readings, both deliberate.</p>
+					<p><strong>Continuous Quality Improvement</strong> is the process: a repeating cycle of observation, feedback, target setting, support and re-observation, quality-assured by moderation. The same standard in every school, every week, whoever is coaching.</p>
+					<p><strong>Coaching Quality Indicator</strong> is the instrument inside it: a structured lesson observation scored against national reference points, producing a graded record for each coach and a headline quality score you can show to schools and commissioners.</p>
+					<p class="pull">A child being busy, active and happy is not the same as a child learning. CQI judges what children learn, not just what they do, and develops coaches until the difference disappears.</p>
+				</div>
+			</section>
+
+			<!-- Who it's for -->
+			<section class="block">
+				<div class="container narrow">
+					<h2>Who it's for</h2>
+					<ul class="ticks">
+						<li>Children's activity providers who need to demonstrate quality</li>
+						<li>Coaches delivering PE and sport in schools</li>
+						<li>Holiday and wraparound clubs</li>
+						<li>Anyone working with or coaching children who has to show their work is good</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- What's included -->
+			<section class="block alt" id="whats-included">
+				<div class="container narrow">
+					<h2>What's in the pack</h2>
+					<p>The full CQI document set, ready to run from day one:</p>
+					<ul class="ticks">
+						{included.map((item) => <li>{item}</li>)}
+					</ul>
+					<p class="soon">Assessor training is coming soon and will be added for everyone who buys the framework.</p>
+				</div>
+			</section>
+
+			<!-- Alignment -->
+			<section class="block">
+				<div class="container narrow">
+					<h2>Mapped to the standards schools are judged by</h2>
+					<p>Every part of CQI triangulates to more than one reference point: the Ofsted report card, the CIMSPA professional standards (Coach, Working with Children, Working in the School Environment) and the Physical Literacy Consensus Statement for England.</p>
+					<p>Because it maps to several, it isn't hostage to any single one. When Ofsted's language changes, or the new curriculum lands in 2028, the criteria flex and the model stands.</p>
+				</div>
+			</section>
+
+			<!-- Credibility -->
+			<section class="block alt">
+				<div class="container narrow">
+					<h2>Built by someone who's done it</h2>
+					<p>CQI was created by Andy Heald. As Head of Quality and Education at a national franchise organisation, Andy built and ran the original CQI approach across a network of more than 2,000 coaches, and contributed to the development of the CIMSPA professional standards the framework aligns to.</p>
+					<p>This is the difference between "we think our coaching is good" and "here is how we know." For schools, it answers their duty to monitor external provision. For the new Partnerships Network, it's the substance behind "quality assured." For coaches, every completed cycle doubles as CPD evidence towards CIMSPA professional status.</p>
+				</div>
+			</section>
+
+			<!-- Buy CTA -->
+			<section class="final-cta">
+				<div class="container">
+					<h2>Get the CQI framework</h2>
+					<p>The full framework and resource pack, licensed by Sportivity Consultants. Get organised before the new system lands.</p>
+					<a href={buyHref} class="btn btn-light" {...(buyConfigured ? { target: '_blank', rel: 'noopener' } : {})}>{buyLabel}</a>
+					{!buyConfigured && <p class="note light">Checkout link coming shortly.</p>}
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main { width: 100%; max-width: 100%; margin: 0; padding: 0; }
+	.container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+	.container.narrow { max-width: 760px; }
+
+	.hero {
+		background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+		padding: 4.5rem 1.5rem 3.5rem;
+		text-align: center;
+		border-bottom: 4px solid var(--accent);
+	}
+	.eyebrow {
+		text-transform: uppercase; letter-spacing: 0.1em;
+		font-size: 0.85rem; font-weight: 700; color: var(--accent); margin: 0 0 1rem;
+	}
+	.hero h1 {
+		font-size: clamp(1.9rem, 4.5vw, 3rem); line-height: 1.15;
+		margin: 0 auto 1.25rem; color: #111; max-width: 800px; letter-spacing: -0.02em;
+	}
+	.hero .lede {
+		font-size: 1.2rem; line-height: 1.6; color: #444; margin: 0 auto 2rem; max-width: 680px;
+	}
+	.cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+	.note { margin: 1rem 0 0; color: #888; font-size: 0.9rem; font-style: italic; }
+	.note.light { color: rgba(255,255,255,0.85); }
+
+	.btn {
+		display: inline-block; padding: 0.85rem 1.75rem; font-weight: 600; font-size: 1rem;
+		text-decoration: none; border-radius: 4px; transition: all 0.2s ease; border: 2px solid transparent;
+	}
+	.btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+	.btn-primary:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
+	.btn-secondary { background: transparent; color: #111; border-color: #111; }
+	.btn-secondary:hover { background: #111; color: #fff; }
+	.btn-light { background: #fff; color: var(--accent); border-color: #fff; }
+	.btn-light:hover { background: #111; color: #fff; border-color: #111; }
+
+	.block { padding: 3.5rem 0; background: #fff; }
+	.block.alt { background: #f5f5f5; }
+	.block h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin: 0 0 1.25rem; color: #111; }
+	.block p { font-size: 1.075rem; line-height: 1.7; color: #333; margin: 0 0 1.1rem; }
+	.pull {
+		border-left: 4px solid var(--accent); padding-left: 1.25rem;
+		font-size: 1.2rem; font-style: italic; color: #111; margin-top: 1.5rem;
+	}
+	.soon { font-style: italic; color: #555; }
+
+	.ticks { margin: 0; padding: 0; list-style: none; }
+	.ticks li {
+		font-size: 1.05rem; line-height: 1.6; color: #333;
+		padding: 0.5rem 0 0.5rem 1.75rem; position: relative;
+	}
+	.ticks li::before { content: "→"; color: var(--accent); position: absolute; left: 0; font-weight: 700; }
+
+	.final-cta { background: var(--accent); color: #fff; padding: 4rem 1.5rem; text-align: center; }
+	.final-cta h2 { color: #fff; font-size: clamp(1.75rem, 3.5vw, 2.25rem); margin: 0 0 1rem; }
+	.final-cta p { font-size: 1.15rem; max-width: 600px; margin: 0 auto 2rem; opacity: 0.95; }
+
+	@media (max-width: 640px) {
+		.hero { padding: 3rem 1rem 2.5rem; }
+		.cta-row { flex-direction: column; width: 100%; max-width: 320px; margin: 0 auto; }
+		.btn { width: 100%; text-align: center; }
+	}
+</style>
