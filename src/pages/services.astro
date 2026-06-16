@@ -37,6 +37,7 @@ const services = [
 			'External validation and audit support',
 		],
 		pillar: 'Smarter Businesses',
+		cta: { label: 'Explore CQI, my quality framework for children’s coaching', href: '/cqi/' },
 	},
 	{
 		title: 'Workforce Development & Qualifications',
@@ -105,6 +106,9 @@ const services = [
 										<li>{point}</li>
 									))}
 								</ul>
+								{service.cta && (
+									<a href={service.cta.href} class="service-cta">{service.cta.label} →</a>
+								)}
 							</div>
 						</article>
 					))}
@@ -227,6 +231,21 @@ const services = [
 		position: absolute;
 		left: 0;
 		font-weight: 700;
+	}
+	.service-cta {
+		display: inline-block;
+		margin-top: 1.5rem;
+		padding: 0.6rem 1.25rem;
+		font-weight: 600;
+		font-size: 0.95rem;
+		text-decoration: none;
+		color: #fff;
+		background: var(--accent);
+		border-radius: 4px;
+		transition: background 0.2s ease;
+	}
+	.service-cta:hover {
+		background: var(--accent-dark);
 	}
 
 	/* Buttons */
