@@ -9,7 +9,8 @@ import Newsletter from '../components/Newsletter.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, type } = Astro.props;
+const label = type === 'newsletter' ? 'The Monthly Edge · Newsletter' : 'Blog';
 
 const siteURL = Astro.site?.href.replace(/\/$/, '') ?? 'https://www.sportivityconsultants.com';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -75,6 +76,14 @@ const jsonLd = {
 			.title h1 {
 				margin: 0 0 0.5em 0;
 			}
+			.post-label {
+				margin: 0 0 0.75em;
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+				font-size: 0.8rem;
+				font-weight: 700;
+				color: var(--accent);
+			}
 			.date {
 				margin-bottom: 0.5em;
 				color: rgb(var(--gray));
@@ -94,6 +103,7 @@ const jsonLd = {
 				</div>
 				<div class="prose">
 					<div class="title">
+						<p class="post-label">{label}</p>
 						<div class="date">
 							<FormattedDate date={pubDate} />
 							{

@@ -12,9 +12,12 @@ const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
-const blogTitle = `Leadership Insights & Blog | ${SITE_TITLE}`;
+const newsletters = posts.filter((p) => p.data.type === 'newsletter');
+const blogs = posts.filter((p) => p.data.type !== 'newsletter');
+
+const blogTitle = `Blog & Newsletter | ${SITE_TITLE}`;
 const blogDescription =
-	'Thoughts on leadership, coaching and organisational growth from Andy Heald of Sportivity Consultants.';
+	'Articles and The Monthly Edge newsletter on leadership, coaching and organisational growth from Andy Heald of Sportivity Consultants.';
 ---
 
 <!doctype html>
@@ -24,8 +27,59 @@ const blogDescription =
 		<style>
 			main {
 				width: 960px;
+				max-width: calc(100% - 2em);
 			}
-			ul {
+			.page-head {
+				text-align: center;
+				margin: 0 0 2.5rem;
+			}
+			.page-head h1 {
+				margin: 0 0 0.5rem;
+				color: rgb(var(--black));
+			}
+			.page-head p {
+				margin: 0;
+				color: rgb(var(--gray));
+			}
+			.content-section {
+				margin-bottom: 3.5rem;
+			}
+			.section-head {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+				gap: 1rem;
+				margin-bottom: 1.5rem;
+				padding-bottom: 0.5rem;
+				border-bottom: 2px solid var(--accent);
+			}
+			.section-head h2 {
+				margin: 0;
+				color: rgb(var(--black));
+			}
+			.section-head h2 span {
+				font-size: 0.85rem;
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+				color: var(--accent);
+				font-weight: 700;
+				margin-left: 0.5rem;
+			}
+			.section-cta {
+				flex-shrink: 0;
+				text-decoration: none;
+				font-weight: 600;
+				font-size: 0.9rem;
+				color: #fff;
+				background: var(--accent);
+				padding: 0.5rem 1.1rem;
+				border-radius: 4px;
+				transition: background 0.2s ease;
+			}
+			.section-cta:hover {
+				background: var(--accent-dark);
+			}
+			.post-list {
 				display: flex;
 				flex-wrap: wrap;
 				gap: 2rem;
@@ -33,29 +87,29 @@ const blogDescription =
 				margin: 0;
 				padding: 0;
 			}
-			ul li {
+			.post-list li {
 				width: calc(50% - 1rem);
 			}
-			ul li * {
+			.post-list li * {
 				text-decoration: none;
 				transition: 0.2s ease;
 			}
-			ul li:first-child {
+			.blog-list li:first-child {
 				width: 100%;
 				margin-bottom: 1rem;
 				text-align: center;
 			}
-			ul li:first-child img {
+			.blog-list li:first-child img {
 				width: 100%;
 			}
-			ul li:first-child .title {
+			.blog-list li:first-child .title {
 				font-size: 2.369rem;
 			}
-			ul li img {
+			.post-list li img {
 				margin-bottom: 0.5rem;
 				border-radius: 12px;
 			}
-			ul li a {
+			.post-list li a {
 				display: block;
 			}
 			.title {
@@ -67,25 +121,25 @@ const blogDescription =
 				margin: 0;
 				color: rgb(var(--gray));
 			}
-			ul li a:hover h4,
-			ul li a:hover .date {
+			.post-list li a:hover h4,
+			.post-list li a:hover .date {
 				color: rgb(var(--accent));
 			}
-			ul a:hover img {
+			.post-list a:hover img {
 				box-shadow: var(--box-shadow);
 			}
 			@media (max-width: 720px) {
-				ul {
+				.post-list {
 					gap: 0.5em;
 				}
-				ul li {
+				.post-list li {
 					width: 100%;
 					text-align: center;
 				}
-				ul li:first-child {
+				.blog-list li:first-child {
 					margin-bottom: 0;
 				}
-				ul li:first-child .title {
+				.blog-list li:first-child .title {
 					font-size: 1.563em;
 				}
 			}
@@ -94,10 +148,19 @@ const blogDescription =
 	<body>
 		<Header />
 		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
+			<div class="page-head">
+				<h1>Blog &amp; Newsletter</h1>
+				<p>Articles and The Monthly Edge, all in one place.</p>
+			</div>
+
+			{newsletters.length > 0 && (
+				<section class="content-section">
+					<div class="section-head">
+						<h2>The Monthly Edge <span>Newsletter</span></h2>
+						<a href="/newsletter" class="section-cta">Subscribe</a>
+					</div>
+					<ul class="post-list newsletter-list">
+						{newsletters.map((post) => (
 							<li>
 								<a href={`/blog/${post.id}/`}>
 									{post.data.heroImage && (
@@ -109,10 +172,32 @@ const blogDescription =
 									</p>
 								</a>
 							</li>
-						))
-					}
+						))}
+					</ul>
+				</section>
+			)}
+
+			<section class="content-section">
+				<div class="section-head">
+					<h2>Blog</h2>
+				</div>
+				<ul class="post-list blog-list">
+					{blogs.map((post) => (
+						<li>
+							<a href={`/blog/${post.id}/`}>
+								{post.data.heroImage && (
+									<Image width={720} height={360} src={post.data.heroImage} alt={post.data.title} />
+								)}
+								<h4 class="title">{post.data.title}</h4>
+								<p class="date">
+									<FormattedDate date={post.data.pubDate} />
+								</p>
+							</a>
+						</li>
+					))}
 				</ul>
 			</section>
+
 			<Newsletter />
 		</main>
 		<Footer />
