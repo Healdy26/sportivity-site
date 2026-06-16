@@ -1,0 +1,86 @@
+---
+// Newsletter signup — embeds the HubSpot form inside an on-brand section.
+// Values taken from the HubSpot form embed code (Share > Embed).
+const HUBSPOT_PORTAL_ID = '148710435';
+const HUBSPOT_FORM_ID = '23e2085d-381c-4019-bd87-46646bf9d635';
+const HUBSPOT_REGION = 'eu1';
+
+const configured = HUBSPOT_PORTAL_ID !== '' && HUBSPOT_FORM_ID !== '';
+const loaderSrc = `https://js-${HUBSPOT_REGION}.hsforms.net/forms/embed/${HUBSPOT_PORTAL_ID}.js`;
+---
+
+<section class="newsletter">
+	<div class="newsletter-inner">
+		<p class="eyebrow">The monthly edge</p>
+		<h2>Sharper leadership, once a month.</h2>
+		<p class="lede">
+			Practical strategies for SME owners and directors: productivity, clarity and
+			focus, performing in the room, better leadership, and the models, frameworks
+			and AI ideas worth your time. No fluff, no spam, unsubscribe anytime.
+		</p>
+
+		{configured ? (
+			<div class="newsletter-card">
+				<div
+					class="hs-form-frame"
+					data-region={HUBSPOT_REGION}
+					data-form-id={HUBSPOT_FORM_ID}
+					data-portal-id={HUBSPOT_PORTAL_ID}
+				>
+				</div>
+			</div>
+		) : (
+			<p class="pending">Newsletter sign-up is launching shortly.</p>
+		)}
+	</div>
+</section>
+
+{configured && <script is:inline defer src={loaderSrc}></script>}
+
+<style>
+	.newsletter {
+		background: #111;
+		color: #fff;
+		padding: 4.5rem 1.5rem;
+		text-align: center;
+	}
+	.newsletter-inner {
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	.eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: 0.85rem;
+		font-weight: 700;
+		color: var(--accent);
+		margin: 0 0 1rem;
+	}
+	.newsletter h2 {
+		color: #fff;
+		font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+		margin: 0 0 1rem;
+		letter-spacing: -0.02em;
+	}
+	.newsletter .lede {
+		font-size: 1.1rem;
+		line-height: 1.6;
+		color: #d4d4d8;
+		margin: 0 auto 2rem;
+		max-width: 560px;
+	}
+	.newsletter-card {
+		background: #fff;
+		border-radius: 12px;
+		padding: 2rem;
+		max-width: 480px;
+		margin: 0 auto;
+		text-align: left;
+		box-shadow: var(--box-shadow);
+	}
+	.pending {
+		color: #888;
+		font-style: italic;
+		margin: 0;
+	}
+</style>
