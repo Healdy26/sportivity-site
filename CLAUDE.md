@@ -18,6 +18,7 @@ The marketing site for Sportivity Consultants, run by Andy Heald (leadership con
 - **GitHub Pages** serves a tiny redirect site for the apex domain
 - **Wix** still holds the domain registration and DNS (Wix won't allow nameserver changes for Wix-bought domains)
 - **Formspree** powers the contact form
+- **HubSpot** (free) powers the newsletter — signup form + subscriber list
 - **Motion** powers booking: https://app.usemotion.com/meet/andy-heald/consultancy?d=60
 
 ## Repos and local paths
@@ -70,13 +71,14 @@ sportivity-site/
 │   ├── styles/global.css     site-wide CSS, design tokens, mobile rules
 │   ├── assets/               images referenced by blog posts (Astro optimises these)
 │   ├── blog/                 one .md file per blog post
-│   ├── components/           Header.astro, Footer.astro, BaseHead, FormattedDate, HeaderLink
+│   ├── components/           Header, Footer, BaseHead, FormattedDate, HeaderLink, Newsletter (subscribe band)
 │   ├── layouts/BlogPost.astro
 │   └── pages/
 │       ├── index.astro       homepage
 │       ├── about.astro
 │       ├── services.astro
 │       ├── contact.astro     Formspree form
+│       ├── newsletter.astro  /newsletter — hosts the HubSpot signup form
 │       └── blog/             index.astro and [...slug].astro
 ```
 
@@ -113,9 +115,19 @@ These records live in Wix DNS and keep the site and email working:
 - SPF and Google verification TXT records (email + verification)
 - Nameservers are locked by Wix and cannot be changed
 
+## Newsletter (HubSpot)
+
+A monthly email newsletter aimed at SME owners and directors. Themes: productivity, mental focus, clarity, performing in meetings, better leadership, leadership models and frameworks, theoretical edges, practical AI tips, and sector news (sport/physical activity, education, leadership).
+
+- **Signup form** lives in HubSpot (free account). Portal `148710435`, EU data centre (`eu1`).
+- **`src/components/Newsletter.astro`** is a call-to-action band ("The Monthly Edge / Sharper leadership, once a month") with a **Subscribe** button. It appears on the homepage, the blog index, and the end of every blog post (via `BlogPost.astro`).
+- **`src/pages/newsletter.astro`** is the dedicated `/newsletter` page that actually hosts the HubSpot embed (on a white card). The form values (portal/form/region) are constants at the top of that file.
+- **Keep Formspree and HubSpot separate**: Formspree = contact form, HubSpot = newsletter only. Don't merge them.
+- **GDPR**: the HubSpot form has consent options enabled (UK audience). Don't remove the consent checkbox.
+- **Monthly draft**: a scheduled Claude task (`sportivity-monthly-newsletter`) runs on the 1st of each month at 09:00, drafts the newsletter in Andy's voice, saves it to `newsletter-drafts/`, and notifies him. It drafts only — Andy reviews and sends from HubSpot. This task lives in Claude's scheduled tasks, not in the repo.
+
 ## Roadmap / open items
 
-- One LinkedIn article still to migrate: "The Power of Failure-Tolerant Leadership and Innovation"
 - The template's placeholder `welcome.md` post can be deleted once enough real posts are live
 - After the Wix registrar lock lifts (around August 2026), the domain could move to Cloudflare for cleaner DNS
 - A leftover pending Cloudflare zone for the apex can be removed (harmless, just untidy)
