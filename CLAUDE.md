@@ -128,6 +128,8 @@ A monthly email newsletter aimed at SME owners and directors. Themes: productivi
 
 ## Roadmap / open items
 
+- **CQI as a paid product (future, real revenue).** The CQI framework (Continuous Quality Improvement / Coaching Quality Indicator) is Andy's sellable asset: a quality-assurance system for coaches, PE teaching and providers, mapped to CIMSPA standards and Ofsted, created by Andy and built across 2,000+ coaches. Plan is a paid subscription to access the CQI model, training and resources. Source materials live in `~/Claude Cowork/Outputs/CQI-2026/`. The launch newsletter introduces it; eventually it needs its own offer (gated training + resources), likely a members area or paywall. Big build, not started.
+- **Header dropdown for Blog / Newsletter.** Andy wants the nav item to become a dropdown ("Blogs and Newsletters") rather than a single Blog link. Deferred for now.
 - The template's placeholder `welcome.md` post can be deleted once enough real posts are live
 - After the Wix registrar lock lifts (around August 2026), the domain could move to Cloudflare for cleaner DNS
 - A leftover pending Cloudflare zone for the apex can be removed (harmless, just untidy)
