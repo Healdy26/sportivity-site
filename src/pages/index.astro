@@ -2,13 +2,49 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_TITLE } from '../consts';
+
+const siteURL = Astro.site?.href.replace(/\/$/, '') ?? 'https://www.sportivityconsultants.com';
+const homeTitle = 'Leadership Consultant & Keynote Speaker | Sportivity Consultants';
+const homeDescription =
+	'Leadership development, executive coaching and strategic consultancy for leaders and organisations. Greater Manchester, operating nationally.';
+
+const jsonLd = [
+	{
+		'@context': 'https://schema.org',
+		'@type': 'ProfessionalService',
+		name: SITE_TITLE,
+		description: homeDescription,
+		url: siteURL,
+		email: 'andy@sportivityconsultants.com',
+		telephone: '+44 7920 008421',
+		image: `${siteURL}/logo.png`,
+		logo: `${siteURL}/logo.png`,
+		areaServed: 'GB',
+		address: {
+			'@type': 'PostalAddress',
+			addressRegion: 'Greater Manchester',
+			addressCountry: 'GB',
+		},
+		founder: { '@type': 'Person', name: 'Andy Heald' },
+		sameAs: ['https://www.linkedin.com/in/andy-heald-sportivity/'],
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'Person',
+		name: 'Andy Heald',
+		jobTitle: 'Leadership Consultant & Keynote Speaker',
+		worksFor: { '@type': 'Organization', name: SITE_TITLE },
+		url: `${siteURL}/about`,
+		sameAs: ['https://www.linkedin.com/in/andy-heald-sportivity/'],
+	},
+];
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={homeTitle} description={homeDescription} jsonLd={jsonLd} />
 	</head>
 	<body>
 		<Header />

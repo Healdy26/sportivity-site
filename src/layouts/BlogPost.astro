@@ -9,11 +9,40 @@ import Header from '../components/Header.astro';
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+
+const siteURL = Astro.site?.href.replace(/\/$/, '') ?? 'https://www.sportivityconsultants.com';
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const heroURL = heroImage ? new URL(heroImage.src, Astro.site).href : `${siteURL}/logo.png`;
+
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'BlogPosting',
+	headline: title,
+	description,
+	image: heroURL,
+	datePublished: pubDate.toISOString(),
+	dateModified: (updatedDate ?? pubDate).toISOString(),
+	author: { '@type': 'Person', name: 'Andy Heald', url: `${siteURL}/about` },
+	publisher: {
+		'@type': 'Organization',
+		name: 'Sportivity Consultants',
+		logo: { '@type': 'ImageObject', url: `${siteURL}/logo.png` },
+	},
+	mainEntityOfPage: canonicalURL.href,
+};
 ---
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead
+			title={title}
+			description={description}
+			image={heroImage}
+			ogType="article"
+			publishedTime={pubDate}
+			author="Andy Heald"
+			jsonLd={jsonLd}
+		/>
 		<style>
 			main {
 				width: calc(100% - 2em);
@@ -60,7 +89,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<main>
 			<article>
 				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
+					{heroImage && <Image width={1020} height={510} src={heroImage} alt={title} />}
 				</div>
 				<div class="prose">
 					<div class="title">
