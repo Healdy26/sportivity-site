@@ -115,22 +115,22 @@ These records live in Wix DNS and keep the site and email working:
 - SPF and Google verification TXT records (email + verification)
 - Nameservers are locked by Wix and cannot be changed
 
-## Newsletter (HubSpot)
+## Newsletter (Substack — "The Monthly Edge")
 
-A monthly email newsletter aimed at SME owners and directors. Themes: productivity, mental focus, clarity, performing in meetings, better leadership, leadership models and frameworks, theoretical edges, practical AI tips, and sector news (sport/physical activity, education, leadership).
+A monthly email newsletter aimed at SME owners and directors. Themes: productivity, mental focus, clarity, performing in meetings, better leadership, leadership models and frameworks, theoretical edges, practical AI tips, and sector news (sport/physical activity, education, leadership). Format is shifting to screenshot-led how-to guides (see `newsletter-drafts/how-to-newsletter-template.md`).
 
-- **Signup form** lives in HubSpot (free account). Portal `148710435`, EU data centre (`eu1`).
-- **`src/components/Newsletter.astro`** is a call-to-action band ("The Monthly Edge / Sharper leadership, once a month") with a **Subscribe** button. It appears on the homepage, the blog index, and the end of every blog post (via `BlogPost.astro`).
-- **`src/pages/newsletter.astro`** is the dedicated `/newsletter` page that actually hosts the HubSpot embed (on a white card). The form values (portal/form/region) are constants at the top of that file.
-- **Keep Formspree and HubSpot separate**: Formspree = contact form, HubSpot = newsletter only. Don't merge them.
-- **GDPR**: the HubSpot form has consent options enabled (UK audience). Don't remove the consent checkbox.
-- **Monthly draft**: a scheduled Claude task (`sportivity-monthly-newsletter`) runs on the 1st of each month at 09:00, drafts the newsletter in Andy's voice, saves it to `newsletter-drafts/`, and notifies him. It drafts only — Andy reviews and sends from HubSpot. This task lives in Claude's scheduled tasks, not in the repo.
+- **Platform: Substack** at `sportivityconsultants.substack.com` (publication "The Monthly Edge"). This is where Andy writes and sends. Free tier for now; paid comes later with the LMS.
+- **Signup form** is the Substack embed (`sportivityconsultants.substack.com/embed`), hosted on `/newsletter` via an iframe. The embed URL is a constant at the top of `src/pages/newsletter.astro`.
+- **`src/components/Newsletter.astro`** is a call-to-action band ("The Monthly Edge / Sharper leadership, once a month") with a **Subscribe** button linking to `/newsletter`. It appears on the homepage, the blog index, and the end of every blog post (via `BlogPost.astro`).
+- **HubSpot is the CRM of record, not the signup form anymore.** Keep the contact list synced by exporting the Substack subscriber CSV monthly and importing to HubSpot. Formspree stays as the contact form. Don't merge the three.
+- **GDPR / unsubscribe**: handled by Substack.
+- **Monthly draft**: a scheduled Claude task (`sportivity-monthly-newsletter`) runs on the 1st of each month at 09:00, drafts the newsletter in Andy's voice, saves it to `newsletter-drafts/`, and notifies him. It drafts only — Andy reviews and sends from Substack. This task lives in Claude's scheduled tasks, not in the repo.
 
 ## Roadmap / open items
 
 - **CQI paid product (live).** The CQI framework (Continuous Quality Improvement / Coaching Quality Indicator) is Andy's sellable asset: a quality-assurance system for coaches, PE teaching and providers, mapped to CIMSPA standards and Ofsted, created by Andy across 2,000+ coaches. Sold via `src/pages/cqi.astro` (`/cqi`) — the "CQI Document Pack" at £250 one-off through a Stripe payment link. Delivery is **automated via Zapier**: Stripe payment → email with a private Drive/Dropbox download link (files stay OFF the public site — never put the paid PDFs in the repo or `public/`). Source materials: `~/Claude Cowork/Outputs/CQI-2026/`. CQI logo for Stripe: `brand-assets/cqi-logo.png`. Still to do: build the assessor training; the Zapier zap is set up in Andy's account, not the repo. Future: a members area / subscription for training + resources.
 - **Learner Management System (LMS) — the big play.** Andy is building towards an LMS hosting training and resources, sold as a subscription. CQI is the first product/module, not the end goal. The funnel: The Monthly Edge newsletter (free, top of funnel) builds the audience → CQI (£250 one-off) → LMS subscription (training + resources). Modelled on Ruben Hassid's approach (free how-to newsletter feeding paid products). Not started; CQI assessor training is the bridge to it.
-- **Newsletter platform: moving to Substack (in progress).** Writing/sending moves from HubSpot to Substack (HubSpot was too fidgety to compose in). HubSpot stays as the CRM of record — sync by exporting the Substack subscriber CSV monthly and importing to HubSpot (Substack's live-sync hooks are weak). Format is shifting to Ruben-style screenshot-led how-to guides ("you come away having done something"), each ending with a share + a CTA to the relevant paid product. Reusable shape in `newsletter-drafts/how-to-newsletter-template.md`. TODO once Andy sets up Substack: swap the `/newsletter` embed and Subscribe buttons from HubSpot to the Substack form.
+- **Newsletter platform: now on Substack.** Writing/sending moved from HubSpot to Substack (`sportivityconsultants.substack.com`). The `/newsletter` page embeds the Substack form and the Subscribe buttons point there — done. HubSpot stays as the CRM of record (monthly CSV export from Substack → import to HubSpot). Format is shifting to Ruben-style screenshot-led how-to guides, each ending with a share + a CTA to the relevant paid product (`newsletter-drafts/how-to-newsletter-template.md`).
 - **Header dropdown for Blog / Newsletter.** Andy wants the nav item to become a dropdown ("Blogs and Newsletters") rather than a single Blog link. Deferred for now.
 - The template's placeholder `welcome.md` post can be deleted once enough real posts are live
 - After the Wix registrar lock lifts (around August 2026), the domain could move to Cloudflare for cleaner DNS

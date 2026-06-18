@@ -4,11 +4,8 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE } from '../consts';
 
-// HubSpot form embed values (Share > Embed).
-const HUBSPOT_PORTAL_ID = '148710435';
-const HUBSPOT_FORM_ID = '23e2085d-381c-4019-bd87-46646bf9d635';
-const HUBSPOT_REGION = 'eu1';
-const loaderSrc = `https://js-${HUBSPOT_REGION}.hsforms.net/forms/embed/${HUBSPOT_PORTAL_ID}.js`;
+// Newsletter signup is hosted on Substack (The Monthly Edge).
+const SUBSTACK_EMBED = 'https://sportivityconsultants.substack.com/embed';
 
 const title = `Subscribe | ${SITE_TITLE}`;
 const description =
@@ -33,20 +30,17 @@ const description =
 						and AI ideas worth your time. No fluff, no spam, unsubscribe anytime.
 					</p>
 
-					<div class="signup-card">
-						<div
-							class="hs-form-frame"
-							data-region={HUBSPOT_REGION}
-							data-form-id={HUBSPOT_FORM_ID}
-							data-portal-id={HUBSPOT_PORTAL_ID}
-						>
-						</div>
-					</div>
+					<iframe
+						class="substack-embed"
+						src={SUBSTACK_EMBED}
+						title="Subscribe to The Monthly Edge"
+						loading="lazy"
+						scrolling="no"
+					></iframe>
 				</div>
 			</section>
 		</main>
 		<Footer />
-		<script is:inline defer src={loaderSrc}></script>
 	</body>
 </html>
 
@@ -89,13 +83,15 @@ const description =
 		margin: 0 auto 2.5rem;
 		max-width: 560px;
 	}
-	.signup-card {
-		background: #fff;
-		border-radius: 12px;
-		padding: 2rem;
+	.substack-embed {
+		display: block;
+		width: 100%;
 		max-width: 480px;
+		height: 360px;
 		margin: 0 auto;
-		text-align: left;
+		border: 0;
+		border-radius: 12px;
+		background: #fff;
 		box-shadow: var(--box-shadow);
 	}
 </style>
