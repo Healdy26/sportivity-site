@@ -52,6 +52,10 @@ const work = [
 		overview:
 			"I built the Swim:ED portable pool licence model: the processes, manuals, safety operating procedures and training that turn portable pools into a safe, scalable way to teach swimming and water safety. I've written and delivered training across the organisation and its national licensees, and I'm now leading the development of a Trade Association for Portable Pools. Product innovation, safety, training and national scale in one place.",
 		link: 'https://swim-ed.co.uk/',
+		extraLinks: [
+			{ label: '2024-25 impact report', href: 'https://swim-ed.co.uk/impact-report/' },
+			{ label: 'Read the stories', href: 'https://swim-ed.co.uk/stories/' },
+		],
 	},
 ];
 ---
@@ -145,7 +149,12 @@ const work = [
 								<h3>{w.name}</h3>
 								<p class="work-role">{w.role}</p>
 								<p class="work-overview">{w.overview}</p>
-								<a href={w.link} target="_blank" rel="noopener" class="work-link">Visit {w.name} →</a>
+								<div class="work-links">
+									<a href={w.link} target="_blank" rel="noopener" class="work-link">Visit {w.name} →</a>
+									{w.extraLinks?.map((x) => (
+										<a href={x.href} target="_blank" rel="noopener" class="work-link-sub">{x.label} →</a>
+									))}
+								</div>
 							</article>
 						))}
 					</div>
@@ -381,8 +390,13 @@ const work = [
 		margin: 0 0 1.25rem;
 		flex: 1;
 	}
+	.work-links {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.6rem;
+	}
 	.work-link {
-		align-self: flex-start;
 		font-weight: 600;
 		font-size: 0.9rem;
 		color: #111;
@@ -393,6 +407,15 @@ const work = [
 	}
 	.work-link:hover {
 		color: var(--accent);
+	}
+	.work-link-sub {
+		font-weight: 600;
+		font-size: 0.85rem;
+		color: var(--accent);
+		text-decoration: none;
+	}
+	.work-link-sub:hover {
+		text-decoration: underline;
 	}
 
 	/* Buttons */
