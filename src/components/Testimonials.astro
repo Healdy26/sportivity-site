@@ -1,0 +1,232 @@
+---
+// "What other people say" carousel, built from Andy's LinkedIn recommendations.
+// Quotes trimmed to punchy pull-quotes, faithful to the originals.
+const testimonials = [
+	{
+		quote: "His passion for sport, health, people and workforce development shines through every meeting. Great attention to detail, genuinely cares about people, and never afraid to push boundaries.",
+		name: 'Dani Halsall',
+		role: 'Workforce Development Manager, CIMSPA',
+	},
+	{
+		quote: "One of the best decisions I ever made was asking him to start a business with me. Together we won awards and grew to £1m turnover with 40 staff. His passion and absolute commitment to quality, putting customers at the heart, is his real strength.",
+		name: 'Danny Melling',
+		role: 'Co-founder & former business partner',
+	},
+	{
+		quote: "Andy's input has been instrumental in helping our business grow, and in fine-tuning our CQI, recruitment and strategy. He blends real sector knowledge with a personable approach that's challenged and developed me as a leader.",
+		name: 'Adam Hampson',
+		role: 'Essex Professional Coaching',
+	},
+	{
+		quote: "An excellent mentor with a humane, personable approach that's challenged and encouraged me to be the best version of myself. He's added invaluable support to our children's activity business, which has gone from strength to strength.",
+		name: 'Karl Andrade',
+		role: 'Co-founder, Essex Professional Coaching',
+	},
+	{
+		quote: "Andy's knowledge of the sector and his advice is unparalleled. He gave me ideas I'd never have considered without his leadership. We now have a clear purpose and driver that's accelerating our sustainable growth.",
+		name: 'Matt Ogle',
+		role: 'S4A Group, SEND & active childcare',
+	},
+	{
+		quote: "A fantastic show and tell on how AI can really work and benefit your business, showing exactly how to use it correctly, and where misusing it can do harm.",
+		name: 'Laurence Barrow',
+		role: 'Managing Director, Barrow Electrical',
+	},
+	{
+		quote: "A highly motivational and dedicated professional. Being able to take a problem to Andy and know he'll give an honest sounding board and process-driven solutions has been invaluable.",
+		name: 'Luke Johnson',
+		role: 'Partnerships Manager, sport & activity',
+	},
+	{
+		quote: "I've watched this gentleman grow into a true influencer, and learned so much from him developing qualifications together. What an inspiration you are, Andy.",
+		name: 'Stacey Doherty',
+		role: 'Transcend Awards',
+	},
+	{
+		quote: "I've worked with Andy for more than ten years across many roles and organisations. His ability to engage with learners at all levels is second to none, and his industry insight is a valuable asset to any organisation.",
+		name: 'Shane Wright',
+		role: 'Senior Lecturer & Consultant',
+	},
+	{
+		quote: "Andy has excellent knowledge of the sport, leisure and education sectors. An outstanding coach educator who inspires beginners and professionals alike. I'd have no hesitation in recommending him to any organisation.",
+		name: 'Steve Eastaugh',
+		role: 'Business growth consultant',
+	},
+	{
+		quote: "Always approachable, motivational and supportive. His knowledge of the school sport landscape is a major strength, and he's helped raise standards, professionalism and reputation. No hesitation in recommending him.",
+		name: 'Ian Gray',
+		role: 'Youth Engagement Manager, Essex Cricket',
+	},
+	{
+		quote: "His professionalism, attention to detail and high standards were there to see every single day. A constant source of inspiration in how he conducts himself as a colleague, a father and a friend.",
+		name: 'Brendan Blood',
+		role: 'Director, BB Fitness',
+	},
+	{
+		quote: "Incredibly positive and energetic, with a real can-do attitude that's infectious. Andy thrives delivering to others, and his ability to make things fun helps learners become the best versions of themselves.",
+		name: 'Jane Hannah',
+		role: 'Mindset & motivation coach',
+	},
+	{
+		quote: "A wealth of knowledge in sport and physical activity, and excellent at developing coaches' skills, delivery and communication. Passionate about inspiring children into an active, healthy life. Highly recommended.",
+		name: 'Paul Baker',
+		role: 'Training Manager',
+	},
+	{
+		quote: "An inspiration to work alongside. Professional, courteous and always forward-thinking, with a clear aptitude for developing quality in people, products and service. His drive for excellence is unmatched.",
+		name: 'Alistair Hudson',
+		role: 'PE Teacher',
+	},
+];
+---
+
+<section class="testimonials">
+	<p class="t-eyebrow">What other people say</p>
+	<div class="t-carousel">
+		<div class="t-slides">
+			{testimonials.map((t, i) => (
+				<figure class={`t-slide ${i === 0 ? 'is-active' : ''}`}>
+					<div class="t-mark" aria-hidden="true">&ldquo;</div>
+					<blockquote>{t.quote}</blockquote>
+					<figcaption>
+						<span class="t-name">{t.name}</span>
+						<span class="t-role">{t.role}</span>
+					</figcaption>
+				</figure>
+			))}
+		</div>
+		<div class="t-nav">
+			<button class="t-arrow t-prev" type="button" aria-label="Previous recommendation">&lsaquo;</button>
+			<span class="t-count">1 / {testimonials.length}</span>
+			<button class="t-arrow t-next" type="button" aria-label="Next recommendation">&rsaquo;</button>
+		</div>
+	</div>
+</section>
+
+<style>
+	.testimonials {
+		background: #fff;
+		padding: 4.5rem 1.5rem;
+		border-top: 1px solid #eee;
+	}
+	.t-eyebrow {
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: 0.8rem;
+		font-weight: 700;
+		color: var(--accent);
+		margin: 0 0 2rem;
+	}
+	.t-carousel {
+		max-width: 680px;
+		margin: 0 auto;
+	}
+	.t-slide {
+		display: none;
+		text-align: center;
+	}
+	.t-slide.is-active {
+		display: block;
+	}
+	.t-mark {
+		font-family: Georgia, 'Times New Roman', serif;
+		font-size: 4.5rem;
+		line-height: 0.4;
+		height: 1.8rem;
+		color: var(--accent);
+	}
+	.t-slide blockquote {
+		font-size: 1.2rem;
+		line-height: 1.7;
+		font-style: italic;
+		color: #222;
+		margin: 1.25rem auto 1.5rem;
+		max-width: 600px;
+	}
+	.t-slides {
+		min-height: 260px;
+		display: flex;
+		align-items: center;
+	}
+	.t-slides .t-slide {
+		width: 100%;
+	}
+	.t-name {
+		display: block;
+		font-weight: 700;
+		color: #111;
+	}
+	.t-role {
+		display: block;
+		font-size: 0.9rem;
+		color: #666;
+		margin-top: 0.15rem;
+	}
+	.t-nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1.25rem;
+		margin-top: 1.5rem;
+	}
+	.t-arrow {
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		border: 1px solid #ddd;
+		background: #fff;
+		color: #111;
+		font-size: 1.4rem;
+		line-height: 1;
+		cursor: pointer;
+		transition: border-color 0.2s ease, color 0.2s ease;
+	}
+	.t-arrow:hover {
+		border-color: var(--accent);
+		color: var(--accent);
+	}
+	.t-count {
+		font-size: 0.85rem;
+		color: #888;
+		min-width: 52px;
+		text-align: center;
+	}
+</style>
+
+<script>
+	document.querySelectorAll('.t-carousel').forEach((root) => {
+		const slides = Array.from(root.querySelectorAll('.t-slide'));
+		const count = root.querySelector('.t-count');
+		if (slides.length < 2) return;
+		let i = 0;
+		let timer;
+		const show = (n) => {
+			slides[i].classList.remove('is-active');
+			i = (n + slides.length) % slides.length;
+			slides[i].classList.add('is-active');
+			if (count) count.textContent = `${i + 1} / ${slides.length}`;
+		};
+		const next = () => show(i + 1);
+		const prev = () => show(i - 1);
+		const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		const start = () => {
+			if (!reduce) timer = setInterval(next, 5500);
+		};
+		const restart = () => {
+			clearInterval(timer);
+			start();
+		};
+		root.querySelector('.t-next').addEventListener('click', () => {
+			next();
+			restart();
+		});
+		root.querySelector('.t-prev').addEventListener('click', () => {
+			prev();
+			restart();
+		});
+		root.addEventListener('mouseenter', () => clearInterval(timer));
+		root.addEventListener('mouseleave', start);
+		start();
+	});
+</script>
