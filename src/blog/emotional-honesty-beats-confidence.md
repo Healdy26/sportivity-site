@@ -5,13 +5,15 @@ pubDate: 'Jun 5 2025'
 heroImage: '../assets/emotional-honesty.jpg'
 ---
 
-> *"The real voyage of discovery consists not in seeking new landscapes, but in having new eyes."* — Marcel Proust
+> *"The real voyage of discovery consists not in seeking new landscapes, but in having new eyes."*
+>
+> Marcel Proust
 
 In today's hyper-professional world, confidence is currency. Leaders are celebrated for decisiveness, bold vision, and charismatic presence. But in over 15 years of professional coaching, I've seen a different truth rise to the surface:
 
-> 🔑 The leaders we trust most aren't always the most confident. They're the most honest — with themselves and with others.
+> 🔑 The leaders we trust most aren't always the most confident. They're the most honest, with themselves and with others.
 
-This blog explores why emotional honesty outperforms confidence in leadership — and how a 1950s psychological tool, the Johari Window, still offers some of the most important insights for leaders today.
+This blog explores why emotional honesty outperforms confidence in leadership, and how a 1950s psychological tool, the Johari Window, still offers some of the most important insights for leaders today.
 
 ## 💬 The One Question Every Leader Should Ask
 
@@ -29,14 +31,16 @@ This is emotional honesty in action. And it's what sets apart transformational l
 
 ## 🔍 Understanding Yourself: The Johari Window Model
 
-> *"Until you make the unconscious conscious, it will direct your life and you will call it fate."* — Carl Jung
+> *"Until you make the unconscious conscious, it will direct your life and you will call it fate."*
+>
+> Carl Jung
 
 The Johari Window, developed by psychologists Luft and Ingham in 1955, remains one of the simplest yet most profound frameworks in personal and professional development. It breaks awareness into four quadrants:
 
-- **Open Self** — what you and others know about you
-- **Blind Spot** — what others see but you don't
-- **Hidden Self** — what you know but keep from others
-- **Unknown Self** — what neither you nor others see yet
+- **Open Self**: what you and others know about you
+- **Blind Spot**: what others see but you don't
+- **Hidden Self**: what you know but keep from others
+- **Unknown Self**: what neither you nor others see yet
 
 ## 🛠️ The Johari Window in Coaching Practice
 
@@ -56,9 +60,11 @@ Take on something new. 🧭 Discover hidden potential and expand your leadership
 
 ## 🔄 The Feedback Loop of Growth
 
-> *"Vulnerability sounds like truth and feels like courage. Truth and courage aren't always comfortable, but they're never weakness."* — Brené Brown
+> *"Vulnerability sounds like truth and feels like courage. Truth and courage aren't always comfortable, but they're never weakness."*
+>
+> Brené Brown
 
-Growth happens in the messy middle — between what you think you know and what others experience. Here's the shift I encourage all leaders to make:
+Growth happens in the messy middle, between what you think you know and what others experience. Here's the shift I encourage all leaders to make:
 
 ❌ Don't ask: *"Am I leading well?"*
 
@@ -70,11 +76,13 @@ It's uncomfortable. But that discomfort? That's where the transformation begins.
 
 Confidence might get you in the room. Emotional honesty keeps you in the hearts of your people.
 
-> *"People don't care how much you know until they know how much you care."* — Theodore Roosevelt
+> *"People don't care how much you know until they know how much you care."*
+>
+> Theodore Roosevelt
 
 As a professional coach, my job is to help you see what you can't yet. To create a space where the "unknown self" becomes a source of power, not fear.
 
-If you're ready to expand your leadership, it starts here — with one question:
+If you're ready to expand your leadership, it starts here, with one question:
 
 > *"How have I annoyed you recently?"*
 

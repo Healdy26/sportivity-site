@@ -5,9 +5,13 @@ pubDate: 'Jun 30 2025'
 heroImage: '../assets/campfires-to-classrooms.jpg'
 ---
 
-> *"A negative emotion only lasts 90 seconds... if you let it."* — Mo Gawdat
+> *"A negative emotion only lasts 90 seconds... if you let it."*
 >
-> *"Responsibility is a privilege."* — Andy Heald
+> Mo Gawdat
+>
+> *"Responsibility is a privilege."*
+>
+> Andy Heald
 
 ## 🔥 The Campfire Lesson That Changed How I Coach
 
@@ -19,7 +23,7 @@ And would you happen to know what I noticed?
 
 I barely spoke at first. Instead, I listened. *Properly* listened.
 
-Because every conversation — whether it was with a mate I hadn't seen in 12 months or someone just venting about life — came back to one key idea: **people want to feel safe to be themselves.**
+Because every conversation, whether it was with a mate I hadn't seen in 12 months or someone just venting about life, came back to one key idea: **people want to feel safe to be themselves.**
 
 That's psychological safety.
 
@@ -29,7 +33,7 @@ It doesn't start in a boardroom. It starts under the stars.
 
 I carried that same energy into the classroom this week.
 
-I stood before my University Academy 92 (UA92) Business students and, instead of laying down the law — *"No phones. No food. No hoods."* — I asked a question:
+I stood before my University Academy 92 (UA92) Business students and, instead of laying down the law, *"No phones. No food. No hoods."*, I asked a question:
 
 > "What kind of culture do we want in this space?"
 
@@ -45,7 +49,7 @@ We used tools like:
 
 And then came a moment that really crystallised it all.
 
-We had the absolute privilege of welcoming Ben Wildsmith and Sophia Szlachetko from EY into our classroom. Their session wasn't just informative — it was transformational.
+We had the absolute privilege of welcoming Ben Wildsmith and Sophia Szlachetko from EY into our classroom. Their session wasn't just informative, it was transformational.
 
 They introduced our students to EY's **7 Drivers of Growth**, a model rooted in insights from 12,500+ client workshops and 1,000+ companies.
 
@@ -71,7 +75,7 @@ Different paths. Different challenges. But one shared truth: **they're Swiss Arm
 
 Sales, marketing, people, finance, strategy, mindset… life.
 
-They're doing everything — and that's where the danger lies.
+They're doing everything, and that's where the danger lies.
 
 Because when you're doing too many things, all at once, something gives. And often, that "something" is you.
 
@@ -83,24 +87,24 @@ It's a powerful phase of your journey. But it's also the phase where burnout lur
 
 The key is to:
 
-- **Stay above the line** — Ownership, Accountability, Responsibility
-- **Avoid falling below the line** — Blame, Excuses, Denial
+- **Stay above the line**: Ownership, Accountability, Responsibility
+- **Avoid falling below the line**: Blame, Excuses, Denial
 
 And remember:
 
 > "Responsibility is a privilege. This moment of doing everything won't last forever. But it will shape who you become."
 
-## ⏱ Mo Gawdat's 90-Second Rule — And Why It Matters
+## ⏱ Mo Gawdat's 90-Second Rule, and Why It Matters
 
 One idea that echoed through all of these experiences was this:
 
-> "A negative emotion only lasts 90 seconds in the body — if you let it pass."
+> "A negative emotion only lasts 90 seconds in the body, if you let it pass."
 
 That blew my mind.
 
-Whether it's pressure in leadership, fear before a pitch, frustration in a meeting, or being overwhelmed by wearing too many hats — it's not the feeling that lasts. It's the story we attach to it.
+Whether it's pressure in leadership, fear before a pitch, frustration in a meeting, or being overwhelmed by wearing too many hats, it's not the feeling that lasts. It's the story we attach to it.
 
-Here's the method Mo shared — and I now use myself and with my students:
+Here's the method Mo shared, and I now use myself and with my students:
 
 **The Flowchart of Happiness:**
 
@@ -144,9 +148,9 @@ Could you put the tools down?
 
 Breathe. Be present. And remember…
 
-> "Responsibility is a privilege. Psychological safety is a choice. Leadership is how we show up — when no one's watching."
+> "Responsibility is a privilege. Psychological safety is a choice. Leadership is how we show up, when no one's watching."
 
-Thanks for reading. And thank you again to everyone — my students, colleagues, the EY team, and the people I've had the joy to coach this week.
+Thanks for reading. And thank you again to everyone, my students, colleagues, the EY team, and the people I've had the joy to coach this week.
 
 You've all shaped this post. And shaped me a little more too.
 

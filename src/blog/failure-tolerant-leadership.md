@@ -5,7 +5,9 @@ pubDate: 'Aug 15 2024'
 heroImage: '../assets/failure-tolerant-leadership.png'
 ---
 
-> *"Innovation distinguishes between a leader and a follower."* — Steve Jobs
+> *"Innovation distinguishes between a leader and a follower."*
+>
+> Steve Jobs
 
 Innovation is the heartbeat of progress. It drives industries forward, transforms ideas into reality, and ultimately changes the world. But the road to innovation is often paved with failures. The true challenge lies not in avoiding those failures but in learning from them and using them as building blocks for future success. This is where failure-tolerant leadership comes into play.
 

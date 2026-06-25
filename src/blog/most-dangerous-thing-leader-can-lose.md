@@ -9,9 +9,9 @@ heroImage: '../assets/leader-lose-themselves.jpg'
 
 I didn't realise I was auditioning.
 
-Not for a job — I already had one.
+Not for a job, I already had one.
 
-Not for credibility — I believed I'd earned that too.
+Not for credibility, I believed I'd earned that too.
 
 I was auditioning for belonging.
 
@@ -35,7 +35,7 @@ I was about to learn that lesson the hard way.
 
 It started with a house. A real one.
 
-A big house, perched high, confidently overlooking everything beneath it. The kind of place that doesn't need to announce success — it embodies it.
+A big house, perched high, confidently overlooking everything beneath it. The kind of place that doesn't need to announce success, it embodies it.
 
 I was there to collect my franchise equipment. Fresh into a new chapter as a franchisee within a national education organisation, I expected a practical handover. What I walked into instead felt like a glimpse into another world.
 
@@ -47,7 +47,7 @@ Not because I wanted power. Not because I wanted status. I wanted to learn. To g
 
 I didn't get tricked. I walked in willingly.
 
-But what I didn't yet understand — and what I now see with painful clarity — is this:
+But what I didn't yet understand, and what I now see with painful clarity, is this:
 
 > The closer you get to performative power, the more it starts performing on you.
 
@@ -57,11 +57,11 @@ Admiration, left unchecked, becomes imitation.
 
 From that moment on, I was in motion.
 
-Every "yes" felt like opportunity. Every long day felt like commitment. Every mile travelled across the country felt like proof that I deserved to be there. I worked relentlessly — not just to deliver, but to be seen delivering.
+Every "yes" felt like opportunity. Every long day felt like commitment. Every mile travelled across the country felt like proof that I deserved to be there. I worked relentlessly, not just to deliver, but to be seen delivering.
 
 I wasn't chasing excellence. I was chasing approval.
 
-The version of me that emerged — let's call him Performance Andy — wasn't dishonest. But he was edited. More agreeable. Less challenging. Constantly scanning for cues about what leadership wanted from him.
+The version of me that emerged, let's call him Performance Andy, wasn't dishonest. But he was edited. More agreeable. Less challenging. Constantly scanning for cues about what leadership wanted from him.
 
 And the system rewarded that.
 
@@ -79,7 +79,7 @@ Leadership research tells us this is a dangerous moment. Identity-based leadersh
 
 As my influence grew, so did my investment.
 
-Not just time and money, though I invested both — but my creative capital. Ideas. Strategies. Frameworks. Ways of working I'd developed over years. I gave them freely because I believed in the bigger picture.
+Not just time and money, though I invested both, but my creative capital. Ideas. Strategies. Frameworks. Ways of working I'd developed over years. I gave them freely because I believed in the bigger picture.
 
 I was paid. But I was also giving away parts of myself in the hope that one day it would all feel aligned.
 
@@ -99,7 +99,7 @@ And the person I became during that period fills me with dread now, because auth
 
 ## The Echo Chamber: When Leadership Replicates Itself
 
-One of the hardest truths I've had to face since stepping away is this: narcissistic leadership doesn't just harm people directly — it replicates itself.
+One of the hardest truths I've had to face since stepping away is this: narcissistic leadership doesn't just harm people directly, it replicates itself.
 
 These systems don't just create followers. They create echoes.
 
@@ -137,7 +137,7 @@ Uncertainty. Strategic shifts. My role no longer secure. I was told to apply for
 
 I ignored the warning sign.
 
-I got the role. It wasn't right for me. And the person brought in above me — a new CEO — was set up to fail almost immediately. Not because he lacked ability, but because the system around him was broken.
+I got the role. It wasn't right for me. And the person brought in above me, a new CEO, was set up to fail almost immediately. Not because he lacked ability, but because the system around him was broken.
 
 This role existed because of an acquisition I had no involvement in. The company acquired was rotten from the inside: fraud investigations, compliance failures, reputational risk. Within weeks I was handling inspections and crisis calls at weekends.
 
@@ -157,7 +157,7 @@ Then COVID hit.
 
 I delivered furlough conversations, redundancies, and reassurance I didn't believe in. Every conversation felt like a moral injury.
 
-And leadership — the leadership that spoke publicly about values and wellbeing — disappeared.
+And leadership, the leadership that spoke publicly about values and wellbeing, disappeared.
 
 Ronald Heifetz wrote:
 
@@ -175,11 +175,11 @@ I didn't break because I was weak. I broke because I had been consumed.
 
 I was no longer a person. I was a resource. And once depleted, I was quietly discarded.
 
-The damage wasn't loud. It was slow, procedural, psychological. Narcissistic leadership doesn't shout — it extracts. And when you resist, punishment becomes administrative.
+The damage wasn't loud. It was slow, procedural, psychological. Narcissistic leadership doesn't shout, it extracts. And when you resist, punishment becomes administrative.
 
 You don't get attacked. You get erased.
 
-Whilst this wasn't the only reason for me breaking, it was this experience that ultimately made it snap — the straw that broke the camel's back.
+Whilst this wasn't the only reason for me breaking, it was this experience that ultimately made it snap, the straw that broke the camel's back.
 
 ## The Philosophy Forged in Fire
 
@@ -191,7 +191,7 @@ I believe leadership is fundamentally about helping people become who they do no
 
 Leadership is the transfer of emotion and the creation of meaning.
 
-My role is to set direction, build culture, nurture capability, and develop leaders who will one day surpass me. Legacy matters — not titles, not awards, but the impact we leave on people.
+My role is to set direction, build culture, nurture capability, and develop leaders who will one day surpass me. Legacy matters, not titles, not awards, but the impact we leave on people.
 
 I surround myself with people smarter than me who don't yet believe they are, help them believe, let them follow first, learn next, and eventually lead, while I lead from behind.
 
@@ -211,6 +211,6 @@ Breathe. Feel your feet on the floor.
 
 You are here. You are learning. You are leading.
 
-And your leadership — rooted in care, courage, humility, and humour — might just be the example someone else needs.
+And your leadership, rooted in care, courage, humility, and humour, might just be the example someone else needs.
 
 Thanks for reading.
