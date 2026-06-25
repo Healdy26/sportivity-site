@@ -11,17 +11,17 @@ const PRICE = '£250'; // one-off payment
 const buyConfigured = STRIPE_LINK !== '';
 const buyHref = buyConfigured ? STRIPE_LINK : '/contact/';
 const buyLabel = buyConfigured
-	? `Get CQI${PRICE ? ` — ${PRICE}` : ''}`
+	? `Get CQI for ${PRICE}`
 	: 'Enquire about CQI';
 
 const included = [
-	'Framework Guide — the model, the evidence base and how to run it',
-	'Lesson Observation Record — gateway, four scored areas and the weighted score',
-	'Grade Descriptors — the standard for every grade, the moderation backbone',
-	'Assessor Conversation Guide — scripts, questioning and the feedback model',
-	'SMART Target Planner & CPD Log — targets mapped to CIMSPA competencies',
-	'Quality Impact Report template — the proof pack for heads and commissioners',
-	'School & pupil voice surveys — the termly check that closes the loop',
+	'Framework Guide: the model, the evidence base and how to run it',
+	'Lesson Observation Record: gateway, four scored areas and the weighted score',
+	'Grade Descriptors: the standard for every grade, the moderation backbone',
+	'Assessor Conversation Guide: scripts, questioning and the feedback model',
+	'SMART Target Planner & CPD Log: targets mapped to CIMSPA competencies',
+	'Quality Impact Report template: the proof pack for heads and commissioners',
+	'School & pupil voice surveys: the termly check that closes the loop',
 ];
 
 const title = `CQI: Quality Assurance for Children's Coaching | ${SITE_TITLE}`;
