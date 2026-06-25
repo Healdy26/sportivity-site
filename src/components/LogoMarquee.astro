@@ -1,0 +1,109 @@
+---
+import { Image } from 'astro:assets';
+
+const mods = import.meta.glob('../assets/logos/*.png', { eager: true });
+const NAMES = {
+	ua92: 'UA92',
+	'all-incompass': 'All Incompass',
+	'sporting-ppl': 'Sporting People',
+	transcend: 'Transcend Awards',
+	'swim-ed': 'Swim:ED',
+	cimspa: 'CIMSPA',
+	fifa: 'FIFA',
+	bha: 'British Horseracing Authority',
+	gbwr: 'GB Wheelchair Rugby',
+	abc: 'ABC Awards',
+	amc: 'AMC',
+	bwb: 'BWB',
+	bg: 'BG',
+	aspirepart: 'Aspire Partnership',
+	actallince: 'Active Alliance',
+};
+
+const logos = Object.entries(mods)
+	.map(([path, mod]) => {
+		const key = path.split('/').pop().replace('.png', '');
+		return { src: mod.default, name: NAMES[key] ?? key.toUpperCase() };
+	})
+	.sort((a, b) => a.name.localeCompare(b.name));
+
+// duplicate the set so the marquee can loop seamlessly
+const loop = [...logos, ...logos];
+---
+
+<section class="logos" aria-label="Organisations I have worked with">
+	<p class="logos-label">Organisations I've worked with</p>
+	<div class="logos-strip">
+		<div class="logos-track">
+			{loop.map((l) => (
+				<div class="logo-cell">
+					<Image src={l.src} alt={l.name} height={88} loading="lazy" />
+				</div>
+			))}
+		</div>
+	</div>
+</section>
+
+<style>
+	.logos {
+		padding: 2.75rem 1.5rem;
+		background: #fff;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+	}
+	.logos-label {
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: 0.8rem;
+		font-weight: 700;
+		color: rgb(var(--gray));
+		margin: 0 0 1.75rem;
+	}
+	.logos-strip {
+		overflow: hidden;
+		-webkit-mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+		mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+	}
+	.logos-track {
+		display: flex;
+		align-items: center;
+		width: max-content;
+		animation: logoscroll 45s linear infinite;
+	}
+	.logos-strip:hover .logos-track {
+		animation-play-state: paused;
+	}
+	.logo-cell {
+		flex: 0 0 auto;
+		margin-right: 3.5rem;
+	}
+	.logo-cell img {
+		height: 46px;
+		width: auto;
+		display: block;
+		filter: grayscale(1);
+		opacity: 0.6;
+		transition: filter 0.2s ease, opacity 0.2s ease;
+	}
+	.logo-cell img:hover {
+		filter: none;
+		opacity: 1;
+	}
+	@keyframes logoscroll {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(-50%);
+		}
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.logos-track {
+			animation: none;
+			flex-wrap: wrap;
+			justify-content: center;
+			row-gap: 1.5rem;
+		}
+	}
+</style>

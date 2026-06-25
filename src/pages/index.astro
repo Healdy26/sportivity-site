@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Newsletter from '../components/Newsletter.astro';
+import LogoMarquee from '../components/LogoMarquee.astro';
 import { SITE_TITLE } from '../consts';
 
 const siteURL = Astro.site?.href.replace(/\/$/, '') ?? 'https://www.sportivityconsultants.com';
@@ -61,6 +62,8 @@ const jsonLd = [
 					</div>
 				</div>
 			</section>
+
+			<LogoMarquee />
 
 			<!-- Three Pillars -->
 			<section class="pillars">
