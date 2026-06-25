@@ -20,10 +20,23 @@ const NAMES = {
 	actallince: 'Active Alliance',
 };
 
+// Per-logo optical sizing. 1 = default; tweak so they look balanced, not literally equal.
+const BASE_HEIGHT = 46;
+const SCALE = {
+	amc: 1.3, // Andy's Man Club — bigger
+	gbwr: 1.22, // GB Wheelchair Rugby — bigger
+	ua92: 1.18, // slightly bigger
+	bwb: 0.85, // British Wheelchair Basketball — slightly smaller
+};
+
 const logos = Object.entries(mods)
 	.map(([path, mod]) => {
 		const key = path.split('/').pop().replace('.png', '');
-		return { src: mod.default, name: NAMES[key] ?? key.toUpperCase() };
+		return {
+			src: mod.default,
+			name: NAMES[key] ?? key.toUpperCase(),
+			h: Math.round(BASE_HEIGHT * (SCALE[key] ?? 1)),
+		};
 	})
 	.sort((a, b) => a.name.localeCompare(b.name));
 
@@ -37,7 +50,7 @@ const loop = [...logos, ...logos];
 		<div class="logos-track">
 			{loop.map((l) => (
 				<div class="logo-cell">
-					<Image src={l.src} alt={l.name} height={88} loading="lazy" />
+					<Image src={l.src} alt={l.name} height={120} loading="lazy" style={`height:${l.h}px`} />
 				</div>
 			))}
 		</div>
@@ -79,7 +92,6 @@ const loop = [...logos, ...logos];
 		margin-right: 3.5rem;
 	}
 	.logo-cell img {
-		height: 46px;
 		width: auto;
 		display: block;
 		filter: grayscale(1);
