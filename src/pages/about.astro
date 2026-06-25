@@ -3,7 +3,57 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import LogoMarquee from '../components/LogoMarquee.astro';
+import { Image } from 'astro:assets';
 import { SITE_TITLE } from '../consts';
+
+import logoUA92 from '../assets/logos/ua92.png';
+import logoAllIncompass from '../assets/logos/all-incompass.png';
+import logoSportingPeople from '../assets/logos/sporting-ppl.png';
+import logoTranscend from '../assets/logos/transcend.png';
+import logoSwimEd from '../assets/logos/swim-ed.png';
+
+const work = [
+	{
+		logo: logoUA92,
+		name: 'UA92',
+		role: 'Associate Lecturer & Module Leader',
+		overview:
+			'I write and deliver modules across Business Management, Sport Business Management, Digital Marketing and World of Sport, and support students through dissertations, projects and assessment. The aim is simple: bring real sector experience into the room so the next generation of sport and business leaders learn things they can actually use. My lectures consistently score over 90% in student feedback.',
+		link: 'https://ua92.ac.uk/',
+	},
+	{
+		logo: logoAllIncompass,
+		name: 'All Incompass',
+		role: 'Founder & Director of Strategic Partnerships',
+		overview:
+			"I co-founded All Incompass to do more for children in sport and physical activity, especially those with special educational needs. It's software and consultancy for children's activity providers, schools and local authorities, bringing booking, safeguarding, payments, compliance and practical advice into one place. It turns admin-heavy, fragmented systems into simpler tools, so providers spend less time fighting spreadsheets and more time delivering good, inclusive provision.",
+		link: 'https://www.allincompass.uk/',
+	},
+	{
+		logo: logoSportingPeople,
+		name: 'Sporting People',
+		role: 'Lead Consultant',
+		overview:
+			"I've worked with Sporting People for around 20 years, and for the last four as one of their lead consultants through Sportivity. Together we've delivered high-impact work across inclusion, strategy, digital experience, workforce development and coach education, for the likes of the British Horseracing Authority, British Wheelchair Basketball and GB Wheelchair Rugby. It's a partnership built on long-term trust and handling complex, multi-stakeholder projects.",
+		link: 'https://sportingpeople.co.uk/',
+	},
+	{
+		logo: logoTranscend,
+		name: 'Transcend Awards',
+		role: 'Co-founder & Quality Lead',
+		overview:
+			'I helped create and build Transcend Awards as an Ofqual-regulated awarding organisation, and stayed through its acquisition by Competence. I design qualifications, assessment methods, policies and the systems behind them, and lead on quality for training providers across the country. One standout is the FIFA Technical Leadership qualification, delivered successfully around the world.',
+		link: 'https://www.transcendawards.co.uk/',
+	},
+	{
+		logo: logoSwimEd,
+		name: 'Swim:ED',
+		role: 'Programme & Licence Model Lead',
+		overview:
+			"I built the Swim:ED portable pool licence model: the processes, manuals, safety operating procedures and training that turn portable pools into a safe, scalable way to teach swimming and water safety. I've written and delivered training across the organisation and its national licensees, and I'm now leading the development of a Trade Association for Portable Pools. Product innovation, safety, training and national scale in one place.",
+		link: 'https://swim-ed.co.uk/',
+	},
+];
 ---
 
 <!doctype html>
@@ -75,6 +125,29 @@ import { SITE_TITLE } from '../consts';
 							<h3>20+ years experience</h3>
 							<p>Working with grassroots providers, national governing bodies, and everything in between.</p>
 						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Selected work -->
+			<section class="work">
+				<div class="container">
+					<header class="work-head">
+						<h2>Selected work</h2>
+						<p>A few of the organisations I've worked with, and what we did together.</p>
+					</header>
+					<div class="work-grid">
+						{work.map((w) => (
+							<article class="work-card">
+								<div class="work-logo">
+									<Image src={w.logo} alt={w.name} height={96} />
+								</div>
+								<h3>{w.name}</h3>
+								<p class="work-role">{w.role}</p>
+								<p class="work-overview">{w.overview}</p>
+								<a href={w.link} target="_blank" rel="noopener" class="work-link">Visit {w.name} →</a>
+							</article>
+						))}
 					</div>
 				</div>
 			</section>
@@ -236,6 +309,90 @@ import { SITE_TITLE } from '../consts';
 		line-height: 1.6;
 		color: #555;
 		margin: 0;
+	}
+
+	/* Selected work */
+	.work {
+		padding: 4rem 0;
+		background: #fff;
+	}
+	.work-head {
+		text-align: center;
+		margin-bottom: 2.5rem;
+	}
+	.work-head h2 {
+		font-size: clamp(1.5rem, 3vw, 2rem);
+		margin: 0 0 0.75rem;
+		color: #111;
+	}
+	.work-head p {
+		color: #555;
+		margin: 0;
+		font-size: 1.05rem;
+	}
+	.work-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	.work-card {
+		display: flex;
+		flex-direction: column;
+		background: #fff;
+		border: 1px solid #e5e5e5;
+		border-top: 4px solid var(--accent);
+		padding: 1.75rem;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+	.work-card:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+	}
+	.work-logo {
+		height: 46px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 1.1rem;
+	}
+	.work-logo img {
+		height: 40px;
+		width: auto;
+		max-width: 175px;
+	}
+	.work-card h3 {
+		font-size: 1.2rem;
+		margin: 0 0 0.3rem;
+		color: #111;
+	}
+	.work-role {
+		font-size: 0.8rem;
+		font-weight: 700;
+		color: var(--accent);
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin: 0 0 0.9rem;
+	}
+	.work-overview {
+		font-size: 0.95rem;
+		line-height: 1.6;
+		color: #444;
+		margin: 0 0 1.25rem;
+		flex: 1;
+	}
+	.work-link {
+		align-self: flex-start;
+		font-weight: 600;
+		font-size: 0.9rem;
+		color: #111;
+		text-decoration: none;
+		border-bottom: 2px solid var(--accent);
+		padding-bottom: 2px;
+		transition: color 0.2s ease;
+	}
+	.work-link:hover {
+		color: var(--accent);
 	}
 
 	/* Buttons */
