@@ -20,6 +20,24 @@ const NAMES = {
 	actallince: 'Active Alliance',
 };
 
+const LINKS = {
+	abc: 'https://www.activeblackcountry.co.uk/',
+	actallince: 'https://www.activityalliance.org.uk/',
+	'all-incompass': 'https://www.allincompass.uk/',
+	amc: 'https://andysmanclub.co.uk/',
+	aspirepart: 'https://www.aaeg.co.uk/',
+	bg: 'https://www.british-gymnastics.org/',
+	bha: 'https://www.britishhorseracing.com/',
+	bwb: 'https://britishwheelchairbasketball.co.uk/',
+	cimspa: 'https://cimspa.co.uk/',
+	fifa: 'https://inside.fifa.com/education-initiatives/campus/programmes/diploma-technical-leadership',
+	gbwr: 'https://gbwr.org.uk/',
+	'sporting-ppl': 'https://sportingpeople.co.uk/',
+	'swim-ed': 'https://swim-ed.co.uk/',
+	transcend: 'https://www.transcendawards.co.uk/',
+	ua92: 'https://ua92.ac.uk/',
+};
+
 // Per-logo optical sizing. 1 = default; tweak so they look balanced, not literally equal.
 const BASE_HEIGHT = 46;
 const SCALE = {
@@ -36,6 +54,7 @@ const logos = Object.entries(mods)
 			src: mod.default,
 			name: NAMES[key] ?? key.toUpperCase(),
 			h: Math.round(BASE_HEIGHT * (SCALE[key] ?? 1)),
+			link: LINKS[key],
 		};
 	})
 	.sort((a, b) => a.name.localeCompare(b.name));
@@ -50,7 +69,13 @@ const loop = [...logos, ...logos];
 		<div class="logos-track">
 			{loop.map((l) => (
 				<div class="logo-cell">
-					<Image src={l.src} alt={l.name} height={120} loading="lazy" style={`height:${l.h}px`} />
+					{l.link ? (
+						<a href={l.link} target="_blank" rel="noopener" aria-label={l.name}>
+							<Image src={l.src} alt={l.name} height={120} loading="lazy" style={`height:${l.h}px`} />
+						</a>
+					) : (
+						<Image src={l.src} alt={l.name} height={120} loading="lazy" style={`height:${l.h}px`} />
+					)}
 				</div>
 			))}
 		</div>
