@@ -1,0 +1,287 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+
+const APP = 'https://sportivity360.com';
+const BUY = `${APP}/buy`;
+
+const tiers = [
+	{ people: '1 person', price: '£75' },
+	{ people: '5 people', price: '£199' },
+	{ people: '10 people', price: '£455' },
+	{ people: 'More than 10', price: 'Get in touch' },
+];
+
+const included = [
+	'A clear leadership profile across 14 competencies',
+	'The spider chart: how others see them, set against their own view',
+	'Strengths, development areas and blind spots, named plainly',
+	'A personalised development plan, written for them',
+	'A recommended book and talk, matched to the area that matters most',
+	'A polished PDF report to download or have emailed',
+	'Confidential by design: anonymous, aggregated, minimum three raters',
+];
+
+// Illustrative spider chart for the "what you get" section.
+const labels = ['Self-awareness', 'Composure', 'Integrity', 'Resilience', 'Focus', 'Growth', 'Psych. safety', 'Honest comms', 'Developing people', 'Trust', 'Accountability', 'Direction', 'Collaboration', 'Leading change'];
+const oVals = [3.4, 4.0, 3.7, 4.2, 3.9, 3.8, 4.6, 3.2, 3.9, 4.1, 4.3, 3.6, 4.0, 4.2];
+const sVals = [3.7, 2.7, 2.0, 3.3, 3.3, 2.7, 4.0, 3.0, 3.1, 3.0, 3.5, 2.8, 3.2, 3.0];
+const SZ = 440, R = 135, cx = SZ / 2, cy = SZ / 2, n = labels.length;
+const ang = (i: number) => (-90 + (i * 360) / n) * (Math.PI / 180);
+const pt = (i: number, v: number): [number, number] => [cx + (R * v / 5) * Math.cos(ang(i)), cy + (R * v / 5) * Math.sin(ang(i))];
+const rings = [1, 2, 3, 4, 5].map((l) => labels.map((_, i) => pt(i, l).join(',')).join(' '));
+const spokes = labels.map((_, i) => pt(i, 5));
+const othersPts = oVals.map((v, i) => pt(i, v).join(',')).join(' ');
+const selfPts = sVals.map((v, i) => pt(i, v).join(',')).join(' ');
+const labelPos = labels.map((lab, i) => {
+	const a = ang(i);
+	const cos = Math.cos(a);
+	return { lab, lx: cx + (R + 12) * cos, ly: cy + (R + 12) * Math.sin(a), anchor: Math.abs(cos) < 0.3 ? 'middle' : cos > 0 ? 'start' : 'end' };
+});
+
+const title = `Leadership 360: confidential 360-degree feedback | ${SITE_TITLE}`;
+const description =
+	'Leadership 360 from Sportivity Consultants. Honest, anonymous 360-degree feedback turned into a clear report, a personalised development plan and a downloadable PDF. From £75.';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<!-- Hero -->
+			<section class="hero">
+				<div class="container">
+					<p class="eyebrow">Leadership 360 · Confidential feedback that lands</p>
+					<h1>See how your leaders are really seen.</h1>
+					<p class="lede">
+						Leadership 360 gathers honest, anonymous feedback from the people around a
+						leader, their manager, their peers and their team, and turns it into a clear
+						picture of how they actually lead. Not a survey that sits in a drawer. A report
+						they will want to act on.
+					</p>
+					<p class="superlede">
+						Self-awareness is a leader's superpower, and honest reflection is how you build it.
+						This is the ultimate tool for both.
+					</p>
+					<div class="cta-row">
+						<a href={BUY} class="btn btn-primary" target="_blank" rel="noopener">Start your 360</a>
+						<a href="#how" class="btn btn-secondary">How it works</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Why it matters -->
+			<section class="block">
+				<div class="container narrow">
+					<h2>Why it matters</h2>
+					<p>Most leaders fly half blind. They know how they meant to come across. They rarely know how they actually land with the people they lead.</p>
+					<p>A good 360 closes that gap. This is not a tick-box exercise. It is true, honest reflection: the real opinions of the people around a leader, surfaced safely, so they can finally see their strengths in black and white and the blind spots no one says to their face.</p>
+					<p>Done well, it is one of the fastest ways a leader grows.</p>
+				</div>
+			</section>
+
+			<!-- How it works -->
+			<section class="block alt" id="how">
+				<div class="container narrow">
+					<h2>How it works</h2>
+					<ol class="steps">
+						<li><strong>Buy your seats.</strong> One leader, or a whole team.</li>
+						<li><strong>Add the people</strong> you want feedback on. Each gets their own private space.</li>
+						<li><strong>Invite their raters.</strong> Manager, peers, direct reports, plus a self-assessment. Everyone gets a private link by email.</li>
+						<li><strong>They answer honestly.</strong> Responses stay anonymous, only ever shown combined, never on their own. At least three raters before anything unlocks.</li>
+						<li><strong>Get the report.</strong> Scores, the spider chart, strengths and blind spots, and a development plan written just for them. Download it as a PDF or have it emailed.</li>
+					</ol>
+				</div>
+			</section>
+
+			<!-- What you get -->
+			<section class="block">
+				<div class="container narrow">
+					<h2>What you get</h2>
+					<ul class="ticks">
+						{included.map((item) => <li>{item}</li>)}
+					</ul>
+
+					<figure class="chart">
+						<svg viewBox={`0 0 ${SZ} ${SZ}`} role="img" aria-label="Example Leadership 360 spider chart">
+							{rings.map((pts) => <polygon points={pts} fill="none" stroke="#e5e5e5" stroke-width="1" />)}
+							{spokes.map(([x, y]) => <line x1={cx} y1={cy} x2={x} y2={y} stroke="#e5e5e5" stroke-width="1" />)}
+							<polygon points={selfPts} fill="none" stroke="#8a8a8a" stroke-width="1.5" stroke-dasharray="5 4" />
+							<polygon points={othersPts} fill="#DC2626" fill-opacity="0.16" stroke="#DC2626" stroke-width="2" />
+							{oVals.map((v, i) => { const [x, y] = pt(i, v); return <circle cx={x} cy={y} r="2.5" fill="#DC2626" /> })}
+							{labelPos.map(({ lab, lx, ly, anchor }) => <text x={lx} y={ly} text-anchor={anchor} dominant-baseline="middle" font-size="10" fill="#555">{lab}</text>)}
+						</svg>
+						<figcaption>
+							<span class="key"><span class="dot others"></span> How others see them</span>
+							<span class="key"><span class="dot self"></span> Their own view</span>
+						</figcaption>
+						<p class="caption-note">An example report. Where the red sits outside the grey, others rate a leader higher than they rate themselves.</p>
+					</figure>
+
+					<p class="pull">A leader who can see themselves clearly is a leader who can change. That is the whole point.</p>
+				</div>
+			</section>
+
+			<!-- Pricing -->
+			<section class="block alt" id="pricing">
+				<div class="container">
+					<h2>Simple pricing</h2>
+					<p class="centered">Pay once per round of feedback. No subscription. Brilliant value for whole teams.</p>
+					<div class="prices">
+						{tiers.map((t) => (
+							<div class="price-card">
+								<div class="price-people">{t.people}</div>
+								<div class="price-amount">{t.price}</div>
+							</div>
+						))}
+					</div>
+					<div class="cta-row">
+						<a href={BUY} class="btn btn-primary" target="_blank" rel="noopener">Start your 360</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Who it's for -->
+			<section class="block">
+				<div class="container narrow">
+					<h2>Who it's for</h2>
+					<ul class="ticks">
+						<li>Leaders and managers who want to grow</li>
+						<li>Universities and colleges developing their people</li>
+						<li>Schools and trusts</li>
+						<li>Business owners and SME directors</li>
+						<li>Coaches, teams and anyone leading others</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Confidential -->
+			<section class="block alt">
+				<div class="container narrow">
+					<h2>Confidential by design</h2>
+					<p>Honest feedback only happens when people feel safe. Every response is anonymous and only ever shown combined with everyone else's. The report stays locked until at least three people have replied, so no individual can be identified. Reports are aggregate only.</p>
+				</div>
+			</section>
+
+			<!-- Built by Andy -->
+			<section class="block">
+				<div class="container narrow">
+					<h2>Built by someone who does this for a living</h2>
+					<p>Leadership 360 was built by Andy Heald, leadership consultant, keynote speaker and university lecturer. The questionnaire is original: real questions for real leaders, grounded in how leadership actually works day to day, not borrowed from an off-the-shelf instrument.</p>
+				</div>
+			</section>
+
+			<!-- Final CTA -->
+			<section class="final-cta">
+				<div class="container">
+					<p class="ethos">Great leaders create great leaders.</p>
+					<h2>Ready to see the full picture?</h2>
+					<p>Set up your first 360 in a few minutes. Honest feedback, a clear report, and a plan they will actually use.</p>
+					<a href={BUY} class="btn btn-light" target="_blank" rel="noopener">Start your 360</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main { width: 100%; max-width: 100%; margin: 0; padding: 0; }
+	.container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+	.container.narrow { max-width: 760px; }
+
+	.hero {
+		background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+		padding: 4.5rem 1.5rem 3.5rem;
+		text-align: center;
+		border-bottom: 4px solid var(--accent);
+	}
+	.eyebrow {
+		text-transform: uppercase; letter-spacing: 0.1em;
+		font-size: 0.85rem; font-weight: 700; color: var(--accent); margin: 0 0 1rem;
+	}
+	.hero h1 {
+		font-size: clamp(1.9rem, 4.5vw, 3rem); line-height: 1.15;
+		margin: 0 auto 1.25rem; color: #111; max-width: 800px; letter-spacing: -0.02em;
+	}
+	.hero .lede {
+		font-size: 1.2rem; line-height: 1.6; color: #444; margin: 0 auto 1.25rem; max-width: 680px;
+	}
+	.superlede {
+		font-size: 1.1rem; line-height: 1.5; color: #111; font-weight: 600;
+		margin: 0 auto 2rem; max-width: 600px;
+	}
+	.cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
+	.centered { text-align: center; }
+
+	.btn {
+		display: inline-block; padding: 0.85rem 1.75rem; font-weight: 600; font-size: 1rem;
+		text-decoration: none; border-radius: 4px; transition: all 0.2s ease; border: 2px solid transparent;
+	}
+	.btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+	.btn-primary:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
+	.btn-secondary { background: transparent; color: #111; border-color: #111; }
+	.btn-secondary:hover { background: #111; color: #fff; }
+	.btn-light { background: #fff; color: var(--accent); border-color: #fff; }
+	.btn-light:hover { background: #111; color: #fff; border-color: #111; }
+
+	.block { padding: 3.5rem 0; background: #fff; }
+	.block.alt { background: #f5f5f5; }
+	.block h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin: 0 0 1.25rem; color: #111; }
+	.block p { font-size: 1.075rem; line-height: 1.7; color: #333; margin: 0 0 1.1rem; }
+	.pull {
+		border-left: 4px solid var(--accent); padding-left: 1.25rem;
+		font-size: 1.2rem; font-style: italic; color: #111; margin-top: 1.5rem;
+	}
+
+	.steps { margin: 0; padding-left: 1.25rem; }
+	.steps li { font-size: 1.075rem; line-height: 1.7; color: #333; margin-bottom: 0.85rem; padding-left: 0.4rem; }
+
+	.ticks { margin: 0; padding: 0; list-style: none; }
+	.ticks li {
+		font-size: 1.05rem; line-height: 1.6; color: #333;
+		padding: 0.5rem 0 0.5rem 1.75rem; position: relative;
+	}
+	.ticks li::before { content: "→"; color: var(--accent); position: absolute; left: 0; font-weight: 700; }
+
+	.chart { margin: 2.5rem 0 0; text-align: center; }
+	.chart svg { width: 100%; max-width: 440px; height: auto; }
+	.chart figcaption { display: flex; gap: 1.5rem; justify-content: center; margin-top: 0.5rem; }
+	.key { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; color: #555; }
+	.dot { width: 16px; height: 10px; border-radius: 2px; display: inline-block; }
+	.dot.others { background: rgba(220,38,38,0.3); border: 2px solid var(--accent); }
+	.dot.self { height: 0; border-top: 2px dashed #8a8a8a; border-radius: 0; }
+	.caption-note { font-size: 0.9rem; color: #777; max-width: 480px; margin: 0.75rem auto 0; }
+
+	.prices {
+		display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+		margin: 1.5rem 0 0.5rem;
+	}
+	.price-card {
+		background: #fff; border: 1px solid #e5e5e5; border-radius: 8px;
+		padding: 1.5rem 1rem; text-align: center;
+	}
+	.price-people { font-size: 0.95rem; color: #666; margin-bottom: 0.5rem; }
+	.price-amount { font-size: 1.6rem; font-weight: 800; color: var(--accent); }
+
+	.final-cta { background: var(--accent); color: #fff; padding: 4rem 1.5rem; text-align: center; }
+	.final-cta .ethos { font-size: 1.1rem; font-style: italic; opacity: 0.95; margin: 0 0 1.5rem; font-weight: 600; }
+	.final-cta h2 { color: #fff; font-size: clamp(1.75rem, 3.5vw, 2.25rem); margin: 0 0 1rem; }
+	.final-cta p { font-size: 1.15rem; max-width: 600px; margin: 0 auto 2rem; opacity: 0.95; }
+
+	@media (max-width: 860px) {
+		.prices { grid-template-columns: repeat(2, 1fr); }
+	}
+	@media (max-width: 640px) {
+		.hero { padding: 3rem 1rem 2.5rem; }
+		.cta-row { flex-direction: column; width: 100%; max-width: 320px; margin: 1.5rem auto 0; }
+		.btn { width: 100%; text-align: center; }
+		.chart figcaption { flex-direction: column; gap: 0.5rem; align-items: center; }
+	}
+</style>
