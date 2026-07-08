@@ -1,7 +1,7 @@
 ---
 title: 'The New Starter in Your Pocket'
 description: "Most leaders using AI are winging it, then blaming the tool when it hands back slop. The fix is not a cleverer app. It is learning to brief it like you would a good new employee."
-pubDate: 'Jul 17 2026'
+pubDate: 'Jul 10 2026'
 heroImage: '../assets/new-starter-in-your-pocket.png'
 ---
 
