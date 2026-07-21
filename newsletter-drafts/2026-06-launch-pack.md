@@ -100,7 +100,7 @@ See you next month.
 
 Andy
 
-**[Book a free consultation](https://app.usemotion.com/meet/andy-heald/consultancy?d=60)** — if any of this hit home and you want to talk it through, no agenda.
+**[Book a free consultation](https://calendly.com/andy-sportivityconsultants/30min)** — if any of this hit home and you want to talk it through, no agenda.
 
 *Forward this to one leader who needs to read it. That's how this grows.*
 

@@ -1,14 +1,17 @@
----
-title: 'The Monthly Edge: The Peaks, the Troughs, and the Bit in Between'
-description: "Issue 2 of The Monthly Edge. My busiest spell in eight years, then the phone goes quiet, and the mindset that holds both. Plus the two-hour afternoon, last times, and who really owns a coach's professionalism."
-pubDate: 'Jul 6 2026'
-heroImage: '../assets/the-monthly-edge.png'
-type: 'newsletter'
+# The Monthly Edge — Issue 2 (ready to review and publish on Substack)
+
+**Post title (this becomes the email subject):** The busiest month, then the quiet.
+**Alternative subjects:**
+- The peaks, the troughs, and the bit in between
+- What the quiet months are actually for
+
+**Subtitle (Substack subtitle / preview line):** My busiest spell in eight years, then the phone goes quiet. Here's what I do with the wobble.
+
+Paste everything below the line into the Substack post body.
+
 ---
 
-This is Issue 2 of The Monthly Edge, my monthly newsletter. One email a month, the stuff I actually use. If you'd rather get it straight to your inbox, you can [subscribe here](/newsletter). You can also [read and share this issue on Substack](https://open.substack.com/pub/sportivityconsultants/p/the-monthly-edge-issue-2-the-peaks).
-
-Let me be honest with you this month, because I think you'll recognise it.
+Right. Let me be honest with you this month, because I think you'll recognise it.
 
 May and June were the busiest I've been in eight years of doing this. Genuinely. Then July arrived and the diary went quiet.
 
@@ -56,7 +59,7 @@ I'm off on holiday in a couple of weeks, and I've insisted my eighteen-year-old,
 
 That's what all the grounding and the gratitude is actually for. Not to feel nice. To be there. To notice the thing while it's still happening, instead of mourning it after. Look up. Some of what's around you right now, you're doing for one of the last times without knowing it.
 
-## Who owns a coach's professionalism?
+## The one that's shaping my work right now: who owns a coach's professionalism?
 
 Now the sector bit, because there's a big shift happening and I'm right in the middle of it.
 
@@ -80,8 +83,17 @@ That's the month, then. The peaks and the troughs and the head that holds both. 
 
 One thread runs through all of it. Be here. Be grounded. Notice what's actually good, and who's actually good, while it's in front of you.
 
-If any of the coaching qualifications, professional status or quality assurance stuff is live for you right now, that's squarely the work I do. This is exactly the kind of quality assurance and governance work I do day in, day out, and you can [book a free chat](https://calendly.com/andy-sportivityconsultants/30min) and let's talk it through.
+If any of the coaching qualifications, professional status or quality assurance stuff is live for you right now, that's squarely the work I do, and my July is quieter than usual, which means I've actually got the time. Grab a free half hour and let's talk it through: https://calendly.com/andy-sportivityconsultants/30min
 
 Feet on the floor. You're here. See you next month.
 
 Andy
+
+---
+
+Written by Andy Heald. Leadership consultant, keynote speaker and lecturer at UA92, based in Greater Manchester and working nationally.
+
+If it was useful, forward it to one person who'd get something from it. That's how this grows.
+
+Work with me: https://www.sportivityconsultants.com
+CQI, my quality framework for coaching children: https://www.sportivityconsultants.com/cqi

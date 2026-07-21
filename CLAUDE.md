@@ -19,7 +19,7 @@ The marketing site for Sportivity Consultants, run by Andy Heald (leadership con
 - **Wix** still holds the domain registration and DNS (Wix won't allow nameserver changes for Wix-bought domains)
 - **Formspree** powers the contact form
 - **HubSpot** (free) powers the newsletter — signup form + subscriber list
-- **Motion** powers booking: https://app.usemotion.com/meet/andy-heald/consultancy?d=60
+- **Calendly** powers booking: https://calendly.com/andy-sportivityconsultants/30min
 
 ## Repos and local paths
 
@@ -57,7 +57,7 @@ Cloudflare auto-deploys to www.sportivityconsultants.com in about 90 seconds. Th
 - Phone: 07920 008 421
 - Location line: Greater Manchester · Operating nationally
 - LinkedIn: https://www.linkedin.com/in/andy-heald-sportivity/
-- Booking link: https://app.usemotion.com/meet/andy-heald/consultancy?d=60
+- Booking link: https://calendly.com/andy-sportivityconsultants/30min
 
 ## File structure (the parts that matter)
 
@@ -125,6 +125,13 @@ A monthly email newsletter aimed at SME owners and directors. Themes: productivi
 - **HubSpot is the CRM of record, not the signup form anymore.** Keep the contact list synced by exporting the Substack subscriber CSV monthly and importing to HubSpot. Formspree stays as the contact form. Don't merge the three.
 - **GDPR / unsubscribe**: handled by Substack.
 - **Monthly draft**: a scheduled Claude task (`sportivity-monthly-newsletter`) runs on the 1st of each month at 09:00, drafts the newsletter in Andy's voice, saves it to `newsletter-drafts/`, and notifies him. It drafts only — Andy reviews and sends from Substack. This task lives in Claude's scheduled tasks, not in the repo.
+
+## Weekly blog ("published every Friday")
+
+A weekly blog post, separate from the monthly newsletter. Published every Friday. Posts live in `src/blog/` (see "How to add a blog post" above).
+
+- **Weekly draft**: a scheduled Claude task (`sportivity-weekly-blog`) runs every **Wednesday at 09:00**, so there's a day or two to review before Friday. It reads existing posts to avoid repeats, suggests 3 to 4 blog ideas for the week, writes ONE full draft from the strongest idea in Andy's voice, and notifies him. It drafts only — Andy reviews, edits, adds a hero image, then publishes.
+- **Drafts land in `blog-drafts/`** (NOT `src/blog/`, so nothing auto-deploys before review). To publish: move the finished `.md` into `src/blog/`, save its hero image into `src/assets/` with the matching filename, then commit and push. This task lives in Claude's scheduled tasks, not in the repo.
 
 ## Roadmap / open items
 

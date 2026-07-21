@@ -57,4 +57,4 @@ Cancel it.
 
 ---
 
-*If your calendar has quietly taken over your week and you want a second pair of eyes on where your time is actually going, [grab a free 60-minute consultation](https://app.usemotion.com/meet/andy-heald/consultancy?d=60). Sometimes it just takes someone asking the awkward question.*
+*If your calendar has quietly taken over your week and you want a second pair of eyes on where your time is actually going, [grab a free 60-minute consultation](https://calendly.com/andy-sportivityconsultants/30min). Sometimes it just takes someone asking the awkward question.*

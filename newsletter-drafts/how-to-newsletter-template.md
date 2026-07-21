@@ -46,7 +46,7 @@ The part Claude can't fully give them: the judgement, the thing that breaks, the
 ## The ask (CTA to a paid product)
 Point to the relevant paid thing in Andy's voice, not a hard sell.
 - Coaching/quality topic → CQI: https://www.sportivityconsultants.com/cqi
-- Leadership/consultancy topic → book a chat: https://app.usemotion.com/meet/andy-heald/consultancy?d=60
+- Leadership/consultancy topic → book a chat: https://calendly.com/andy-sportivityconsultants/30min
 - Later: the LMS subscription.
 
 ## Share + subscribe
