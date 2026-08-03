@@ -11,11 +11,19 @@ I'll say up front, I'm not a political person. I don't follow it closely and I'm
 
 ## The day he lined up in front of me
 
-I played for Leigh RMI back in the day. One match, we came up against Everton, and there in the side that day was Burnham. A lifelong, dyed-in-the-wool Everton fan, pulling on a shirt to play against the very team he's supported his whole life. He came on as a sub and took up the left wing.
+I played for Leigh RMI back in the day, and I've just dug the match report out to check I hadn't romanticised it over the years.
 
-I dropped to left back, right behind him, because our job that day was to deal with Everton's best player on the pitch, a young Leon Osman who was tearing it up at the time.
+26 July 2003. Everton at Hilton Park, pre-season friendly, 825 through the gate. Their side had Leon Osman, Nick Chadwick and Kevin McLeod in it, and Osman put them ahead on 32 minutes with a twenty yarder.
 
-Now think about that for a second. Here's a man who could have watched from the stands, safe and adored. Instead he put himself on the grass, against his own heroes, in front of a crowd, knowing full well he might get skinned or make a show of himself. He didn't have to. He did it anyway.
+We got level on 67. Alan Moogan gave a free-kick away on the right hand side of the box, I floated it into the middle, and Ged Courtenay climbed above the Everton defence and glanced a header past a young Iain Turner.
+
+Then, with two minutes left on the clock, on came the Member of Parliament for Leigh.
+
+![Match report for Leigh RMI 1 Everton 1 at Hilton Park, 26 July 2003, showing Andy Burnham coming on as an 88th minute substitute for Leigh RMI](../assets/burnham-leigh-rmi-team-sheet.jpg)
+
+Burnham took up the left wing. I was at left back behind him, and I'll be straight with you, most of my afternoon had gone on worrying about Osman rather than about our new winger. The report describes his arrival as comic relief. Fair enough.
+
+But think about it for a second. Here's a lifelong, dyed-in-the-wool Everton fan who could have sat in the stand, safe and adored. Instead he pulled on a Leigh shirt against the club he's supported his whole life, in front of a crowd, knowing full well he might get skinned or make a show of himself. Two minutes or ninety, he still had to walk out there and do it. He didn't have to. He did it anyway.
 
 That's the first thing I ever learned about him. Grit. Courage. A willingness to try something new and put himself in the arena rather than watch from the side. You can't fake that. It shows.
 

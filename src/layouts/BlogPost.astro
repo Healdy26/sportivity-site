@@ -57,6 +57,8 @@ const jsonLd = {
 			.hero-image img {
 				display: block;
 				margin: 0 auto;
+				max-width: 100%;
+				height: auto;
 				border-radius: 12px;
 				box-shadow: var(--box-shadow);
 			}
@@ -99,7 +101,7 @@ const jsonLd = {
 		<main>
 			<article>
 				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt={title} />}
+					{heroImage && <Image width={1020} src={heroImage} alt={title} />}
 				</div>
 				<div class="prose">
 					<div class="title">
