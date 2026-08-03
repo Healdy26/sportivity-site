@@ -5,7 +5,7 @@ pubDate: 'Jul 24 2026'
 heroImage: '../assets/andy-burnham-too-nice.png'
 ---
 
-The man who walked into Downing Street this week as Prime Minister once played left wing directly in front of me.
+The man who walked into Downing Street as Prime Minister once played left wing directly in front of me.
 
 I'll say up front, I'm not a political person. I don't follow it closely and I'm not here to fly a flag for anyone. So take what follows not as a political opinion but as something rarer than that. It's what I saw with my own eyes, twice, long before the rest of the country was deciding what it thinks of Andy Burnham.
 
