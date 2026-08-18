@@ -4,6 +4,99 @@ Daily bank of timely, on-brand items Andy could react to. Drafts only — Andy r
 
 ---
 
+## 2026-08-18 (second entry) — Gallup: 99% of CHROs say AI is strategic, half don't trust their own managers to lead it
+
+**Item:** Gallup published **AI's Effect on Workplace Culture** on **16 August**, syndicated hard across US outlets on **17 August**. Two datasets behind it. A CHRO roundtable of **102 Fortune 500 HR directors** (fieldwork 10 Feb to 16 Mar 2026) and a **Q1 2026 US workforce study of 23,717 employed adults** (fieldwork 4 to 19 Feb, ±0.9pp). Headlines: **99% of CHROs** say AI is somewhat or very important to strategy, but **50%** are "not very confident or not at all confident" in their managers' ability to guide employees on using AI. **57%** now provide AI training for managers, **78%** encourage peer learning, **62%** have built AI centres of excellence. The killer number is on the employee side: where workers strongly agree their manager champions AI, **33%** say AI has transformed how work gets done. Where they don't, **4%**. On culture, **31% vs 21%** improved. Overall, AI-adopting organisations split roughly even on culture: 24% improved, 25% worsened, 51% no change.
+
+**Why it clears the bar:** This is the "practical AI for leaders" and "strategy is people, not tools" seam in one story, with a number Andy can own. 33% versus 4% is the same software, the same licence, the same training budget, and an eight-fold difference in outcome, with the manager as the only variable. Everyone else will post "companies must train managers on AI." Andy's differentiated move is to say it was never an AI problem: it is the accidental manager problem wearing a new costume, and we are asking people who were never trained to lead humans to now lead humans through the biggest change to work in a generation. He has 2,000+ coaches and the managers above them behind that claim. Also a neat inversion: if Fortune 500 CHROs *with* L&D teams and centres of excellence don't trust their managers, the SME owner with none of that should stop feeling behind and start feeling urgent.
+
+**Honest notes — read before posting:**
+- **The data is not UK and not SME.** 102 global Fortune 500 CHROs plus a US workforce panel. Do not imply it is British small business data. The draft below handles this by naming Fortune 500 explicitly and using it as the contrast, not the proof.
+- **Fieldwork is Feb to Mar 2026**, published 16 Aug. Timely as a publication, five months old as a measurement. Fine to post, don't call it "new research this week."
+- **The 82% accidental managers figure is CMI**, already used in the 5 Aug draft and the September newsletter. Solid, but Andy has now leaned on it three times. Consider dropping that line if it is starting to feel like a stock phrase.
+- **Third entry in a fortnight touching the 1 Sept defunding.** The peg is genuinely different this time (AI, not apprenticeships) but the closing line reuses it. If Andy already runs the results-week apprenticeship post this week, cut the 1 Sept line from this one and let it stand on the 33/4 stat alone. It is strong enough without.
+
+**Persona/target:** JOHN primarily (owner/director who bought the licences, ran the webinar, saw nothing change). Strong secondary DAN (the manager being asked to lead this with no training behind him). Also lands with Andy's leadership and HR network.
+
+**Sources:**
+- Gallup, AI's Effect on Workplace Culture (16 Aug) — https://www.gallup.com/workplace/712976/ai-effect-workplace-culture.aspx
+- Allwork.space write-up (17 Aug) — https://allwork.space/2026/08/99-of-chros-say-ai-matters-but-half-doubt-their-managers-are-ready
+- Sinclair syndication, "AI at work puts new pressure on managers" — https://cnycentral.com/news/nation-world/ai-at-work-puts-new-pressure-on-managers-gallup-workplace-culture-technology-artificial-intelligence-productivity
+
+**LinkedIn draft:**
+
+Gallup asked 102 Fortune 500 HR directors about AI last week. 99% said it is important to their strategy.
+
+Half of them said they are not confident their own managers can guide anyone on how to use it.
+
+Read that twice. These are companies with budgets, L&D teams and AI centres of excellence.
+
+But the number that actually stopped me was on the employee side.
+
+Where people say their manager champions AI, 33% say it has transformed how work gets done.
+
+Where they do not, 4%.
+
+Same tool. Same licence. Same training budget. Eight times the result.
+
+The variable is not the technology. It is the person standing in front of the team.
+
+We keep treating this as a tools problem. Buy the licences, run the webinar, wonder why nothing changed six months later. It was never a tools problem. It is the same thing it has always been. We promote people for being good at the job, hand them a team, train them in nothing, and then ask them to lead everyone through the biggest change to work in a generation.
+
+If a Fortune 500 with a centre of excellence cannot make that work, the licences were never the answer.
+
+So whose manager is actually ready?
+
+**Folds into Friday's blog:** Natural pairing with the strategy-is-people seam. Piece would be "your AI rollout is a leadership problem in a software invoice" — why the 33% vs 4% gap is the only AI statistic that matters for an SME, and the four questions to ask your managers before you renew a single licence. Sits well as a standalone because it does not depend on the apprenticeship funding argument, so it gives the blog queue a break from that thread. Working title: "Same software. Eight times the result. The difference was the manager."
+
+---
+
+## 2026-08-18 — Results week: under-19 apprenticeship starts sinking, 14 days before the leadership standards defund
+
+**Item:** A-level results landed **13 August**. 28.3% at A*/A (up from 28.2%), but **78.3% of England's 18 year olds got their first-choice university place, down from 81.5% last year**, with 13.6% on a backup (up from 11.6%) — so more young people are in clearing and weighing alternatives right now. **GCSE results day is Thursday 20 August, two days away**, which pushes the same conversation down an age group. Against that, the official DfE picture: **apprenticeship starts for under 19s fell 5%, from 56,470 to 53,510** (first half of 2024-25 vs first half of 2025-26), and the under-19 **share of all starts dropped to 21.2% from 23.2%**. **Over half of all starts (51.3%) now go to people aged 25 and over**, up from 48.4%. Sector calls this week are for employers to create more routes into skilled work.
+
+**Why it clears the bar:** Results week is the one week a year the whole country talks about young people's routes, and the take everyone gives is "consider an apprenticeship." Andy's differentiated move is to flip it from a young-person question to an employer-capability question: appetite among young people is not the blocker, places are — and **in 14 days, on 1 September, Team Leader L3, Operations Manager L5 and Coaching Professional L5 lose funding**. So the country is asking employers to take on more young people while defunding the training for whoever would have to develop them. Nobody in the education press is joining those two dots because they cover it as a skills story. Andy covers it as a leadership story. He sits on both ends of the pipeline: UA92 at the young end, 2,000+ coaches and the managers above them at the developing end, plus Workforce Development & Qualifications as a live service line.
+
+**Honest note on freshness:** this is the **same seam as the 5 Aug entry, materially advanced** — not a new story. What is new: official under-19 starts data, the results-week peg it did not have a fortnight ago, GCSE day on Thursday, and the 1 Sept cliff now at 14 days rather than 27. Read it as "this is the best week to run the argument you already drafted", not "here's a fresh scoop." Andy's call.
+
+**Persona/target:** JOHN primarily (owner/director who has talked himself out of hiring young, and whose first-line manager has had no training). Secondary DAN — the routes up are thinning at both ends. Also strong for Andy's education/FE network in results week.
+
+**Stat confidence — check before posting:**
+- **Rock solid (DfE / JCQ / FE Week):** the 5% fall, 56,470 → 53,510, 21.2% vs 23.2% share, 51.3% aged 25+, 78.3% first-choice unis, 28.3% A*/A. Use these freely.
+- **Use with care:** the "106 jobs per apprenticeship opening" / "227:1 in electrical" figures doing the rounds are from a **DART Tool Group** PR report (17 June 2026) built on a snapshot of just **809 live apprenticeship positions** cross-referenced against Reed/ONS vacancies. Eye-catching but a supplier press release with thin methodology. Left out of the draft below deliberately.
+- **Unverified:** "nine in ten young people would consider an apprenticeship" traces to a NationalWorld piece, original survey not confirmed. Softened to "the appetite is there" in the draft rather than quoting a number.
+
+**Sources:**
+- FE Week, under-19 starts still sinking — https://feweek.co.uk/apprenticeships-for-under-19s-still-sinking/
+- FE Week, A-level results 2026 — https://feweek.co.uk/a-level-results-2026-3-2-rise-in-a-grades/
+- Schools Week, A-level results 2026 — https://schoolsweek.co.uk/a-level-results-2026-3-2-rise-in-a-grades/
+- HR Grapevine, protect the routes beyond university (14 Aug, paywalled/403) — https://www.hrgrapevine.com/content/article/2026-08-14-a-level-results-2026-why-employers-must-protect-the-routes-beyond-university
+- DfE apprenticeship statistics — https://explore-education-statistics.service.gov.uk/find-statistics/apprenticeships/2025-26
+
+**LinkedIn draft:**
+
+This week we told a generation to go and consider an apprenticeship.
+
+Fair enough. Now look at what is actually available to them.
+
+Apprenticeship starts for under 19s have fallen again, down 5% to 53,510. The under 19 share of all starts is down to 21.2%. More than half of every apprenticeship start in this country now goes to someone aged 25 or over.
+
+The appetite among young people is not the problem. The places are.
+
+That is not a young person problem. That is an employer problem.
+
+And here is the bit nobody is joining up this week. In 14 days, on 1 September, we stop funding Team Leader Level 3, Operations Manager Level 5 and Coaching Professional Level 5.
+
+So we are asking employers to take on more young people, while defunding the training for the very people who would have to develop them.
+
+I have worked with over 2,000 coaches and the managers above them. Taking on a sixteen year old was never really a budget decision. It is a capability decision. It needs someone who knows how to bring a young person on.
+
+So who in your business is actually ready to develop one?
+
+**Folds into Friday's blog:** Strongest option is to give `blog-drafts/2026-09-04-eight-grand-to-hire-a-young-person.md` a results-week opener and pull it forward to **Friday 21 August**, the day after GCSE results, while the 1 Sept deadline still has runway. That way the argument lands before the cliff instead of after it, and the 4 Sept slot becomes the follow-up. If Andy would rather hold the running order, run this as LinkedIn only and leave the blog where it is. Working title if pulled forward: "We told them to get an apprenticeship. We forgot to ask who's going to train them."
+
+---
+
 ## 2026-08-05 — Leadership apprenticeships defunded from 1 Sept: Team Leader L3, Ops Manager L5, Chartered Manager L6, Coaching Professional L5
 
 **Item:** 16 apprenticeship standards lose funding for **new starts from 1 September 2026**. Four of them are the country's main leadership and coaching routes: **Team Leader / Supervisor (L3)**, **Operations / Departmental Manager (L5)**, **Chartered Manager Degree Apprenticeship (L6)** and **Coaching Professional (L5)**. Team Leader is the most popular apprenticeship in Britain to lose funding: **12,670 starts in 2024-25** across ~450 training providers, of which only **80 were under 19**. Anyone who **starts before 1 September** finishes on existing funding, so the window is open for another few weeks. **No replacement standard has been announced for most of them.** Government rationale is redirecting money to young people and technical skills, citing a ~40% decline in young apprenticeship starts over a decade. Ben Rowland, CEO of AELP, said the government is dismantling employer-led programmes employers actually cherished. Funded alternatives being pointed at: Associate Project Manager (L4) and AI & Automation Practitioner (L4). Direct-funded CMI qualifications (L3 to L7) stay available outside the apprenticeship system.
