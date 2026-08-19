@@ -227,3 +227,39 @@ The design decisions are being made now, ahead of spring 2027.
 So my question for afPE, the Youth Sport Trust, Sport England and the NGBs building this: what does "quality-assured" actually mean, and who's accountable when it slips?
 
 **Folds into Friday's blog:** Expand into a piece on why quality assurance, not funding levels, is the real test of the new network — and what a coaching quality framework mapped to CIMSPA and Ofsted looks like in practice (soft intro to CQI). Working title: "Everyone's arguing about the money. Nobody's asking who assures the quality."
+
+---
+
+## 2026-08-19 — Gallup: the manager, not the tool, decides whether AI actually changes anything
+
+**Item:** Gallup published "AI's Effect on Workplace Culture" on **16 August 2026** (Morgan Meinen and Megan Mulherin), picked up in the wider press on 17 August. The headline finding: among employees who strongly agree their manager champions AI, **33%** say AI has transformed how work gets done. Among those who don't, it's **4%**. Same tools, same rollout, eight times the difference. Alongside it: **50% of CHROs** say they are not confident in their managers' ability to guide employees' AI use; **57%** are now providing AI training for managers; **62%** are setting up centres of excellence or internal AI champions. On culture generally, AI-adopting organisations split almost evenly — 24% say culture improved, 25% say it worsened, 51% no change.
+
+**Why it clears the bar:** Genuinely fresh (3 days), and it's a hard number attached to the exact argument Andy makes — strategy and transformation are people and culture, not tools and frameworks. The obvious take ("train your managers") is what everyone will post. Andy's differentiated take is that this is a permission and time problem being mis-diagnosed as a capability problem, which lands squarely on his 360 / leadership development ground.
+
+**Persona/target:** **DAN** primarily — the employed manager who knows he could do more and is being handed AI on top of a full job with no cover. Secondary read for **JOHN**, the owner who bought the licences and wonders why nothing changed. Ties naturally to the Leadership 360 product (manager capability, measured) without needing a hard sell.
+
+**Sources:**
+- Gallup — https://www.gallup.com/workplace/712976/ai-effect-workplace-culture.aspx
+- Press pickup (17 Aug) — https://fox17.com/news/nation-world/ai-at-work-puts-new-pressure-on-managers-gallup-workplace-culture-technology-artificial-intelligence-productivity
+
+**LinkedIn draft:**
+
+Gallup has put a number on something I've seen in nearly every business I've worked with.
+
+When people strongly agree their manager champions AI, 33% say it has changed how work actually gets done. When they don't, it's 4%.
+
+Same tools. Same licences. Same all staff email announcing the rollout. Eight times the difference, and the only variable is the manager.
+
+Half of HR directors say they aren't confident their managers can guide people through this. Fair enough. But I'd push back on where that lands the blame.
+
+Most managers aren't blocking AI. They're the only people in the building being asked to absorb it on top of a full job, with no time, no cover, and no permission to be rubbish at it for a fortnight while they learn.
+
+Championing isn't a personality trait. It's what happens when someone's been given space and a clear expectation.
+
+Buying the tool is the easy bit. The culture is the product.
+
+So if your rollout has stalled, be honest with yourself. Is it your managers, or is it what you've asked of them?
+
+(Research: Gallup, Morgan Meinen and Megan Mulherin.)
+
+**Folds into Friday's blog:** Expand into a piece on why AI rollouts stall in the middle layer — the difference between giving someone a tool and giving them the time, cover and permission to use it. Use the 33% vs 4% gap as the hook, then give owners a practical test: name the last thing you took OFF a manager's plate when you added AI to it. Working title: "You didn't give them AI. You gave them another job."
