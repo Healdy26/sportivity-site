@@ -8,9 +8,12 @@ import Header from '../../components/Header.astro';
 import Newsletter from '../../components/Newsletter.astro';
 import { SITE_TITLE } from '../../consts';
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+// Newest first, and hold back posts whose pubDate is still in the future so the
+// queue stays hidden until its Friday. Matches the same filter in rss.xml.js.
+const now = new Date();
+const posts = (await getCollection('blog'))
+	.filter((post) => post.data.pubDate <= now)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const newsletters = posts.filter((p) => p.data.type === 'newsletter');
 const blogs = posts.filter((p) => p.data.type !== 'newsletter');
