@@ -17,6 +17,10 @@ pnpm-debug.log*
 .env
 .env.production
 
+# linkedin posting credentials and token, never commit these
+.env.linkedin
+.linkedin-token.json
+
 # macOS-specific files
 .DS_Store
 
