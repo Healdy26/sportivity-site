@@ -1,0 +1,127 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+
+const lastUpdated = 'August 2026';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Privacy Policy | ${SITE_TITLE}`} description="How Sportivity Consultants collects, uses and protects your personal information." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<!-- Page Hero -->
+			<section class="page-hero">
+				<div class="container">
+					<p class="eyebrow">Privacy</p>
+					<h1>Privacy Policy</h1>
+					<p class="lede">Plain English, because you shouldn't need a solicitor to work out what happens to your email address.</p>
+				</div>
+			</section>
+
+			<section class="policy-body">
+				<div class="container">
+					<p class="updated">Last updated: {lastUpdated}</p>
+
+					<h2>Who we are</h2>
+					<p>Sportivity Consultants is a leadership consultancy run by Andy Heald, based in Greater Manchester and operating nationally across the United Kingdom. For the purposes of UK data protection law, Sportivity Consultants is the data controller for the information described on this page.</p>
+					<p>If you want to talk to a human about anything here, email <a href="mailto:andy@sportivityconsultants.com">andy@sportivityconsultants.com</a> or call 07920 008 421.</p>
+
+					<h2>The short version</h2>
+					<p>This website does not run analytics, advertising trackers or third-party cookies. Nobody is following you around the internet because you read a blog post here. We only hold personal information you have actively given us, and only for as long as it is useful to you.</p>
+
+					<h2>What we collect, and why</h2>
+
+					<h3>When you use the contact form</h3>
+					<p>The contact form collects your name, your email address and whatever you write in the message. It is handled by Formspree, which passes it on to Andy's inbox. We use it to reply to you and, if the conversation goes somewhere, to keep a record of the work we discussed. The lawful basis is legitimate interest: you got in touch and expect a reply.</p>
+
+					<h3>When you subscribe to The Monthly Edge</h3>
+					<p>The newsletter runs on Substack, and the signup form on our newsletter page is theirs. Substack holds your email address and your subscription preferences. We use it to send you the newsletter, monthly, and nothing else. The lawful basis is consent, which you gave by subscribing and can withdraw at any time using the unsubscribe link at the bottom of every issue.</p>
+					<p>We keep a copy of the subscriber list in HubSpot, our customer records system, so that client conversations and newsletter subscriptions are not scattered across three places.</p>
+
+					<h3>When you book a call</h3>
+					<p>Booking links take you to Calendly, where you enter your name, email and a time. Calendly holds that booking information and shares it with us so the meeting can happen.</p>
+
+					<h3>When you buy the CQI Document Pack</h3>
+					<p>Payments are taken by Stripe. We never see or store your card details. Stripe passes us your name, email address and confirmation that payment succeeded, so we can send you the files and keep proper business records. We are required to retain transaction records for six years for HMRC.</p>
+
+					<h3>When you just read the site</h3>
+					<p>The site is hosted on Cloudflare Pages. Like any web host, Cloudflare's servers automatically log technical information such as IP addresses and which pages were requested, to serve the site and protect it from attacks. We do not use these logs to build a picture of individual visitors.</p>
+
+					<h2>Cookies</h2>
+					<p>This website sets no cookies of its own, and there is no cookie banner because there is nothing to consent to. Two pages embed content from other companies, and those companies may set their own cookies once you interact with them:</p>
+					<p>The newsletter page embeds a Substack signup form. Pages linking to Calendly or Stripe send you to their websites when you click. Once you are on Substack, Calendly or Stripe, their privacy policies and cookie practices apply, not ours.</p>
+
+					<h2>Who we share information with</h2>
+					<p>We do not sell your personal information, and we never will. We share it only with the service providers who make this business work: Formspree for the contact form, Substack for the newsletter, HubSpot for customer records, Calendly for bookings, Stripe for payments, Google Workspace for email, and Cloudflare for hosting. Each holds only what they need for their part of the job.</p>
+					<p>Some of these companies are based in the United States. Where information is transferred outside the UK, it is protected by the safeguards those providers have in place, such as the UK extension to the EU-US Data Privacy Framework or standard contractual clauses.</p>
+
+					<h2>How long we keep it</h2>
+					<p>Newsletter subscriptions are kept until you unsubscribe. Enquiries and client records are kept for as long as we are working together and for six years afterwards, which is what tax and contract law expects. Financial records are kept for six years. If you ask us to delete something and there is no legal reason to keep it, we will.</p>
+
+					<h2>Your rights</h2>
+					<p>Under UK GDPR you can ask us to show you what we hold about you, correct it if it is wrong, delete it, restrict what we do with it, hand it over in a portable format, or object to us using it. You can also withdraw consent to marketing at any time, and the unsubscribe link does that instantly without needing to email anyone.</p>
+					<p>To exercise any of these, email <a href="mailto:andy@sportivityconsultants.com">andy@sportivityconsultants.com</a>. We will respond within one month. There is no charge.</p>
+					<p>If you think we have got something wrong and we have not put it right, you can complain to the Information Commissioner's Office at <a href="https://ico.org.uk/make-a-complaint/" target="_blank" rel="noopener">ico.org.uk</a> or on 0303 123 1113. We would rather you told us first so we can fix it.</p>
+
+					<h2>Other Sportivity services</h2>
+					<p>Sportivity 360, our leadership feedback tool, runs on a separate website at <a href="https://sportivity360.com" target="_blank" rel="noopener">sportivity360.com</a> and handles feedback data under its own privacy policy. This policy covers this website only.</p>
+
+					<h2>Changes to this policy</h2>
+					<p>If we change how we handle personal information, we will update this page and change the date at the top. If the change is significant and you are on the newsletter list, we will tell you in an issue rather than hoping you notice.</p>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.policy-body {
+		padding: 4rem 1.5rem 5rem;
+	}
+	.policy-body .container {
+		max-width: 720px;
+		margin: 0 auto;
+	}
+	.updated {
+		color: #666;
+		font-size: 0.9rem;
+		margin: 0 0 2.5rem;
+	}
+	.policy-body h2 {
+		font-size: 1.5rem;
+		margin: 2.75rem 0 1rem;
+		line-height: 1.3;
+	}
+	.policy-body h2:first-of-type {
+		margin-top: 0;
+	}
+	.policy-body h3 {
+		font-size: 1.1rem;
+		margin: 1.75rem 0 0.5rem;
+		color: #333;
+	}
+	.policy-body p {
+		margin: 0 0 1.1rem;
+		line-height: 1.7;
+		color: #444;
+	}
+	.policy-body a {
+		color: var(--accent);
+	}
+
+	@media (max-width: 720px) {
+		.policy-body {
+			padding: 2.5rem 1rem 3.5rem;
+		}
+		.policy-body h2 {
+			font-size: 1.3rem;
+		}
+	}
+</style>
