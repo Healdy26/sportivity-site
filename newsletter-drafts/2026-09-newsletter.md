@@ -1,4 +1,4 @@
-# The Monthly Edge — Issue 4 (ready to review and publish on Substack)
+# The Monthly Edge: Issue 4 (ready to review and publish on Substack)
 
 > **Note for Andy:** Issue 3 (`2026-08-newsletter.md`) is written and still unsent. This is the NEXT one in the queue, not a replacement. Send Issue 3 first, then this goes out early September. If you'd rather this one went out now, swap the filenames and the "Issue 4" label.
 >

@@ -13,6 +13,7 @@ import {
   escapeCommentary,
   readToken,
 } from './lib.mjs';
+import { voiceCheck, reportVoiceCheck } from './voice-check.mjs';
 
 const args = process.argv.slice(2);
 const confirm = args.includes('--confirm');
@@ -47,8 +48,20 @@ if (text.length > POST_CHARACTER_LIMIT) {
   process.exit(1);
 }
 
-if (text.includes('—')) {
-  console.warn(`Warning: there's an em dash in this post. Andy doesn't use them.\n`);
+// Every post goes through here, so this is the one place a voice check can't be
+// forgotten, whichever session, task or person is doing the posting.
+const skipVoiceCheck = args.includes('--skip-voice-check');
+const voice = voiceCheck(text);
+reportVoiceCheck(voice);
+
+if (voice.errors.length && !skipVoiceCheck) {
+  console.error(
+    `Not posting. Fix those, or if they're deliberate re-run with --skip-voice-check.\n`
+  );
+  process.exit(1);
+}
+if (voice.errors.length && skipVoiceCheck) {
+  console.warn(`Overriding the voice check because --skip-voice-check was passed.\n`);
 }
 
 const token = readToken();

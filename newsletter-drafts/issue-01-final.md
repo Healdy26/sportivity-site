@@ -1,4 +1,4 @@
-# The Monthly Edge — Issue 1 (ready to publish on Substack)
+# The Monthly Edge: Issue 1 (ready to publish on Substack)
 
 **Post title (this becomes the email subject):** Busyness is a disease. Here's the cure I use.
 **Subtitle (Substack subtitle / preview line):** My site's live, this is the first Monthly Edge, and a funding change nobody's explaining straight.

@@ -1,4 +1,4 @@
-# The Monthly Edge — Launch Issue (June 2026)
+# The Monthly Edge: Launch Issue (June 2026)
 
 *Draft for Andy to review, edit and send from HubSpot. One message running through the whole thing: busy is not the same as good. Sources for the Sport Premium facts: gov.uk, Schools Week, TES (21 May 2026).*
 
@@ -100,13 +100,13 @@ See you next month.
 
 Andy
 
-**[Book a free consultation](https://calendly.com/andy-sportivityconsultants/30min)** — if any of this hit home and you want to talk it through, no agenda.
+**[Book a free consultation](https://calendly.com/andy-sportivityconsultants/30min)**. If any of this hit home and you want to talk it through, no agenda.
 
 *Forward this to one leader who needs to read it. That's how this grows.*
 
 ---
 
-## LINKEDIN — LAUNCH POST
+## LINKEDIN: LAUNCH POST
 
 It's live.
 
@@ -148,7 +148,7 @@ And if this is useful, the newsletter goes deeper. Come and join us.
 
 ---
 
-## LINKEDIN — TEASER POST (shorter, sign-up only)
+## LINKEDIN: TEASER POST (shorter, sign-up only)
 
 I'm starting a newsletter. One a month. That's it.
 

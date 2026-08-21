@@ -1,4 +1,4 @@
-# The Monthly Edge — Issue 2 (ready to review and publish on Substack)
+# The Monthly Edge: Issue 2 (ready to review and publish on Substack)
 
 **Post title (this becomes the email subject):** The busiest month, then the quiet.
 **Alternative subjects:**

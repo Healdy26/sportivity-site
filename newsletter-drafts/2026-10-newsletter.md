@@ -1,4 +1,4 @@
-# The Monthly Edge — Issue 5 (ready to review and publish on Substack)
+# The Monthly Edge: Issue 5 (ready to review and publish on Substack)
 
 > **Note for Andy:** This is the October issue, and the timing is deliberate. The £2,000 non-levy hiring grant goes live in October, so this lands while the money is actually claimable. Send Issue 3 and Issue 4 first.
 >

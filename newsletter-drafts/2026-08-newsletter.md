@@ -1,4 +1,4 @@
-# The Monthly Edge — Issue 3 (ready to review and publish on Substack)
+# The Monthly Edge: Issue 3 (ready to review and publish on Substack)
 
 **Post title (this becomes the email subject):** The month I watched three leaders get tested
 **Alternative subjects:**

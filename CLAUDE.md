@@ -147,3 +147,35 @@ A weekly blog post, separate from the monthly newsletter. Published every Friday
 ## Voice for any written or on-site content
 
 Andy's voice is warm, plain Northern English, story-led, never corporate. British spelling throughout (-ise, colour, organise). No em dashes. No corporate filler. Take a clear stance. Match the language of the audience.
+
+**Before writing anything in Andy's voice, read his voice files.** They are the source of truth and override the summary above:
+
+- `~/Claude Cowork/About Me/ai-context.md` — voice and judgment profile
+- `~/Claude Cowork/About Me/anti-ai-writing.md` — banned words, phrases and structures
+- `~/Claude Cowork/About Me/voice-profile.md` — the deep archive of his stories and beliefs
+
+Check any draft before it goes anywhere:
+
+```
+npm run voice:check -- path/to/draft.md
+```
+
+It reads the rules live out of `anti-ai-writing.md`, so editing that file changes the check everywhere. Works on blog drafts, newsletter drafts and LinkedIn posts alike.
+
+## LinkedIn posting
+
+Posts go to Andy's personal LinkedIn feed through LinkedIn's official API. Setup and full notes: `scripts/linkedin/README.md`.
+
+```
+npm run linkedin:post -- blog-drafts/linkedin/2-keegan.txt            # dry run
+npm run linkedin:post -- blog-drafts/linkedin/2-keegan.txt --confirm  # publishes
+```
+
+Rules that matter:
+
+- **The voice check runs automatically and blocks the post if it fails**, even with `--confirm`. That is deliberate. Don't reach for `--skip-voice-check` to get past it; fix the writing instead.
+- **Always dry run first** and show Andy the output. Posting is public and irreversible.
+- **Never post without Andy asking for that specific post to go out.** Drafting is not permission to publish.
+- The subscribe link goes in the **first comment**, not the post body, because LinkedIn suppresses reach on posts with outbound links. The script can't post comments, so that stays manual.
+- Company page posting is not possible here (needs LinkedIn partner approval). Personal profile only.
+- The access token lasts 60 days. When it expires, `npm run linkedin:auth`.

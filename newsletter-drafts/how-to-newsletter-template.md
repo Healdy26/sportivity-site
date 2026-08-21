@@ -1,4 +1,4 @@
-# The Monthly Edge — reusable how-to issue template
+# The Monthly Edge: reusable how-to issue template
 
 The shape every "how-to" issue follows, so we can flip them fast. Modelled on what works (clear hook, a map, step-by-step with screenshots, one clear ask). Andy's voice throughout: plain Northern English, no em dashes, one thought per line, no corporate filler.
 

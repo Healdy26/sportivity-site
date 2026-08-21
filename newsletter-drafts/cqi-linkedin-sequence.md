@@ -4,7 +4,7 @@ Drip order: Angle A (days 1-2), Angle B (days 3-4), Angle C (days 5-6). All driv
 
 ---
 
-## DAY 1 — Angle A (the two undefined words)
+## DAY 1: Angle A (the two undefined words)
 
 Two words just landed in school sport funding. Nobody has defined them.
 
@@ -32,7 +32,7 @@ Get organised before the question lands, not after.
 
 ---
 
-## DAY 2 — Angle A (the scramble, and the question)
+## DAY 2: Angle A (the scramble, and the question)
 
 There's about to be a scramble in school sport. Here's the question I hope every school asks.
 
@@ -56,7 +56,7 @@ That's exactly what CQI gives you. The framework, the observation tools, the gra
 
 ---
 
-## DAY 3 — Angle B (busy is not the same as good)
+## DAY 3: Angle B (busy is not the same as good)
 
 A kid running round a field, red-faced and grinning, is not the same as a kid learning.
 
@@ -82,7 +82,7 @@ The full pack is ready now.
 
 ---
 
-## DAY 4 — Angle B (thinking you're good vs knowing)
+## DAY 4: Angle B (thinking you're good vs knowing)
 
 "We're a really good provider."
 
@@ -108,7 +108,7 @@ Stop hoping you're good. Start proving it.
 
 ---
 
-## DAY 5 — Angle C (I built it across 2,000 coaches)
+## DAY 5: Angle C (I built it across 2,000 coaches)
 
 I once ran the quality for more than 2,000 coaches.
 
@@ -134,7 +134,7 @@ You don't need to build it. I already did.
 
 ---
 
-## DAY 6 — Angle C (the question I asked in every observation)
+## DAY 6: Angle C (the question I asked in every observation)
 
 For years, my job was to watch coaches work and ask one question they didn't love.
 
