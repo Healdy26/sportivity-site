@@ -39,16 +39,15 @@ On the **Auth** tab, under "Authorized redirect URLs for your app", add exactly:
 http://localhost:8765/callback
 ```
 
-**4. Copy the credentials into a local file**
+**4. Hand over the credentials**
 
-Still on the Auth tab, copy the Client ID and Client Secret. Create a file at the root of this repo called `.env.linkedin`:
+Still on the Auth tab you'll see Client ID and Primary Client Secret. Run:
 
+```bash
+npm run linkedin:setup
 ```
-LINKEDIN_CLIENT_ID=paste-client-id-here
-LINKEDIN_CLIENT_SECRET=paste-client-secret-here
-```
 
-That file is gitignored and stays on your machine. Don't paste the secret into a chat.
+It asks for each one, you paste them in. The secret is hidden as you type. It writes `.env.linkedin` for you, gitignored and readable only by you. Don't paste the secret into a chat, including to Claude.
 
 **5. Authorise**
 

@@ -4,6 +4,77 @@ Daily bank of timely, on-brand items Andy could react to. Drafts only — Andy r
 
 ---
 
+## 2026-08-21 — Enterprise Nation: three in four owners pay themselves under £20k, and the ones WITH staff are worse off
+
+**Item:** Enterprise Nation published its **Small Business Barometer** on **19 August 2026**. Headline: **75%** of small business owners now pay themselves under £20,000 a year, up from **63%** in 2025. The buried stat that matters more: **65% of owners who employ staff** are also under £20,000, up from **48%** in 2024 (as reported by SME Magazine from the Barometer). Alongside it: **42%** were paid late in the last year (nearly double the 24-34% steady state of 2023-24); funding appetite at a record low with **40%** seeking finance and **40%** of those asking for under £10,000; expansion confidence down to **41%** from 50% a year ago. And a quietly damning pair: **64%** now use AI tools like ChatGPT or Gemini (up from 59%), while those describing themselves as "mainly digital" **fell from 43% to 35%**. CEO Aaron Asadi is pushing the Government on owner pay and late payments ahead of the **28 October Budget**.
+
+**Why it clears the bar:** Fresh (two days), and live rather than static — Enterprise Nation are actively lobbying into a Budget ten weeks out, so the story has legs. Crucially it is not just another "SMEs are struggling" release. The with-staff number is a genuinely different finding, and almost nobody will pick it up because the 75% headline is the easier post.
+
+**Persona/target:** **JOHN**, dead centre. This is the statistical portrait of the man who thinks he is an entrepreneur but has built himself a job with staff attached. Secondary read for **DAN**, who is eyeing the leap out of employment and needs to see what he would actually be leaping into.
+
+**Sources:**
+- SME Magazine (19 Aug) — https://www.smeweb.com/three-quarters-of-small-business-owners-pay-themselves-under-20000/
+- Enterprise Nation data and insight hub — https://www.enterprisenation.com/data-insight/
+- Prior Barometer for the trend line (Q3 2025, 43% digital) — https://www.enterprisenation.com/learn-something/small-business-community-in-transition/
+
+**LinkedIn draft:**
+
+Three in four small business owners now pay themselves under £20,000 a year. Last year it was 63%.
+
+Here's the number that stopped me though. Among owners who employ staff, 65% are under £20,000 as well. In 2024 that was 48%.
+
+Read that again. You took on the payroll, the HR, the rotas and the worry at 3am, and you're taking home less than the people you're paying.
+
+Most of the response to this will be about costs. National Insurance, late payments, the Budget in October. All real, and Enterprise Nation are right to push hard on them.
+
+But cost isn't the whole story. If taking people on made you poorer and busier, that isn't a cost problem. That's a design problem. You didn't build a business, you built yourself a harder job with more liability attached.
+
+The fix isn't another ten hours a week. It's working out what in your diary genuinely needs you, and what you're still doing purely because you always have.
+
+So be honest with yourself. If you stepped away for a fortnight, would it grow, or would it stop?
+
+(Research: Enterprise Nation Small Business Barometer. Hat tip Aaron Asadi.)
+
+**Folds into Friday's blog:** Expand into the definitive JOHN piece. Use the 48% to 65% jump for owners with staff as the hook, then separate the two problems owners keep merging: the cost squeeze (real, largely external, mostly political) and the leverage gap (real, internal, entirely fixable). Bring in the AI stat as the twist — 64% now use AI yet fewer call themselves digital, which is what adopting a tool without redesigning the work looks like. Land on a practical test: list last week's tasks, mark the ones only you could do, and count what's left. Working title: "You didn't hire your way out of the job. You hired your way deeper into it."
+
+---
+
+## 2026-08-19 — Gallup: the manager, not the tool, decides whether AI actually changes anything
+
+**Item:** Gallup published "AI's Effect on Workplace Culture" on **16 August 2026** (Morgan Meinen and Megan Mulherin), picked up in the wider press on 17 August. The headline finding: among employees who strongly agree their manager champions AI, **33%** say AI has transformed how work gets done. Among those who don't, it's **4%**. Same tools, same rollout, eight times the difference. Alongside it: **50% of CHROs** say they are not confident in their managers' ability to guide employees' AI use; **57%** are now providing AI training for managers; **62%** are setting up centres of excellence or internal AI champions. On culture generally, AI-adopting organisations split almost evenly — 24% say culture improved, 25% say it worsened, 51% no change.
+
+**Why it clears the bar:** Genuinely fresh (3 days), and it's a hard number attached to the exact argument Andy makes — strategy and transformation are people and culture, not tools and frameworks. The obvious take ("train your managers") is what everyone will post. Andy's differentiated take is that this is a permission and time problem being mis-diagnosed as a capability problem, which lands squarely on his 360 / leadership development ground.
+
+**Persona/target:** **DAN** primarily — the employed manager who knows he could do more and is being handed AI on top of a full job with no cover. Secondary read for **JOHN**, the owner who bought the licences and wonders why nothing changed. Ties naturally to the Leadership 360 product (manager capability, measured) without needing a hard sell.
+
+**Sources:**
+- Gallup — https://www.gallup.com/workplace/712976/ai-effect-workplace-culture.aspx
+- Press pickup (17 Aug) — https://fox17.com/news/nation-world/ai-at-work-puts-new-pressure-on-managers-gallup-workplace-culture-technology-artificial-intelligence-productivity
+
+**LinkedIn draft:**
+
+Gallup has put a number on something I've seen in nearly every business I've worked with.
+
+When people strongly agree their manager champions AI, 33% say it has changed how work actually gets done. When they don't, it's 4%.
+
+Same tools. Same licences. Same all staff email announcing the rollout. Eight times the difference, and the only variable is the manager.
+
+Half of HR directors say they aren't confident their managers can guide people through this. Fair enough. But I'd push back on where that lands the blame.
+
+Most managers aren't blocking AI. They're the only people in the building being asked to absorb it on top of a full job, with no time, no cover, and no permission to be rubbish at it for a fortnight while they learn.
+
+Championing isn't a personality trait. It's what happens when someone's been given space and a clear expectation.
+
+Buying the tool is the easy bit. The culture is the product.
+
+So if your rollout has stalled, be honest with yourself. Is it your managers, or is it what you've asked of them?
+
+(Research: Gallup, Morgan Meinen and Megan Mulherin.)
+
+**Folds into Friday's blog:** Expand into a piece on why AI rollouts stall in the middle layer — the difference between giving someone a tool and giving them the time, cover and permission to use it. Use the 33% vs 4% gap as the hook, then give owners a practical test: name the last thing you took OFF a manager's plate when you added AI to it. Working title: "You didn't give them AI. You gave them another job."
+
+---
+
 ## 2026-08-18 (second entry) — Gallup: 99% of CHROs say AI is strategic, half don't trust their own managers to lead it
 
 **Item:** Gallup published **AI's Effect on Workplace Culture** on **16 August**, syndicated hard across US outlets on **17 August**. Two datasets behind it. A CHRO roundtable of **102 Fortune 500 HR directors** (fieldwork 10 Feb to 16 Mar 2026) and a **Q1 2026 US workforce study of 23,717 employed adults** (fieldwork 4 to 19 Feb, ±0.9pp). Headlines: **99% of CHROs** say AI is somewhat or very important to strategy, but **50%** are "not very confident or not at all confident" in their managers' ability to guide employees on using AI. **57%** now provide AI training for managers, **78%** encourage peer learning, **62%** have built AI centres of excellence. The killer number is on the employee side: where workers strongly agree their manager champions AI, **33%** say AI has transformed how work gets done. Where they don't, **4%**. On culture, **31% vs 21%** improved. Overall, AI-adopting organisations split roughly even on culture: 24% improved, 25% worsened, 51% no change.
@@ -137,6 +208,8 @@ After that, who is developing your first line managers?
 
 **Folds into Friday's blog:** Pairs directly with the drafted blog `blog-drafts/2026-09-04-eight-grand-to-hire-a-young-person.md` — consider adding this as the sharpest section in that piece, since it is the same argument with the receipts. Or run it standalone this Friday while the 1 Sept deadline still has runway, then let the 4 Sept blog land after the cliff as the "told you so, here's what to do instead" follow-up. Working title if standalone: "The government will pay you £8,000 to hire them. It won't pay a penny to train whoever leads them."
 
+---
+
 ## 2026-08-03 — Youth employment package: up to £8k for SMEs to hire a young person (BUILT INTO DRAFTS, not a same-day react)
 
 **Status:** Logged, not banked as a LinkedIn react. The announcement was 28 July, so the same-day reactive window had already passed by the time the radar caught it. Andy's call: build it into long-form instead. Done, see below.
@@ -227,39 +300,3 @@ The design decisions are being made now, ahead of spring 2027.
 So my question for afPE, the Youth Sport Trust, Sport England and the NGBs building this: what does "quality-assured" actually mean, and who's accountable when it slips?
 
 **Folds into Friday's blog:** Expand into a piece on why quality assurance, not funding levels, is the real test of the new network — and what a coaching quality framework mapped to CIMSPA and Ofsted looks like in practice (soft intro to CQI). Working title: "Everyone's arguing about the money. Nobody's asking who assures the quality."
-
----
-
-## 2026-08-19 — Gallup: the manager, not the tool, decides whether AI actually changes anything
-
-**Item:** Gallup published "AI's Effect on Workplace Culture" on **16 August 2026** (Morgan Meinen and Megan Mulherin), picked up in the wider press on 17 August. The headline finding: among employees who strongly agree their manager champions AI, **33%** say AI has transformed how work gets done. Among those who don't, it's **4%**. Same tools, same rollout, eight times the difference. Alongside it: **50% of CHROs** say they are not confident in their managers' ability to guide employees' AI use; **57%** are now providing AI training for managers; **62%** are setting up centres of excellence or internal AI champions. On culture generally, AI-adopting organisations split almost evenly — 24% say culture improved, 25% say it worsened, 51% no change.
-
-**Why it clears the bar:** Genuinely fresh (3 days), and it's a hard number attached to the exact argument Andy makes — strategy and transformation are people and culture, not tools and frameworks. The obvious take ("train your managers") is what everyone will post. Andy's differentiated take is that this is a permission and time problem being mis-diagnosed as a capability problem, which lands squarely on his 360 / leadership development ground.
-
-**Persona/target:** **DAN** primarily — the employed manager who knows he could do more and is being handed AI on top of a full job with no cover. Secondary read for **JOHN**, the owner who bought the licences and wonders why nothing changed. Ties naturally to the Leadership 360 product (manager capability, measured) without needing a hard sell.
-
-**Sources:**
-- Gallup — https://www.gallup.com/workplace/712976/ai-effect-workplace-culture.aspx
-- Press pickup (17 Aug) — https://fox17.com/news/nation-world/ai-at-work-puts-new-pressure-on-managers-gallup-workplace-culture-technology-artificial-intelligence-productivity
-
-**LinkedIn draft:**
-
-Gallup has put a number on something I've seen in nearly every business I've worked with.
-
-When people strongly agree their manager champions AI, 33% say it has changed how work actually gets done. When they don't, it's 4%.
-
-Same tools. Same licences. Same all staff email announcing the rollout. Eight times the difference, and the only variable is the manager.
-
-Half of HR directors say they aren't confident their managers can guide people through this. Fair enough. But I'd push back on where that lands the blame.
-
-Most managers aren't blocking AI. They're the only people in the building being asked to absorb it on top of a full job, with no time, no cover, and no permission to be rubbish at it for a fortnight while they learn.
-
-Championing isn't a personality trait. It's what happens when someone's been given space and a clear expectation.
-
-Buying the tool is the easy bit. The culture is the product.
-
-So if your rollout has stalled, be honest with yourself. Is it your managers, or is it what you've asked of them?
-
-(Research: Gallup, Morgan Meinen and Megan Mulherin.)
-
-**Folds into Friday's blog:** Expand into a piece on why AI rollouts stall in the middle layer — the difference between giving someone a tool and giving them the time, cover and permission to use it. Use the 33% vs 4% gap as the hook, then give owners a practical test: name the last thing you took OFF a manager's plate when you added AI to it. Working title: "You didn't give them AI. You gave them another job."

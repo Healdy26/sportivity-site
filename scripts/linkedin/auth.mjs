@@ -6,6 +6,7 @@
  * (gitignored) and lasts 60 days.
  */
 import { createServer } from 'node:http';
+import { spawn } from 'node:child_process';
 import { writeFileSync } from 'node:fs';
 import { randomBytes } from 'node:crypto';
 import {
@@ -123,7 +124,24 @@ const server = createServer(async (req, res) => {
 });
 
 server.listen(8765, () => {
-  console.log('\nOpen this URL in your browser and approve the request:\n');
+  // Open it for them on macOS. If that fails they can still paste the URL.
+  let opened = false;
+  if (process.platform === 'darwin') {
+    try {
+      spawn('open', [authUrl], { stdio: 'ignore', detached: true }).unref();
+      opened = true;
+    } catch {
+      opened = false;
+    }
+  }
+
+  if (opened) {
+    console.log('\nYour browser should have opened LinkedIn.');
+    console.log('Click "Allow" on the page that appears.\n');
+    console.log('If nothing opened, paste this in your browser instead:\n');
+  } else {
+    console.log('\nCopy this URL, paste it in your browser, and click "Allow":\n');
+  }
   console.log(authUrl + '\n');
   console.log('Waiting for LinkedIn to send you back...\n');
 });

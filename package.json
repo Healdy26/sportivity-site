@@ -10,6 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "linkedin:setup": "node scripts/linkedin/setup.mjs",
     "linkedin:auth": "node scripts/linkedin/auth.mjs",
     "linkedin:post": "node scripts/linkedin/post.mjs"
   },
