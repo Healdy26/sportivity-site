@@ -179,7 +179,8 @@ If he's pointing at something that isn't in the queue yet (an idea in chat, a dr
 
 ```
 printf '%s' "<the post text>" | npm run linkedin -- --add some-slug
-npm run linkedin -- --radar       # pulls the newest content-radar.md draft in
+npm run linkedin -- --radar       # every radar draft from the last 7 days, deduped
+npm run linkedin -- --drop 3      # take item 3 back out without posting it
 ```
 
 Everything that generates LinkedIn content writes into this queue: the daily content radar, the weekly blog task and the monthly newsletter task all drop their post in `linkedin-queue/ready/`. So most of the time the answer to "post this on LinkedIn" is already sitting there waiting.

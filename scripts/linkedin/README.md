@@ -70,7 +70,9 @@ npm run linkedin -- 2 --confirm   # post item 2, then archive it
 Adding something that isn't there yet:
 
 ```bash
-npm run linkedin -- --radar                                  # newest content-radar.md draft
+npm run linkedin -- --radar        # every radar draft from the last 7 days, skipping any already queued
+npm run linkedin -- --radar 2      # just the last 2 days
+npm run linkedin -- --drop 3       # take item 3 back out (moves to linkedin-queue/dropped/)
 printf '%s' "your post text" | npm run linkedin -- --add my-slug
 ```
 

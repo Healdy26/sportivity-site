@@ -28,3 +28,4 @@ pnpm-debug.log*
 .idea/
 linkedin-queue/posted/
 linkedin-queue/posted.log
+linkedin-queue/dropped/

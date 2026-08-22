@@ -74,33 +74,73 @@ function add(text, slug) {
   console.log(`\nSee the queue with:  npm run linkedin\n`);
 }
 
-/** Pull the newest "LinkedIn draft:" block out of the content radar bank. */
-function addFromRadar() {
+function alreadyQueued(slug) {
+  return readdirSync(READY)
+    .concat(readdirSync(POSTED))
+    .some((f) => f.replace(/^\d{3}-/, '').replace(/\.txt$/, '') === slug);
+}
+
+/**
+ * Pull "LinkedIn draft:" blocks out of the content radar bank.
+ * `days` limits how far back to go, so old news doesn't creep back in.
+ */
+function addFromRadar(days = 1) {
   if (!existsSync(RADAR)) {
     console.error(`No content-radar.md yet. The daily radar task writes it when something clears the bar.`);
     process.exit(1);
   }
-  const md = readFileSync(RADAR, 'utf8');
-  const entry = md.split(/^## /m)[1];
-  if (!entry) {
+  const entries = readFileSync(RADAR, 'utf8').split(/^## /m).slice(1);
+  if (!entries.length) {
     console.error(`content-radar.md has no entries yet.`);
     process.exit(1);
   }
-  const heading = entry.split('\n')[0].trim();
-  const marker = entry.match(/\*\*LinkedIn draft:?\*\*:?/i);
-  if (!marker) {
-    console.error(`Couldn't find a "**LinkedIn draft:**" block in the newest entry:\n  ${heading}`);
+
+  const cutoff = new Date(Date.now() - days * 86400000).toISOString().slice(0, 10);
+  let added = 0;
+  let skippedOld = 0;
+
+  for (const entry of entries) {
+    const heading = entry.split('\n')[0].trim();
+    const date = heading.match(/^(\d{4}-\d{2}-\d{2})/)?.[1];
+    if (date && date < cutoff) {
+      skippedOld++;
+      continue;
+    }
+
+    const marker = entry.match(/\*\*LinkedIn draft:?\*\*:?/i);
+    if (!marker) continue;
+
+    let body = entry.slice(marker.index + marker[0].length);
+    body = body.split(/^\*\*Folds into/m)[0].split(/^---\s*$/m)[0].trim();
+    if (!body) continue;
+
+    const label = heading.replace(/^\d{4}-\d{2}-\d{2}\s*(\([^)]*\))?\s*[:–-]*\s*/, '');
+    if (alreadyQueued(slugify(label))) {
+      console.log(`  already in the queue, skipping: ${label.slice(0, 60)}`);
+      continue;
+    }
+
+    console.log(`\nFrom the radar (${date ?? 'undated'}): ${heading.slice(0, 70)}`);
+    add(body, label);
+    added++;
+  }
+
+  if (!added) console.log(`\nNothing new to add from the last ${days} day(s).\n`);
+  if (skippedOld) console.log(`Skipped ${skippedOld} entry(s) older than ${days} days.\n`);
+}
+
+/** Take something back out of the queue without posting it. */
+function drop(index) {
+  const all = items();
+  const item = all[index - 1];
+  if (!item) {
+    console.error(`\nThere's no item ${index}. The queue has ${all.length}.\n`);
     process.exit(1);
   }
-  let body = entry.slice(marker.index + marker[0].length);
-  // Stop at whatever comes after the draft.
-  body = body.split(/^\*\*Folds into/m)[0].split(/^---\s*$/m)[0].trim();
-  if (!body) {
-    console.error(`The LinkedIn draft block in "${heading}" is empty.`);
-    process.exit(1);
-  }
-  console.log(`\nFrom the radar: ${heading}`);
-  add(body, heading.replace(/^\d{4}-\d{2}-\d{2}\s*[:—-]*\s*/, ''));
+  mkdirSync(join(QUEUE, 'dropped'), { recursive: true });
+  renameSync(join(READY, item.name), join(QUEUE, 'dropped', item.name));
+  console.log(`\nDropped ${item.name}. It's in linkedin-queue/dropped/ if you want it back.`);
+  console.log(`${items().length} left in the queue.\n`);
 }
 
 function list() {
@@ -150,7 +190,11 @@ function post(index) {
 }
 
 if (flags.includes('--radar')) {
-  addFromRadar();
+  // Default to a week, which is what Andy asks for: only what's recent.
+  const days = positional.length ? parseInt(positional[0], 10) : 7;
+  addFromRadar(Number.isNaN(days) ? 7 : days);
+} else if (flags.includes('--drop')) {
+  drop(parseInt(positional[0], 10));
 } else if (flags.includes('--add')) {
   const slug = positional[0];
   const stdin = existsSync('/dev/stdin') && !process.stdin.isTTY ? readFileSync(0, 'utf8') : '';

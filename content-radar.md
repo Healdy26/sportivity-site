@@ -4,6 +4,45 @@ Daily bank of timely, on-brand items Andy could react to. Drafts only — Andy r
 
 ---
 
+## 2026-08-22 — Zero hours consultation closes Tuesday, and the coaching sector nobody is talking about runs on it
+
+**Item:** The Government's consultation **"Make Work Pay: ending one-sided flexibility — reforms of zero hours and similar contracts"** closes at **11.59pm on 25 August 2026** (opened 2 June). It sets the detailed rules behind three new rights coming out of the Employment Rights Act: a right to be **offered guaranteed hours** reflecting the hours actually worked over a reference period, a right to **reasonable notice of shifts**, and a **right to payment when shifts are cancelled, curtailed or moved** at short notice. The qualifying threshold is still open, consulted on across 8 to 48 hours a week with the Government's stated preference being **8 to 20 hours**, over a preferred **12 week** reference period. The rights themselves land in **2027**. Fresh press on 21 August put a price on it: Andrew Noble of Anglia Ruskin University estimated the reforms could cost employers up to **£2.9 billion**, against roughly **1.23 million** people primarily employed on zero hours contracts.
+
+**Why it clears the bar:** It is genuinely live rather than a static report — a hard deadline three days out, with the threshold and reference period still undecided, which is exactly the window where sector voices actually count. And the take is wide open. Everyone commenting on this is either an employment lawyer explaining the rules or an owner complaining about the bill. Almost nobody is connecting it to delivery quality, which is precisely where Andy has standing nobody else in the leadership space has: he built a quality assurance framework across 2,000+ coaches in a sector that runs almost entirely on casual hours.
+
+**Persona/target:** **JOHN** first — the owner with staff, a rota, and a delivery model quietly propped up by people he cannot give notice to. Strong secondary pull for the **sport / physical activity and education sectors**, where casual coaching hours are the norm. Ties naturally to CQI without a word of selling.
+
+**Sources:**
+- GOV.UK consultation — https://www.gov.uk/government/consultations/make-work-pay-ending-one-sided-flexibility-reforms-of-zero-hours-and-similar-contracts
+- 21 Aug press pickup, £2.9bn and 1.23m figures — https://cpa.co.uk/uk-business-news-today-21-august-2026-economy-markets-insolvencies/
+- Deadline confirmation — https://www.theglobalrecruiter.com/zero-hours-consultation-have-your-say-before-25th-august/
+
+**Voice note:** Andy's profile has a hard refusal on party politics and news takes. This draft deliberately stays off whether the policy is right or wrong — it treats the deadline as the news hook only, then goes straight to workforce design and delivery quality, which is his ground. Keep it that way if editing. Do not let it drift into commentary on the Government.
+
+**LinkedIn draft:**
+
+There's a government consultation on zero hours contracts closing on Tuesday. Nearly all the noise about it is cost. What it adds to the wage bill, what it does to flexibility, what it means for the rota.
+
+I've spent years working with coaches. Over two thousand of them, building a quality system for the sector. And here's the bit nobody's saying.
+
+The people delivering your sessions often find out on a Thursday whether they're working on Saturday.
+
+Then we sit in review meetings and ask why quality is patchy. Why nobody finishes the CPD. Why the good ones leave for a job in a warehouse that at least tells them what next Tuesday looks like.
+
+You cannot ask someone to invest in getting better at a job you won't commit to giving them. That isn't a contracts problem sat with HR. That is the reason your standards wobble from one site to the next.
+
+Whatever the rules land on in 2027, the question for Monday morning is smaller and harder than the law.
+
+Look at your rota. How far ahead can you honestly tell your people they're working?
+
+If the answer is a few days, the paperwork was never your real problem.
+
+What would it take to make it four weeks?
+
+**Folds into Friday's blog:** The natural CQI piece, and the one that makes the paid product make sense without pitching it. Open on the Thursday-for-Saturday reality, then make the argument properly: quality assurance and workforce security are the same conversation, and most providers try to buy the first while refusing the second. Bring in the 2027 rights as the forcing function — providers have roughly a year to redesign their delivery model rather than wait and be compliant late. Land on a practical audit: take four weeks of rota, mark how many days' notice each person actually got, and put that number next to your last quality review. Working title: "You can't inspect your way to quality with a workforce that doesn't know if it's working Saturday."
+
+---
+
 ## 2026-08-21 — Enterprise Nation: three in four owners pay themselves under £20k, and the ones WITH staff are worse off
 
 **Item:** Enterprise Nation published its **Small Business Barometer** on **19 August 2026**. Headline: **75%** of small business owners now pay themselves under £20,000 a year, up from **63%** in 2025. The buried stat that matters more: **65% of owners who employ staff** are also under £20,000, up from **48%** in 2024 (as reported by SME Magazine from the Barometer). Alongside it: **42%** were paid late in the last year (nearly double the 24-34% steady state of 2023-24); funding appetite at a record low with **40%** seeking finance and **40%** of those asking for under £10,000; expansion confidence down to **41%** from 50% a year ago. And a quietly damning pair: **64%** now use AI tools like ChatGPT or Gemini (up from 59%), while those describing themselves as "mainly digital" **fell from 43% to 35%**. CEO Aaron Asadi is pushing the Government on owner pay and late payments ahead of the **28 October Budget**.
