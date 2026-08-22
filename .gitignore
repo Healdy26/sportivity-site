@@ -26,3 +26,5 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+linkedin-queue/posted/
+linkedin-queue/posted.log

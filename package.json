@@ -10,6 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "linkedin": "node scripts/linkedin/queue.mjs",
     "voice:check": "node scripts/linkedin/voice-check.mjs",
     "linkedin:setup": "node scripts/linkedin/setup.mjs",
     "linkedin:auth": "node scripts/linkedin/auth.mjs",

@@ -57,7 +57,26 @@ npm run linkedin:auth
 
 It prints a URL. Open it, approve the request, done. The token is saved to `.linkedin-token.json` (also gitignored).
 
-## Posting
+## Posting: the queue
+
+Everything waiting to go lives in `linkedin-queue/ready/`. The daily content radar, the weekly blog task and the monthly newsletter task all write their LinkedIn post there automatically, so it's usually already waiting.
+
+```bash
+npm run linkedin                  # list what's waiting, numbered, with voice-check status
+npm run linkedin -- 2             # preview item 2, posts nothing
+npm run linkedin -- 2 --confirm   # post item 2, then archive it
+```
+
+Adding something that isn't there yet:
+
+```bash
+npm run linkedin -- --radar                                  # newest content-radar.md draft
+printf '%s' "your post text" | npm run linkedin -- --add my-slug
+```
+
+Posted items move to `linkedin-queue/posted/` and get logged in `linkedin-queue/posted.log`, so the queue only ever shows what's still to go. Both are gitignored.
+
+## Posting: a specific file
 
 Put the post in a plain text file, then:
 

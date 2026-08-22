@@ -166,9 +166,31 @@ It reads the rules live out of `anti-ai-writing.md`, so editing that file change
 
 Posts go to Andy's personal LinkedIn feed through LinkedIn's official API. Setup and full notes: `scripts/linkedin/README.md`.
 
+**When Andy says "post this on LinkedIn", this is the whole procedure.** It works from any session, task or directory, because everything routes through one queue.
+
 ```
-npm run linkedin:post -- blog-drafts/linkedin/2-keegan.txt            # dry run
-npm run linkedin:post -- blog-drafts/linkedin/2-keegan.txt --confirm  # publishes
+cd ~/Documents/sportivity-site
+npm run linkedin                  # what's waiting, numbered
+npm run linkedin -- 2             # preview item 2, posts nothing
+npm run linkedin -- 2 --confirm   # post item 2, archives it automatically
+```
+
+If he's pointing at something that isn't in the queue yet (an idea in chat, a draft in a file, a line from a routine's output), add it first, then post it:
+
+```
+printf '%s' "<the post text>" | npm run linkedin -- --add some-slug
+npm run linkedin -- --radar       # pulls the newest content-radar.md draft in
+```
+
+Everything that generates LinkedIn content writes into this queue: the daily content radar, the weekly blog task and the monthly newsletter task all drop their post in `linkedin-queue/ready/`. So most of the time the answer to "post this on LinkedIn" is already sitting there waiting.
+
+**"Post this on LinkedIn" is permission for that specific post, and nothing else.** Preview it, show him the text, then post. Never post something he hasn't pointed at.
+
+Direct file posting still works if you need it:
+
+```
+npm run linkedin:post -- <file>            # dry run
+npm run linkedin:post -- <file> --confirm  # publishes
 ```
 
 Rules that matter:
