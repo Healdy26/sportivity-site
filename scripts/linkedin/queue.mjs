@@ -22,6 +22,7 @@ import {
 } from 'node:fs';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import { ROOT } from './lib.mjs';
 import { voiceCheck } from './voice-check.mjs';
 
@@ -29,6 +30,7 @@ const QUEUE = join(ROOT, 'linkedin-queue');
 const READY = join(QUEUE, 'ready');
 const POSTED = join(QUEUE, 'posted');
 const LOG = join(QUEUE, 'posted.log');
+const LEDGER = join(QUEUE, 'posted.json');
 const RADAR = join(ROOT, 'content-radar.md');
 
 for (const dir of [QUEUE, READY, POSTED]) mkdirSync(dir, { recursive: true });
@@ -38,14 +40,47 @@ const confirm = args.includes('--confirm');
 const flags = args.filter((a) => a.startsWith('--'));
 const positional = args.filter((a) => !a.startsWith('--'));
 
+/**
+ * The ledger, not the file location, decides what has been posted.
+ *
+ * This repo lives in iCloud Drive, which will happily restore a file we moved
+ * out of ready/ minutes later. Relying on the move alone means a posted item
+ * reappears in the queue and goes out twice. Hashing the text means it stays
+ * caught even if the file comes back under a different name.
+ */
+function readLedger() {
+  if (!existsSync(LEDGER)) return [];
+  try {
+    return JSON.parse(readFileSync(LEDGER, 'utf8'));
+  } catch {
+    console.warn(`Couldn't read ${LEDGER}, treating it as empty.`);
+    return [];
+  }
+}
+
+function hash(text) {
+  return createHash('sha256').update(text.trim()).digest('hex').slice(0, 16);
+}
+
+function recordPosted(name, text) {
+  const ledger = readLedger();
+  ledger.push({ name, sha: hash(text), posted: new Date().toISOString().slice(0, 10) });
+  writeFileSync(LEDGER, JSON.stringify(ledger, null, 2) + '\n');
+}
+
 function items() {
+  const ledger = readLedger();
+  const postedNames = new Set(ledger.map((e) => e.name));
+  const postedShas = new Set(ledger.map((e) => e.sha));
+
   return readdirSync(READY)
     .filter((f) => f.endsWith('.txt'))
     .sort()
     .map((name) => {
       const text = readFileSync(join(READY, name), 'utf8').trim();
       return { name, text, voice: voiceCheck(text) };
-    });
+    })
+    .filter((item) => !postedNames.has(item.name) && !postedShas.has(hash(item.text)));
 }
 
 function slugify(s) {
@@ -183,10 +218,17 @@ function post(index) {
   if (result.status !== 0) process.exit(result.status ?? 1);
   if (!confirm) return;
 
+  // Record first. If iCloud restores the file, the ledger still keeps it out
+  // of the queue, so nothing goes out twice.
   const stamp = new Date().toISOString().slice(0, 10);
-  renameSync(join(READY, item.name), join(POSTED, item.name));
+  recordPosted(item.name, item.text);
   appendFileSync(LOG, `${stamp}  ${item.name}\n`);
-  console.log(`Archived to linkedin-queue/posted/. ${items().length} left in the queue.\n`);
+  try {
+    renameSync(join(READY, item.name), join(POSTED, item.name));
+  } catch (err) {
+    console.warn(`Couldn't archive the file (${err.code}), but it's recorded as posted.`);
+  }
+  console.log(`Recorded as posted. ${all.length - 1} left in the queue.\n`);
 }
 
 if (flags.includes('--radar')) {
