@@ -179,9 +179,12 @@ If he's pointing at something that isn't in the queue yet (an idea in chat, a dr
 
 ```
 printf '%s' "<the post text>" | npm run linkedin -- --add some-slug
+printf '%s' "<the post text>" | npm run linkedin -- --add some-slug --now   # time-sensitive: jumps the queue
 npm run linkedin -- --radar       # every radar draft from the last 7 days, deduped
 npm run linkedin -- --drop 3      # take item 3 back out without posting it
 ```
+
+**Daily and immediate content goes straight away.** Anything tied to today's news gets `--now` when added (radar items get it automatically), which marks it `"priority": "immediate"` in `queued.json`. The auto poster picks immediate items first, ahead of anything else waiting; evergreen content queues behind them, oldest first. If Andy hands over something time-sensitive in a session, don't just queue it: queue it with `--now`, then offer to post it there and then.
 
 Everything that generates LinkedIn content writes into this queue: the daily content radar, the weekly blog task and the monthly newsletter task all drop their post in `linkedin-queue/ready/`. So most of the time the answer to "post this on LinkedIn" is already sitting there waiting.
 
