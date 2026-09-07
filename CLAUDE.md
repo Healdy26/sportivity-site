@@ -201,6 +201,13 @@ npm run linkedin:post -- <file> --confirm  # publishes
 Rules that matter:
 
 - **The voice check runs automatically and blocks the post if it fails**, even with `--confirm`. That is deliberate. Don't reach for `--skip-voice-check` to get past it; fix the writing instead.
+- **Never promise a link that doesn't exist yet.** If a post says "link in the first comment", or sends people to The Monthly Edge, Sportivity 360 or CQI, that destination must be live and its URL attached before the post goes out:
+
+  ```
+  npm run linkedin -- 2 --link https://... --confirm
+  ```
+
+  The link check enforces this and blocks the post otherwise. A newsletter issue sitting in `newsletter-drafts/` is **not** published, and cross-posting it into `src/blog/` is the signal that it actually sent. If the issue isn't out, either publish it first and use its real URL, or cut the "go deeper" line. Don't queue a post whose payoff is two months away.
 - **Always dry run first** and show Andy the output. Posting is public and irreversible.
 - **Never post without Andy asking for that specific post to go out.** Drafting is not permission to publish.
 - The subscribe link goes in the **first comment**, not the post body, because LinkedIn suppresses reach on posts with outbound links. The script can't post comments, so that stays manual.

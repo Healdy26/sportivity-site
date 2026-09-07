@@ -100,6 +100,25 @@ Options:
 
 - `--confirm` actually publishes. Without it, nothing happens.
 - `--connections-only` limits visibility to 1st-degree connections instead of public.
+- `--link <url>` records the URL that goes in the first comment. Required for any post that promises one, see below.
+
+## The link check
+
+A post that says "link in the first comment", or points at The Monthly Edge, Sportivity 360 or CQI, will not publish unless a link is attached to it. The check lives in `link-check.mjs` and runs in `post.mjs` next to the voice check, so every route hits it.
+
+This exists because of a real miss. The drama-triangle post went out on 1 September 2026 ending "I go deeper on this in The Monthly Edge. Link in the first comment." The issue it pointed at was written but unsent, sat behind two other unsent issues, so there was no link and none went in the comment. The draft it came from even said "do not post before Issue 6 sends", but that was prose in a markdown file and nothing enforced it.
+
+Attach the link when you queue it, or later:
+
+```
+printf '%s' "<text>" | npm run linkedin -- --add my-slug --link https://...
+npm run linkedin -- 2 --link https://...            # attach to something waiting
+npm run linkedin -- 2 --link https://... --confirm  # attach and post
+```
+
+`npm run linkedin` marks blocked items **BLOCKED**. The auto poster skips them and moves down the queue rather than stopping. If the promise itself is wrong, take the line out of the post instead of forcing it through.
+
+The right fix is nearly always to publish the thing first and then post with its real URL. Reaching for `--skip-link-check` puts you back where this started.
 
 ## The 60-day thing
 

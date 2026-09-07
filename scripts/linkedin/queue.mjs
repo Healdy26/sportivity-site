@@ -25,6 +25,7 @@ import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { ROOT } from './lib.mjs';
 import { voiceCheck } from './voice-check.mjs';
+import { missingPromisedLink } from './link-check.mjs';
 
 const QUEUE = join(ROOT, 'linkedin-queue');
 const READY = join(QUEUE, 'ready');
@@ -36,7 +37,24 @@ const RADAR = join(ROOT, 'content-radar.md');
 
 for (const dir of [QUEUE, READY, POSTED]) mkdirSync(dir, { recursive: true });
 
-const args = process.argv.slice(2);
+// --link takes a value, so lift it out before splitting flags from positionals.
+// Otherwise the URL counts as a positional and breaks the item number.
+const rawArgs = process.argv.slice(2);
+const args = [];
+let linkArg = null;
+for (let i = 0; i < rawArgs.length; i++) {
+  const a = rawArgs[i];
+  if (a === '--link') {
+    linkArg = rawArgs[++i] ?? null;
+    continue;
+  }
+  if (a.startsWith('--link=')) {
+    linkArg = a.slice('--link='.length);
+    continue;
+  }
+  args.push(a);
+}
+
 const confirm = args.includes('--confirm');
 const flags = args.filter((a) => a.startsWith('--'));
 const positional = args.filter((a) => !a.startsWith('--'));
@@ -73,13 +91,15 @@ function items() {
   const ledger = readLedger();
   const postedNames = new Set(ledger.map((e) => e.name));
   const postedShas = new Set(ledger.map((e) => e.sha));
+  const meta = readMeta();
 
   return readdirSync(READY)
     .filter((f) => f.endsWith('.txt'))
     .sort()
     .map((name) => {
       const text = readFileSync(join(READY, name), 'utf8').trim();
-      return { name, text, voice: voiceCheck(text) };
+      const link = meta[name]?.link ?? null;
+      return { name, text, link, voice: voiceCheck(text), needsLink: missingPromisedLink(text, link) };
     })
     .filter((item) => !postedNames.has(item.name) && !postedShas.has(hash(item.text)));
 }
@@ -106,7 +126,7 @@ function readMeta() {
   }
 }
 
-function add(text, slug, sourceDate, priority = null) {
+function add(text, slug, sourceDate, priority = null, link = null) {
   const trimmed = text.trim();
   if (!trimmed) {
     console.error('Nothing to add, the text was empty.');
@@ -118,11 +138,37 @@ function add(text, slug, sourceDate, priority = null) {
   const meta = readMeta();
   meta[name] = { added: new Date().toISOString(), sourceDate: sourceDate ?? null };
   if (priority) meta[name].priority = priority;
+  if (link) meta[name].link = link;
   writeFileSync(META, JSON.stringify(meta, null, 2) + '\n');
   const v = voiceCheck(trimmed);
   console.log(`\nAdded to the queue: ${name}`);
   console.log(v.errors.length ? `  Voice check: ${v.errors.length} problem(s), run npm run voice:check on it` : `  Voice check: passed`);
+
+  // Say it now, at the point it can still be fixed cheaply, rather than
+  // letting it sit in the queue and fail at the moment it should post.
+  const broken = missingPromisedLink(trimmed, link);
+  if (broken) {
+    console.log(`\n  Needs a link: it says "${broken.phrase}" and nothing is attached.`);
+    console.log(`  It won't post until there is one:`);
+    console.log(`    npm run linkedin -- <n> --link https://... --confirm`);
+  } else if (link) {
+    console.log(`  First comment: ${link}`);
+  }
   console.log(`\nSee the queue with:  npm run linkedin\n`);
+}
+
+/** Attach a link to something already in the queue. */
+function setLink(index, url) {
+  const all = items();
+  const item = all[index - 1];
+  if (!item) {
+    console.error(`\nThere's no item ${index}. The queue has ${all.length}.\n`);
+    process.exit(1);
+  }
+  const meta = readMeta();
+  meta[item.name] = { ...(meta[item.name] ?? {}), link: url };
+  writeFileSync(META, JSON.stringify(meta, null, 2) + '\n');
+  console.log(`\n${item.name} will go out with this in the first comment:\n  ${url}\n`);
 }
 
 function alreadyQueued(slug) {
@@ -240,11 +286,23 @@ function auto() {
 
   const fresh = [];
   const stale = [];
+  const blocked = [];
   for (const item of all) {
+    // A post that promises a link nobody has written yet is not postable.
+    // Skip it and carry on down the queue rather than stopping the run.
+    if (item.needsLink) {
+      blocked.push(item);
+      continue;
+    }
     const m = meta[item.name] ?? {};
     const when = m.sourceDate ? new Date(m.sourceDate) : m.added ? new Date(m.added) : null;
     const ageDays = when ? (now - when.getTime()) / 86400000 : 0;
     (ageDays > MAX_AGE_DAYS ? stale : fresh).push({ item, ageDays });
+  }
+
+  if (blocked.length) {
+    console.log(`Skipping ${blocked.length} item(s) waiting on a link:`);
+    for (const b of blocked) console.log(`  ${b.name} ("${b.needsLink.phrase}")`);
   }
 
   if (stale.length) {
@@ -301,6 +359,7 @@ function postNow() {
 
   // Newest first: breaking news beats whatever has been sat there.
   const ranked = all
+    .filter((item) => !item.needsLink)
     .map((item) => {
       const m = meta[item.name] ?? {};
       const when = m.sourceDate ? new Date(m.sourceDate) : m.added ? new Date(m.added) : new Date(0);
@@ -310,6 +369,10 @@ function postNow() {
 
   const pick = ranked.find((r) => r.ageDays <= MAX_AGE_DAYS);
   if (!pick) {
+    if (all.some((i) => i.needsLink)) {
+      console.log(`Nothing postable. Some items are waiting on a link, run npm run linkedin to see which.`);
+      return;
+    }
     console.log(`Nothing in the queue is newer than ${MAX_AGE_DAYS} days. Not posting stale news.`);
     return;
   }
@@ -334,10 +397,20 @@ function list() {
     const status = item.voice.errors.length ? `${item.voice.errors.length} voice problem(s)` : 'voice ok';
     const prio = meta[item.name]?.priority === 'immediate' ? ', IMMEDIATE' : '';
     console.log(`  ${i + 1}. ${first}${item.text.split('\n')[0].length > 62 ? '...' : ''}`);
-    console.log(`     ${item.text.length} chars, ${status}${prio}, ${item.name}\n`);
+    console.log(`     ${item.text.length} chars, ${status}${prio}, ${item.name}`);
+    if (item.needsLink) {
+      console.log(`     BLOCKED: promises ${item.needsLink.kind} ("${item.needsLink.phrase}") with none attached`);
+    } else if (item.link) {
+      console.log(`     First comment: ${item.link}`);
+    }
+    console.log();
   });
   console.log(`Preview:  npm run linkedin -- 1`);
-  console.log(`Post it:  npm run linkedin -- 1 --confirm\n`);
+  console.log(`Post it:  npm run linkedin -- 1 --confirm`);
+  if (all.some((i) => i.needsLink)) {
+    console.log(`Unblock:  npm run linkedin -- 1 --link https://...`);
+  }
+  console.log();
 }
 
 function post(index, { publish = confirm } = {}) {
@@ -384,7 +457,7 @@ if (flags.includes('--add')) {
     console.error(`Pipe the text in, e.g.\n  echo "your post" | npm run linkedin -- --add my-slug\n`);
     process.exit(1);
   }
-  add(piped, slug, null, flags.includes('--now') ? 'immediate' : null);
+  add(piped, slug, null, flags.includes('--now') ? 'immediate' : null, linkArg);
   if (flags.includes('--now')) postNow();
 } else if (flags.includes('--now')) {
   postNow();
@@ -405,7 +478,13 @@ if (flags.includes('--add')) {
   }
   add(stdin, slug, null, flags.includes('--now') ? 'immediate' : null);
 } else if (positional.length) {
-  post(parseInt(positional[0], 10));
+  const index = parseInt(positional[0], 10);
+  // `-- 2 --link https://...` attaches the link and, with --confirm, posts it.
+  if (linkArg) setLink(index, linkArg);
+  post(index);
+} else if (linkArg) {
+  console.error(`\nWhich item? e.g.  npm run linkedin -- 2 --link ${linkArg}\n`);
+  process.exit(1);
 } else {
   list();
 }

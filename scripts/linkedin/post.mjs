@@ -7,22 +7,42 @@
  * Dry run is the default on purpose. Nothing reaches LinkedIn without --confirm.
  */
 import { readFileSync, existsSync } from 'node:fs';
+import { basename, join } from 'node:path';
 import {
   LINKEDIN_VERSION,
   POST_CHARACTER_LIMIT,
   escapeCommentary,
   readToken,
+  ROOT,
 } from './lib.mjs';
 import { voiceCheck, reportVoiceCheck } from './voice-check.mjs';
+import { missingPromisedLink } from './link-check.mjs';
 
-const args = process.argv.slice(2);
+// --link takes a value, so pull it out before working out which argument is
+// the file. Otherwise the URL looks like the filename.
+const rawArgs = process.argv.slice(2);
+const args = [];
+let inlineLink = null;
+for (let i = 0; i < rawArgs.length; i++) {
+  const a = rawArgs[i];
+  if (a === '--link') {
+    inlineLink = rawArgs[++i] ?? null;
+    continue;
+  }
+  if (a.startsWith('--link=')) {
+    inlineLink = a.slice('--link='.length);
+    continue;
+  }
+  args.push(a);
+}
+
 const confirm = args.includes('--confirm');
 const connectionsOnly = args.includes('--connections-only');
 const file = args.find((a) => !a.startsWith('--'));
 
 if (!file) {
   console.error(
-    `Usage: npm run linkedin:post -- <file> [--confirm] [--connections-only]\n\n` +
+    `Usage: npm run linkedin:post -- <file> [--confirm] [--connections-only] [--link <url>]\n\n` +
       `Without --confirm it prints the post and stops.`
   );
   process.exit(1);
@@ -64,6 +84,37 @@ if (voice.errors.length && skipVoiceCheck) {
   console.warn(`Overriding the voice check because --skip-voice-check was passed.\n`);
 }
 
+/** The link recorded against this item when it was queued, if there is one. */
+function queuedLink(path) {
+  const meta = join(ROOT, 'linkedin-queue', 'queued.json');
+  if (!existsSync(meta)) return null;
+  try {
+    return JSON.parse(readFileSync(meta, 'utf8'))[basename(path)]?.link ?? null;
+  } catch {
+    return null;
+  }
+}
+
+// Same reasoning as the voice check above: every post comes through here, so
+// this is the one place the promise of a link can't be forgotten.
+const link = inlineLink ?? queuedLink(file);
+const skipLinkCheck = args.includes('--skip-link-check');
+const broken = missingPromisedLink(text, link);
+
+if (broken) {
+  console.error(
+    `\nThis post promises ${broken.kind} and there isn't one.\n\n` +
+      `  It says: "${broken.phrase}"\n\n` +
+      `Nobody can follow a promise to nowhere, and the first comment is where\n` +
+      `the subscribers actually come from. Either give it a link:\n\n` +
+      `  npm run linkedin -- <n> --link https://... --confirm\n\n` +
+      `or publish the thing it points at first, then post it with that URL.\n` +
+      `If the line is wrong, edit it out of the post instead.\n`
+  );
+  if (!skipLinkCheck) process.exit(1);
+  console.warn(`Overriding the link check because --skip-link-check was passed.\n`);
+}
+
 const token = readToken();
 const visibility = connectionsOnly ? 'CONNECTIONS' : 'PUBLIC';
 
@@ -71,6 +122,7 @@ console.log('\n' + '─'.repeat(60));
 console.log(text);
 console.log('─'.repeat(60));
 console.log(`\n${text.length}/${POST_CHARACTER_LIMIT} characters, visibility ${visibility}, as ${token.name}`);
+if (link) console.log(`First comment: ${link}`);
 
 if (!confirm) {
   console.log(`\nDry run. Nothing was posted.`);
@@ -157,4 +209,8 @@ if (!res.ok) {
 const url = postUrlFrom(res);
 console.log(`\nPosted.`);
 if (url) console.log(url);
+if (link) {
+  console.log(`\nNow put this in the first comment. The script can't do it for you:\n`);
+  console.log(`  ${link}\n`);
+}
 console.log();
