@@ -104,6 +104,7 @@ Then write the body in markdown. Save the hero image into `src/assets/` with a m
 - **Restart the dev server after changing `content.config.ts`** (Ctrl+C, then `npm run dev`). Style changes sometimes need it too if they look stale.
 - **`global.css` already has a `box-sizing: border-box` reset and `overflow-x: hidden` on html/body.** These fix mobile button overflow and a stray horizontal scroll. Keep them.
 - **Headings scale down on mobile** in the `@media (max-width: 720px)` block in global.css. If a heading looks huge on a phone, adjust there.
+- **A future-dated post does NOT publish itself.** `src/pages/blog/index.astro` and `src/pages/rss.xml.js` both filter out posts whose `pubDate` is still in the future. That filter runs at BUILD time, and Cloudflare Pages only builds when something is pushed. So a post dated Friday appears the next time the site gets built, not on the Friday. In August 2026 this froze the live blog on 21 Aug for a fortnight while five committed posts sat invisible. `.github/workflows/friday-rebuild.yml` now triggers a build every Friday at 07:00 UTC to release that week's post. If a post needs to go out early, run that workflow by hand from the Actions tab, or just push anything.
 
 ## DNS — do not touch
 
