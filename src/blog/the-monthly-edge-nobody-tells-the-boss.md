@@ -1,17 +1,12 @@
-# The Monthly Edge: Issue 4 (SENT 8 September 2026)
-
-> **Sent 8 September 2026, 14:27 UK.** Live at https://sportivityconsultants.substack.com/p/nobody-tells-the-boss-the-truth-85a and cross-posted to `src/blog/the-monthly-edge-nobody-tells-the-boss.md`. Before sending, the "caught my eye" section was updated with the 1 September apprenticeship funding change, and the "Sign-off" heading was dropped. Next in the queue: Issue 5 (`2026-10-newsletter.md`), timed for the October grant.
-
-**Post title (this becomes the email subject):** Nobody tells the boss the truth
-**Alternative subjects:**
-- What your team won't say to your face
-- The blind spot every leader has
-
-**Subtitle (Substack subtitle / preview line):** The higher you go, the kinder the feedback gets, and the less of it is true. Here's how to get an honest answer.
-
-Paste everything below the line into the Substack post body.
-
 ---
+title: 'The Monthly Edge: Nobody Tells the Boss the Truth'
+description: "Issue 4 of The Monthly Edge. The higher you go, the kinder the feedback gets and the less of it is true. Three ways to get an honest answer, the 6% problem, and the AI prompt I use to argue with myself."
+pubDate: 'Sep 8 2026'
+heroImage: '../assets/the-monthly-edge.png'
+type: 'newsletter'
+---
+
+This is Issue 4 of The Monthly Edge, my monthly newsletter. One email a month, the stuff I actually use. If you'd rather get it straight to your inbox, you can [subscribe here](/newsletter). You can also [read and share this issue on Substack](https://sportivityconsultants.substack.com/p/nobody-tells-the-boss-the-truth-85a).
 
 Here's a thing nobody warns you about when you start leading people. The feedback doesn't stop. It just stops being true.
 
@@ -110,18 +105,9 @@ If this was useful, send it to one person who leads something. Ideally one who's
 
 And if someone forwarded this to you, you can get it every month here: sportivityconsultants.substack.com
 
-## Sign-off
 
 Go and ask somebody a question you might not like the answer to. Then say nothing for five seconds. It's the cheapest bit of leadership development there is.
 
 Feet on the floor. You are here.
 
 Andy
-
----
-
-Written by Andy Heald. Leadership consultant, keynote speaker and lecturer at UA92, based in Greater Manchester and working nationally.
-
-Work with me: https://www.sportivityconsultants.com
-Sportivity 360, honest feedback for leaders: https://sportivity360.com
-CQI, my quality framework for coaching children: https://www.sportivityconsultants.com/cqi
