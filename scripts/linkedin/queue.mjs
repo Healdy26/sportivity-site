@@ -255,6 +255,12 @@ function drop(index) {
 const MAX_PER_DAY = 3;
 const MIN_GAP_HOURS = 2.5;
 const MAX_AGE_DAYS = 3;
+// Evergreen posts (no sourceDate: reworked old content, stories, models) never
+// go stale, but they are rationed so the feed never turns into three reruns in
+// an afternoon. Two a day is what Andy asked for: the 7am run takes one, the
+// 1pm run takes the other, and the 6pm slot is left for news. News items are
+// not rationed; they go when they are fresh and stop when they are not.
+const MAX_EVERGREEN_PER_DAY = 2;
 
 function auto() {
   const ledger = readLedger();
@@ -284,9 +290,16 @@ function auto() {
     return;
   }
 
+  const isEvergreen = (name) => !meta[name]?.sourceDate;
+  const evergreenInLastDay = ledger.filter((e) => {
+    const t = new Date(e.posted).getTime();
+    return !Number.isNaN(t) && now - t < 86400000 && isEvergreen(e.name);
+  }).length;
+
   const fresh = [];
   const stale = [];
   const blocked = [];
+  const rationed = [];
   for (const item of all) {
     // A post that promises a link nobody has written yet is not postable.
     // Skip it and carry on down the queue rather than stopping the run.
@@ -295,9 +308,19 @@ function auto() {
       continue;
     }
     const m = meta[item.name] ?? {};
-    const when = m.sourceDate ? new Date(m.sourceDate) : m.added ? new Date(m.added) : null;
-    const ageDays = when ? (now - when.getTime()) / 86400000 : 0;
-    (ageDays > MAX_AGE_DAYS ? stale : fresh).push({ item, ageDays });
+    // Staleness is about the news behind a post, so only news items (ones
+    // with a sourceDate) can go stale. Queue age still decides the order.
+    const newsAgeDays = m.sourceDate ? (now - new Date(m.sourceDate).getTime()) / 86400000 : 0;
+    const queueAgeDays = m.added ? (now - new Date(m.added).getTime()) / 86400000 : Infinity;
+    if (newsAgeDays > MAX_AGE_DAYS) {
+      stale.push({ item, ageDays: newsAgeDays });
+      continue;
+    }
+    if (isEvergreen(item.name) && evergreenInLastDay >= MAX_EVERGREEN_PER_DAY) {
+      rationed.push(item);
+      continue;
+    }
+    fresh.push({ item, ageDays: queueAgeDays });
   }
 
   if (blocked.length) {
@@ -310,8 +333,12 @@ function auto() {
     for (const s of stale) console.log(`  ${s.item.name} (${s.ageDays.toFixed(1)} days old)`);
   }
 
+  if (rationed.length) {
+    console.log(`Holding ${rationed.length} evergreen item(s): already posted ${evergreenInLastDay} evergreen in the last 24h (limit ${MAX_EVERGREEN_PER_DAY}).`);
+  }
+
   if (!fresh.length) {
-    console.log('Nothing fresh enough to post. Nothing to do.');
+    console.log('Nothing to post right now. Nothing to do.');
     return;
   }
 

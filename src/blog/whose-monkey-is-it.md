@@ -1,8 +1,8 @@
 ---
 title: 'Everything Comes Back to You, and You Trained It To'
 description: "Someone catches you in the corridor with a problem and you say the six most expensive words in business. A 1974 idea that explains why you cannot get out of your own business, and the one question that hands the work back."
-pubDate: 'Oct 2 2026'
-heroImage: '../assets/whose-monkey-is-it.png'
+pubDate: 'Sep 22 2026'
+# heroImage: '../assets/whose-monkey-is-it.png'
 ---
 
 There is a moment I see in nearly every small business I walk into.

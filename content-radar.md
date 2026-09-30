@@ -4,6 +4,97 @@ Daily bank of timely, on-brand items Andy could react to. Drafts only — Andy r
 
 ---
 
+## 2026-09-29 — The tribunal window doubles on 1 October, and the story is the conversation nobody had
+
+**Item:** From **1 October 2026**, the time limit for bringing most employment tribunal claims **doubles from three months to six**, under the Employment Rights Act. Confirmed on GOV.UK's own employment changes page: "Employment Tribunal time limits for bringing a claim to the Employment Tribunal will increase from 3 to 6 months." It applies only where the incident date falls on or after 1 October. Scotland's breach of contract claims follow on 9 November. A second, bigger package lands **30 October**: employers must take **"all reasonable steps"** to prevent sexual harassment (up from "reasonable steps"), and become liable for **third-party harassment** by customers, clients, contractors and suppliers, plus trade union access and recognition reforms. People Management, 24 September, quoted **Francesca Wild, partner at Morr & Co**: there will be "a longer period of uncertainty for employers once an employee has left or been dismissed", and **Elizabeth Maxwell, senior associate solicitor at Morr & Co**: "Employers will have to take statements and accounts of issues more quickly."
+
+**Why it clears the bar:** A hard date two days out, confirmed by GOV.UK rather than a law firm's newsletter, hitting every employer in the country. It is the single most consequential thing happening to SME employers this fortnight, and the 30 October package behind it gives the theme a month of runway rather than a one day life.
+
+**The angle, and why it is differentiated:** This is where the whole entry earns itself. The feed between now and Friday will be nothing but compliance checklists from HR firms and employment solicitors. Update your handbook, retain your notes longer, review your policies. All true, all identical, all written by people selling the fix. Andy does not compete with that and should not try. He concedes the checklist in one line, then moves the story somewhere none of them will go: **a tribunal claim is the invoice for a conversation nobody had.** The claim never starts at the dismissal. It starts months earlier when someone's work slipped and everyone agreed to give it another few weeks. The law has not changed the risk, it has doubled how long you carry it. That reframe turns a legal deadline into a management one, which is his ground and nobody else's. Credits Francesca Wild by name rather than lifting her point.
+
+**Deliberately NOT the angle:** whether the change is good or bad, anything about the Government, anything touching trade union reform, and any nod to fear-selling ("protect yourself before it's too late"). His profile has hard refusals on news takes and on fear as a sales lever. The date is the hook and nothing more. Keep it there if editing.
+
+**Overlap check:** The bank's only other Employment Rights Act entry is 22 August (zero hours consultation), which was about rota notice, workforce design and delivery quality, pointing at CQI. Different rights, different seam, no repeated stat or line. Nearest thematic neighbour is 22 September (presence and promotion), which was about managers who cannot describe contribution. This one is about managers who avoid saying it out loud. Adjacent, not a repeat.
+
+**Persona/target:** **JOHN** squarely. Owner with staff, no HR function, one person doing the people job alongside four others, and a date like this goes past unnoticed until it costs him. Strong secondary pull for **DAN's manager**, and for anyone in sport, coaching or education running casual and part-time teams where the avoided conversation is the norm rather than the exception.
+
+**Sources:**
+- GOV.UK / business.gov.uk employment changes campaign (authoritative) — https://www.business.gov.uk/campaign/employment-changes/
+- People Management, 24 September 2026 — https://www.peoplemanagement.co.uk/article/1970827/employment-law-changes-coming-october-businesses-need-know
+- Blake Morgan, implementation dates confirmed — https://www.blakemorgan.co.uk/employment-rights-act-2025-october-2026-implementation-dates-confirmed/
+
+**Date check:** Drafted Tuesday 29 September for posting Wednesday 30 September. Uses the literal date "1 October" rather than "Thursday", "in two days" or "this week", so it stays true whenever it goes out. "Since spring" is a fixed season, not a rolling countdown. "Before the week's out" is an instruction to the reader, not a factual claim, so it cannot go stale. Nothing references the 30 October package by a relative date. Safe to post any day up to 30 September. If it is ever reused on or after 1 October, the opening line needs rewriting to past tense ("the window doubled") because the change will already have happened.
+
+**Voice check:** passed (174 words).
+
+**LinkedIn draft:**
+
+On 1 October the window for an employment tribunal claim doubles. Three months becomes six.
+
+Your feed will fill up with checklists. Update the handbook. Keep your notes longer. All of it true, and all of it missing the point.
+
+In my experience the claim never starts at the dismissal.
+
+It starts months earlier, with a conversation nobody had. Someone's work slipped, or their attitude turned, and everyone decided to give it another few weeks. Then another few. By the time anyone said it out loud, that person had been quietly failing since spring and genuinely didn't know.
+
+A tribunal claim is the invoice for that silence. The law hasn't changed your risk. It's doubled how long you carry it.
+
+Francesca Wild at Morr and Co put it plainly. There's now a longer stretch of uncertainty once someone has left.
+
+So do this one before the week's out. Think of the person you've been meaning to have a proper conversation with. You already know exactly who. Go and have it.
+
+What's actually stopping you?
+
+**Blog fold:** Friday's post is the long version, and it is a strong one because the 30 October harassment duty gives it a second act. Working title: "The invoice always arrives." Open on the six month window, then the honest middle section on why managers genuinely avoid the conversation, which is not cowardice but the fear of making it worse, of being unfair, of having to then do something about it. Then the reframe: the kindest thing you can do for someone is tell them early enough to fix it. Land on a practical structure, the adult-to-adult conversation from transactional analysis, what you noticed, what the effect was, what you need, what support looks like, and a date to review it. Close on the point that "all reasonable steps" from 30 October cannot be met with a policy document, because reasonable steps means somebody actually noticing, and a team where nobody says the hard thing early is a team where nobody reports the bad thing either.
+
+---
+
+## 2026-09-22 — Being in the office counts as much as bringing in the money, say a third of UK workers
+
+**Item:** New **HiBob** research, out **21 September 2026**, asked UK workers what actually gets rewarded in promotion decisions. **Visibility to senior leadership: 34%. Constant availability: 33%. Office presence: 30%. Revenue delivery: 30%.** Being seen scores level with bringing in the money, and being *available* beats it. Alongside that: **28%** said greater visibility to their manager is what makes coming in appealing, and **13%** said they have been left out of important decisions because they work remotely. Remote or hybrid working rose from **52% (2025) to 64% (2026)**, and the preference for it from **64% to 77%**, so the gap is widening, not closing. HiBob's Chief People Officer **Nirit Peled-Muntz**: "If employees believe showing their face in the office matters as much as delivering revenue, that is a management problem." Framed against **stronger statutory flexible-working requirements from 2027**.
+
+**Why it clears the bar:** Published yesterday, UK data, and one stat does all the work: 30 and 30. Presence equals revenue. That is a line anyone understands in a second and nobody can argue with, because it is what workers *believe*, not a claim about what managers do. It also sits right on top of the 2027 flexible working changes, so it has a runway rather than a one day life.
+
+**The angle, and why it is differentiated:** Everyone else will post this as a work-from-home argument, either "see, the office still matters" or "presenteeism is back". Andy refuses the row entirely and turns it into a measurement problem. Managers who cannot describe what someone contributed fall back on counting who was in the room, because presence is easy to measure and contribution is hard. We always drift to the easy number. Then he goes one past HiBob's own quote: it is not a management problem, it is a knowing-your-people problem. Lands on a concrete Monday task that exposes it, write down what one person actually delivered since June, and if you cannot fill the page you have been marking them on attendance. Credits Peled-Muntz by name.
+
+**Overlap check:** The bank has nothing on presenteeism, promotion or how contribution gets measured. Closest neighbours are the two Gallup manager/AI entries (18 and 19 Aug), which were about managers deciding whether tools land. This is about managers not being able to see work at all. Different seam.
+
+**Deliberately NOT the angle:** any take on remote versus office as a policy, and anything touching the 2027 legislation as politics. Andy does not do news takes or party politics. The law is background, not the subject.
+
+**Persona/target:** **DAN** squarely. Employed, good at the job, passed over, quietly suspecting the bloke who sits near the boss is getting ahead of him. This tells him he is not imagining it, then refuses to let him conclude the answer is sitting in a chair longer. Secondary: any leader with a hybrid team who thinks their promotion process is fair.
+
+**Sources:**
+- Workplace Insight, 21 September 2026 — https://workplaceinsight.net/people-think-office-presence-is-still-rewarded/
+- HR Grapevine, 21 September 2026 — https://www.hrgrapevine.com/content/article/2026-09-21-office-presence-still-shapes-promotion-decisions-as-flexible-working-expands-research-suggests
+
+**Date check:** "out this week" is true for anything posted 21 to 27 September. "Since June" is a fixed month, not a rolling countdown. No "yesterday", no "in X days", nothing tied to the 2027 date. Safe to post any day this week.
+
+**Blog fold:** Friday's post is the long version on measuring contribution instead of attendance. Working title: "You can't promote what you can't describe." Open on the 30 and 30, then the honest section on why managers default to presence (it needs no thought, it feels objective, and nobody ever got told off for it), then the practical bit: a one page contribution note per person, written by the manager not the employee, updated quarterly, covering what changed because of them. Close on the reframe, KPIs should be Keep People Informed, and the fact that most people who leave do not leave over money, they leave because nobody could say what they were good at.
+
+**LinkedIn draft:**
+
+Thirty percent of UK workers think being in the office gets you promoted.
+
+The same thirty percent think delivering revenue does.
+
+That's new research out this week from HiBob. Visibility to senior leadership beat both of them, on 34.
+
+Your feed will turn this into another row about working from home. It isn't one.
+
+Here's what it actually says. A lot of managers can't tell you who is contributing, so they count who's in the room. Presence is easy to measure. Contribution is hard. And we always drift to the easy number.
+
+Their own Chief People Officer, Nirit Peled-Muntz, put it better than I could. If people believe showing their face matters as much as delivering revenue, that's a management problem.
+
+I'd go further. It's a knowing-your-people problem.
+
+So try this Monday. Take one person on your team and write down what they've actually delivered since June. Not their job title. Not their hours. What changed because of them.
+
+If you can't fill the page, you've been marking them on being there.
+
+Who on your team is doing brilliant work you couldn't describe?
+
+---
+
 ## 2026-09-03 — Every Beefeater in the country shuts next week, and the delay is the story
 
 **Item:** **Whitbread is closing all 106 Beefeater restaurants on 10 September 2026** and **89 Brewers Fayre sites on 7 September**, putting around **3,800 roles** at risk out of a 30,000 strong UK and Ireland workforce. It is the end of Whitbread's branded restaurants division, part of a five year plan announced in **April 2026** to take out **£250m** in costs and return **£2bn** to shareholders, turning the group into what chief executive **Dominic Paul** called a "pure-play hotel business". Food and drink moves inside Premier Inn. The exit is forecast to cut food and beverage sales by up to **£160m**. The closure date was confirmed on **27 July**; the "full list" local coverage has been running since **28 August** as the shutters actually come down.
