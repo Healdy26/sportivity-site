@@ -131,8 +131,22 @@ A monthly email newsletter aimed at SME owners and directors. Themes: productivi
 
 A weekly blog post, separate from the monthly newsletter. Published every Friday. Posts live in `src/blog/` (see "How to add a blog post" above).
 
-- **Weekly draft**: a scheduled Claude task (`sportivity-weekly-blog`) runs every **Wednesday at 09:00**, so there's a day or two to review before Friday. It reads existing posts to avoid repeats, suggests 3 to 4 blog ideas for the week, writes ONE full draft from the strongest idea in Andy's voice, and notifies him. It drafts only — Andy reviews, edits, adds a hero image, then publishes.
-- **Drafts land in `blog-drafts/`** (NOT `src/blog/`, so nothing auto-deploys before review). To publish: move the finished `.md` into `src/blog/`, save its hero image into `src/assets/` with the matching filename, then commit and push. This task lives in Claude's scheduled tasks, not in the repo.
+- **Weekly draft**: a scheduled Claude task (`sportivity-weekly-blog`) runs every **Wednesday at 09:00**. It reads existing posts to avoid repeats, suggests 3 to 4 blog ideas for the week, writes ONE full post from the strongest idea in Andy's voice, and notifies him. This task lives in Claude's scheduled tasks, not in the repo.
+- **The task publishes it itself.** The post goes straight into `src/blog/`, gets committed and pushed. Andy does not want to be the bottleneck moving files around. A future-dated post stays invisible on the live site until the Friday rebuild releases it, so pushing early is safe and he has until that Friday to change or pull anything. Only the Substack version stays in `blog-drafts/`, because publishing to Substack needs his login.
+
+### Hero images never block a publish
+
+`heroImage` is **optional** in `src/content.config.ts` (`z.optional(image())`), and every use in `BlogPost.astro` and the blog index is guarded with `heroImage &&`. A post with no `heroImage` line builds and renders perfectly well; the social share image falls back to `/logo.png`.
+
+What breaks the build is a `heroImage` line pointing at a file that is **not** in `src/assets/`. That is a hard build failure, which means the Friday rebuild fails and that week's post never goes live. It has already happened once: `whose-monkey-is-it.md` was committed pointing at an image that was never saved.
+
+So write the line commented out, and let Andy uncomment it when the image exists:
+
+```
+# heroImage: '../assets/your-slug.png'
+```
+
+**Always run `npm run build` before pushing.** It catches exactly this.
 
 ## Roadmap / open items
 
