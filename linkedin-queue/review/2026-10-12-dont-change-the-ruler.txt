@@ -1,0 +1,23 @@
+We nearly picked the better tool. It would have wrecked the whole thing.
+
+Here is a decision I had this month, and I think it comes up far more often than people notice.
+
+Somebody is going through a year of development. We measure where they are now, we do the work, and we measure again at month twelve. The gap between those two numbers is the entire point. It is the only honest proof that anything happened.
+
+There were two ways of running that first measurement. One was a document, ready that week, written for exactly this piece of work. The other was a proper web system, anonymous by default, better reports, genuinely the stronger product.
+
+I went with the document.
+
+Not because the good one was wrong. Because whatever you start on is the one you have to finish on. Change the ruler halfway and the before and after means nothing. You are left holding two unrelated snapshots and a story you cannot back up.
+
+Keeping the same ruler matters more than having the best one.
+
+It shows up everywhere once you have seen it. The staff survey that gets improved every year, so nobody can say whether the place actually got better. The appraisal form that changed in March, so this year's scores cannot sit next to last year's. The new dashboard that counts a lead slightly differently, and suddenly there is growth that nobody earned.
+
+Every one of those was a well meant upgrade that quietly deleted the evidence.
+
+So if you are about to start measuring something that matters, ask the boring question before the exciting one. Not "what is the best tool for this". But "will I still be able to run exactly this, unchanged, in twelve months".
+
+If the answer is no, you have not built a measure. You have built a mood board.
+
+What are you measuring right now that you have already changed the ruler on?

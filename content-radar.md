@@ -4,6 +4,210 @@ Daily bank of timely, on-brand items Andy could react to. Drafts only — Andy r
 
 ---
 
+## 2026-10-12 — Ofsted's own research: 88% of schools say inspection harmed staff wellbeing, and that is a design fault
+
+**Item:** Published **Friday 9 October 2026**. Ofsted commissioned **IFF Research** to independently evaluate its renewed Education Inspection Framework. The interim findings surveyed **699 providers** inspected between January and May 2026, plus focus groups and interviews with around 80 providers. Just over 250 schools took part, roughly 23% of those inspected in that window. Headline numbers: **88% of schools said the inspection negatively affected their or their staff's wellbeing**, with **half reporting a significant impact**. **29%** said wellbeing was hit "a lot", **18%** "a fair amount", and only **11%** reported no negative impact at all. **50% said the inspection workload was not manageable.** Only **65%** of schools felt inspectors understood their context, dropping to **47% of secondary schools**. **69%** of schools agreed inspectors worked collaboratively, against **86% of colleges**, so the FE experience is measurably better than the schools one.
+
+On the same day, **ASCL council passed a motion of no confidence** in Ofsted's leadership, saying it had seen "no meaningful progress" on the wellbeing issues, and agreed to **survey members on whether to hold an indicative ballot on industrial action**. So this is not a one-day research release. It is a live dispute with a next step already scheduled.
+
+**Why it clears the bar:** **Quality Assurance & Governance** is one of Andy's six services, and CQI is explicitly mapped to **CIMSPA standards and Ofsted**. This is the single news story closest to his actual sellable asset, and he has built QA across **2,000+ coaches**, so he is not commentating from the stands. The education sector is squarely in the radar filter, and the wellbeing angle runs straight into his core lens: psychological safety, "safe enough to be challenged", adult-to-adult over command-and-control. Three days old rather than one, but Monday is exactly when the sector picks this up, and the ASCL ballot keeps it moving.
+
+**The angle, and why it is differentiated:** The feed will be full of two posts today. Either "Ofsted is broken and here are the numbers", or a defence of rigour. Both are available to anybody. Andy's addition is a **systems claim from someone who designs these systems**: if the people being measured come out of the process worse at their job, that is a design fault, not a communication problem. Then the mechanism nobody is naming. Good quality assurance is **continuous** and therefore boring, a conversation in March about what you'll do better in June. What the sector has instead is an **event**: one visit, one verdict, months of dread either side. The wellbeing numbers are not a side effect of inspection, they are what an event-shaped design produces. That reframe is his CQI thesis arriving through the news rather than through a pitch, and it generalises off education to any SME owner running appraisals as an annual verdict.
+
+**Deliberately NOT the angle:** **No naming or criticism of Martyn Oliver**, per his hard refusal on never name-and-shaming anyone publicly. The unions have already called him "out of touch" and piling on would be off-voice and cheap. The draft argues with the **shape of the system**, not the person, and says so out loud ("it isn't aimed at any one person or any one watchdog") so nobody reads it as a swipe. **No politics**: the education secretary, the "back to the drawing board" briefing and the no-confidence vote are all kept out of the post body, because party politics and news takes are a hard refusal and the professional argument is stronger without them. No teacher-sympathy pile-on, and no suggestion of scrapping inspection, which he does not believe. **No CQI pitch and no link**, deliberately: the argument earns more as an argument, and a post with no promised destination cannot trip the link check.
+
+**Overlap check:** Grepped `linkedin-queue/ready/` (9 items) and `linkedin-queue/review/` for Ofsted, inspection, wellbeing and quality assurance. **No matches, no clash.** Nearest bank neighbour is the **24 July** entry on the PE and Sport Premium being replaced by the Partnerships Network, which is education-sector but about funding structure, not measurement.
+
+**Persona/target:** Not a clean Dan or John. This one targets **Andy's actual QA buyers**: school and college leaders, PE and sport providers, and National Governing Bodies who live under inspection. Secondary pull on **JOHN**, the owner whose own quality process is an annual appraisal nobody learns anything from, which is the line that carries it beyond education.
+
+**Friday blog fold-in:** Strong full post on continuous quality improvement versus the judgement event. Spine: Friday's numbers, then the design-fault claim, then the March/June conversation as the alternative, then a practical sorting exercise (write down every point in the year where somebody is judged, and mark whether anything actually improved because of it), landing on the appraisal-only manager. Natural bridge to both CQI and the Leadership 360 thinking without selling either in the post.
+
+**Sources:**
+- Schools Week, 9 October 2026, the research and the full figures — https://schoolsweek.co.uk/9-in-10-schools-say-ofsted-inspections-negatively-impact-wellbeing-report-finds/
+- Schools Week, ASCL no confidence vote, 9 October 2026 — https://schoolsweek.co.uk/ascl-council-passes-no-confidence-vote-in-ofsteds-leadership/
+- FE Week on the same vote — https://feweek.co.uk/ascl-council-passes-no-confidence-vote-in-ofsteds-leadership/
+- Ofsted's own inspection blog, September 2026 framework updates — https://educationinspection.blog.gov.uk/2026/06/12/what-you-need-to-know-about-the-september-2026-updates-to-education-inspections/
+
+**Date check:** Done before queueing. Today is **Monday 12 October 2026**; the findings landed **Friday 9 October**. The draft says "published on Friday", which stays true for the whole of this week and reads correctly whenever the poster sends it. Deliberately **no** "today", "yesterday", "this week's report" or "due to report". The ASCL ballot is left out of the body precisely because it has no date yet and would rot. Figures double-checked against the Schools Week write-up: 88% negative wellbeing impact and half significant, both stated as published rather than as current fact.
+
+**Voice check:** passed (186 words).
+
+**LinkedIn draft:**
+
+Eighty-eight per cent of schools said their inspection harmed staff wellbeing. Half said the damage was significant.
+
+That was Ofsted's own commissioned research, published on Friday.
+
+I build quality assurance systems for a living. I've done it across more than two thousand coaches. So here's my honest read, and it isn't aimed at any one person or any one watchdog.
+
+If the people being measured come out of the process worse at their job, the process has a design fault. Not a messaging problem. A design fault.
+
+Good quality assurance is continuous. It's the conversation you have in March about what you'll do better in June. Nobody loses sleep over it, because nobody is sat waiting to be judged.
+
+What we've built instead is an event. One visit, one verdict, and months of dread either side of it. Then we act surprised when half the sector says the workload isn't manageable.
+
+Measurement should make people better. Not smaller.
+
+So here's the question for your own place. If your quality process vanished tomorrow, would your people get better, or worse?
+
+---
+
+## 2026-10-09 — HSBC cuts up to 70% of its UK advisers, four months after publishing research saying clients want humans
+
+**Item:** HSBC is restructuring its UK wealth management business around AI. Reported by the FT and picked up widely on **7 and 8 October 2026**: cuts of roughly **half of management and specialist roles**, and **up to 70% of financial advisers**. One source described it as "deep, wide and brutal". A **consultation period is already running** and affected staff are expected to leave at the end of October. The restructure follows HSBC's multi-year Google Cloud deal signed in June, which named wealth management as a priority for AI transformation. The emerging model pushes simpler products into digital channels and **reserves human advice for customers with more complicated needs**.
+
+The detail that makes it a story rather than a headline: in **June 2026** HSBC published its own research, "The Human-AI Advantage", run by **Ipsos across about 10,000 affluent and high-net-worth investors**. It found **62% still name a human professional as their main source of investment ideas**, and only **12% said AI was the most influential factor** in their decision making. HSBC's own CEO Georges Elhedery has said "Customers still want a trusted relationship." So the bank published the evidence, then cut the humans four months later.
+
+**Why it clears the bar:** Moving right now, not a law peg, and not a research release either, which the bank needed. It is a live commercial decision from a name everybody recognises, with a consultation running this month. It sits exactly on Andy's authority seam (strategy is people and relationships) and on practical AI for leaders, which is his strongest differentiated territory because he is a heavy AI user rather than a sceptic. It is also his "national voice, local accent" writing law in its purest form: a giant example brought down to what an SME owner does on Monday.
+
+**The angle, and why it is differentiated:** Forbes already ran the obvious version on 7 October ("HSBC To Cut Advisors Even While Investors Want Human Judgment"), so "they contradict themselves" is taken and is not enough on its own. Andy's addition is the mechanism nobody else is naming. HSBC's plan sounds reasonable: automate the simple, keep humans for the complex. **The flaw is that trust is cumulative.** It does not get built in the complicated conversation. It gets built in all the dull ones beforehand, the quick call that went nowhere, the daft question, the two minutes of remembering somebody's kid's name. Those boring touches are precisely what is being automated. So you cannot ring-fence "humans for complex cases" and expect the relationship to exist when the complex case arrives, because you have deleted the thing that built it.
+
+That is a real, differentiated claim, it is his adult-to-adult relationship lens applied to an operating model, and it lands on a concrete Monday task: look at what you are about to automate and sort it into admin versus the reason anybody rings you first.
+
+**Deliberately NOT the angle:** No anti-AI framing. The draft says plainly that he uses AI every day and it has given him hours back, because he is pro-AI and anti AI-slop, and a fear post would misrepresent him and date badly. No naming or mocking of individual HSBC executives, per his hard refusal on never name-and-shaming anyone publicly: the post argues with the **decision and its logic**, not with a person, and the CEO quote is left out of the draft for that reason. No "AI is coming for your job" scare line, and no sympathy framing for the advisers. Nothing about investment or financial advice, since he is not a financial adviser and must not sound like one. Also left out: the 83% who fear being blamed for an AI mistake (GoTo Pulse of Work, **15 September 2026**, too old to peg to and a different argument).
+
+**Overlap check:** Checked the ready queue. `059-done-is-done.txt` is the only AI-adjacent item and it argues something else entirely (AI gave him his afternoon back, busyness is a disease), so the two sit together fine and even reinforce the pro-AI position. The two AI drafts in `linkedin-queue/review/` dated 2026-10-08 (`tell-them-you-used-ai`, `never-ask-it-to-read-the-handwriting`) are about disclosure and tool limits, not about automating relationships. No clash. The nearest bank neighbour is the **25 August** entry on the productivity comeback that was not AI, which is a different claim about measurement rather than relationships.
+
+**Persona/target:** **JOHN** squarely. The owner running the business like a job, who is right now being sold automation as the way out and is about to automate the wrong end of it, stripping out the small client contact that is actually generating his work. Secondary pull on **DAN**, who reads it as his own manager only ever appearing when something has gone wrong.
+
+**Friday blog fold-in:** Extends to a full post on what to automate and what never to touch. Spine: the HSBC decision, then the cumulative-trust argument, then a practical sorting exercise (list every recurring task that touches a client, mark each one admin or relationship, automate only the first column), then the same logic turned inward on managing people, which is the appraisal-only manager problem and the direct bridge to the Leadership 360 thinking.
+
+**Sources:**
+- Forbes, 7 October 2026 — https://www.forbes.com/sites/sheilacallaham/2026/10/07/hsbc-to-cut-advisors-even-while-investors-want-human-judgment/
+- Customer Experience Magazine, 8 October 2026 — https://cxm.world/employee-experience/hsbc-wealth-management-job-cuts-ai-advisers
+- East & Partners, scale of the cuts and the consultation — https://eastandpartners.com/news/hsbc-to-cut-up-to-70-of-uk-financial-advisers-in-ai-driven-wealth-restructure/
+- HSBC's own research, "The Human-AI Advantage", June 2026 — https://www.hsbc.com/news-and-views/news/hsbc-news-archive/ai-makes-investors-bolder-but-human-expertise-rules-at-decision-time
+- CNBC on that research, 25 June 2026 — https://www.cnbc.com/2026/06/25/investors-still-seek-a-human-touch-even-with-ai-tools-at-hand-hsbc-.html
+
+**Date check:** Done before queueing. Every claim is past tense with a literal date. "Reported on 7 October" stays true whenever it posts. "Back in June" for the research is correct (June 2026). "This autumn" is true today and for weeks yet. Deliberately **no** "yesterday", "this week", "consultation closes on", or "staff leave at the end of the month" in the draft, even though the consultation is live, because that window closes during October and the post would rot. "Up to seventy per cent" matches the sourcing, which says adviser cuts "could reach around 70%", so the hedge is doing real work and must not be hardened to a flat 70%. The 62% and 12% figures are HSBC's own published numbers, verified against the HSBC release and CNBC, not taken from the restructure coverage.
+
+**Voice check:** passed (203 words).
+
+**LinkedIn draft:**
+
+HSBC is cutting up to seventy per cent of its UK financial advisers.
+
+The plan reported on 7 October keeps human advice for the complicated cases and pushes everything simpler down a digital channel. On paper that is tidy. Automate the easy bit, keep the people for when it gets hard.
+
+But the thing about trust is this. It never gets built in the hard conversation. It gets built in all the dull ones that came before it.
+
+The quick call that went nowhere. The question somebody felt daft asking. The two minutes where you remembered their daughter's name and they clocked that you had.
+
+That is the bit being automated. And you cannot skip all of it, then expect trust to be sat there waiting when the big decision finally lands.
+
+Here is the part I keep turning over. HSBC asked ten thousand wealthy investors about this back in June. Sixty two per cent said a human was still their main source of investment ideas. Twelve per cent said AI. Their own research.
+
+I am not anti-AI. I use it every day and it has handed me hours back. I just point it at the donkey work, never at the relationship.
+
+So look at whatever you are planning to automate this autumn. Is it the admin? Or is it the only reason anybody rings you first?
+
+---
+
+## 2026-10-02 — A third of owners say they never meant to run a business, and "accidental" is the wrong word for it
+
+**Item:** Santander UK published research on **1 October 2026**, polled from 1,000 UK business owners (fieldwork June 2026). Headline: **35% describe themselves as "accidental entrepreneurs"** who never planned to run a business, and **62% had no previous business experience** when they started. What pushed them in was lifestyle, not ambition: **34%** wanted more flexibility, **25%** wanted financial independence, **21%** were out of work or had been made redundant, and another **21%** turned a side hustle full time. Then the part that matters more than the headline: **39% did not understand the basics of running a business when they started**, **79% learned almost everything on the job**, and **60% found it harder than they expected**, with day-to-day tasks getting more complex as the business grew. On support: **81%** value having someone to talk to about a complex situation, **83%** prefer human guidance over relying on digital tools alone, and **71%** wish they had more tools and support to grow.
+
+**Why it clears the bar:** Published yesterday, and it is the closest thing the bank has ever carried to a census of **persona JOHN**. Not a proxy, not an adjacent sector stat. A thousand owners saying out loud that they never planned this, did not understand it, and learned it by getting it wrong in public. Andy's whole SME offer is aimed at exactly the person in that 35%. It is also a rare peg that is about management capability rather than a legal deadline, which the bank badly needs right now (see the honest flag on the 1 October entry about law pegs stacking up).
+
+**The angle, and why it is differentiated:** Everyone else will take the 35% and read it as a skills gap, then sell the fix. Course, business plan, accelerator, "five things every new owner must know". Andy refuses the premise of the word itself. **Nobody is an accidental joiner. Nobody is an accidental hairdresser.** These people were good at a trade, and then got handed a completely separate second job (finance, HR, sales, being the one who decides) that nobody ever wrote a description for. So "accidental" is a label that quietly blames the owner for a handover that never happened. That reframe is the whole post, and it is his reframe-the-word signature tell working on live data.
+
+Then the hard turn, which is where the differentiation really sits: **79% learned on the job** will be quoted admiringly, as grit. Andy says the quiet part instead. **Learning on the job with nobody watching is just guessing, and the consequences are other people's wages.** That is the QA argument in its most general form, the same spine as CQI, applied to the owner rather than the coach, and it earns the "design fault we have all agreed not to mention" line without preaching. Lands on a two-column task he can do on Monday with a pen.
+
+**Deliberately NOT the angle:** The **83% who prefer human guidance over digital tools** is the most tempting stat in the release and it is deliberately left out. Two reasons. It reads as Andy arguing "hire a human like me", which is the self-serving hard-sell his profile refuses outright. And it would land as anti-AI, which he is not. He is pro-AI and anti AI-slop, so a post implying tools are the lesser option misrepresents him. Also left out: the **81% who want someone to talk to**, because that is already covered in the queue (see overlap). And no sympathy framing. The post must not pity the reader.
+
+**Overlap check:** Real risk here, caught before drafting. **`041-solo-is-slower.txt` is sitting at position 2 in the queue** and runs the isolation seam properly: solo is slower, who is in your corner, mentor versus coach, people grinding alone and calling it independence. If this draft had leaned on the 81%/83% "someone to talk to" stats, the two posts would have argued the same thing a few days apart. It does not, so they sit together fine and even support each other. `046-nobody-to-sit-with-him.txt` (position 7) is about who develops a young hire, different question. The bank's nearest neighbours are **21 August** (Enterprise Nation, owners paying themselves under £20k, the trapped owner) and the recurring **CMI 82% accidental managers** figure. That CMI stat is flagged in the 18 August entry as having been used three times already, so it is **deliberately not cited here** even though it rhymes. This entry is about the accidental *owner*, and the number is Santander's own, which keeps it fresh.
+
+**Persona/target:** **JOHN**, as directly as the bank gets. Self-employed but trapped, running the business like a job, no leverage, and now holding a research finding that says a third of the country is in the same boat. Mild secondary pull on **DAN**, who reads it as a warning about what the leap actually involves before he romanticises it.
+
+**Sources:**
+- Business Matters, 1 October 2026 — https://bmmagazine.co.uk/in-business/santander-research-accidental-entrepreneurs/
+- Brit Brief, the 35% figure and the lifestyle triggers — https://britbrief.co.uk/business/consumers/35-of-uk-business-owners-fell-into-entrepreneurship-by-accident.html
+- Real Business, SME owners wanting more growth support — https://realbusiness.co.uk/uk-sme-owners-want-more-support-to-fuel-growth-study-finds
+
+**Date check:** Done before queueing. The draft says **"Santander published that on 1 October"** in the past tense with the literal date, so it stays true whether it posts at 07:00 tomorrow or any day after. No "yesterday", no "this week", no "new research out today", nothing that rots. Checked specifically because the fieldwork was **June 2026** and the release was October, so the draft must not claim they were asked recently. An earlier version said "asked a thousand of them last week", which was simply false, and it was cut. "On Monday" is an instruction to the reader, not a dated claim. **No attributed quote is used**: the Santander spokesperson names that came back in search were tangled up with a separate Santander X Awards release, so rather than risk putting words in a real person's mouth the research is credited to Santander as an organisation. Do not add a named quote to this post without checking the primary release first.
+
+**Voice check:** passed (195 words).
+
+**LinkedIn draft:**
+
+Thirty five per cent of business owners in this country say they never planned to run a business.
+
+Santander published that on 1 October, after asking a thousand of them. Thirty nine per cent did not understand the basics when they started. Seventy nine per cent learned almost everything on the job.
+
+Everybody will read that as a skills gap. I read it differently.
+
+Nobody is an accidental joiner. Nobody is an accidental hairdresser. You were good at something. Then you got handed a second job, and nobody ever wrote down what that job was.
+
+Finance director. HR. Sales. The one who decides. All bolted onto the thing you were brilliant at, on a Tuesday, with no handover.
+
+So you learn on the job. Which sounds fine until you say it plainly. Learning on the job with nobody watching is just guessing, and the consequences are other people's wages.
+
+That is not an accident. That is a design fault we have all agreed not to mention.
+
+Try this on Monday. Two columns. The job you are good at. The job you actually do. Then circle the one thing in column two you have been swerving for over a year.
+
+What is in your circle?
+
+**Folds into Friday's blog:** Working title: **"The second job nobody described."** Open on the two columns, because every owner recognises the gap the second they draw it. Then the honest middle, which the post has no room for: the second job is not one job, it is about six, and they arrive in a specific order that is worth naming. You start as the person who does the work. Then you are the person who sells it. Then the person who collects the money. Then, the one that breaks people, the person who manages other humans doing the work you used to do yourself, badly at first, while you watch and say nothing. Most owners stall at that fourth one and conclude they are bad at delegating, when what has actually happened is that nobody taught them the job. Use the Santander numbers as proof it is a pattern, not a personal failing, and be careful to keep the tone out of pity. The useful close is not "get help", it is the standard question: write down what good looks like for the one job in column two you have been avoiding, because you cannot hand over, improve or even judge a thing you have never defined. That is the CQI logic pointed at the owner instead of the coach, and it sets up /cqi without a pitch.
+
+---
+
+## 2026-10-01 — Right to work checks reach past employees from today, and our sector runs on the people now in scope
+
+**Item:** From **1 October 2026**, right to work checks stop being an employee-only duty. Under the Border Security, Asylum and Immigration Act 2025, the scheme now covers **workers on a worker's contract, individual sub-contractors, substitutes, agency and zero-hours workers, and gig/platform workers matched through online services**. The test is whether someone provides services **personally** to the organisation, so the contract label does nothing: Lewis Silkin's note is blunt that a contract calling someone self-employed "will not be conclusive if the reality of the arrangement is different". Genuinely independent businesses serving the public stay out of scope. **Liability travels up the contracting chain** where the direct employer cannot be identified, which means an organisation can be on the hook for someone it did not know was working for it. Civil penalties are **£45,000 per worker for a first breach, £60,000 for repeats**, with criminal exposure for knowing employment.
+
+The reason this is a sport story and not just an HR story: **Lewis Silkin published a sport-specific note on 28 September** walking through exactly who gets caught at a club. Employees (players, head coach, head of medical). Worker contracts (the matchday announcer engaged regularly with no substitution right). Individual sub-contractors (**freelance event hosts, freelance chefs, academy staff engaged as contractors**). And supply-chain staff in catering, security, stewarding and hospitality. Authors: **Stephen O'Flaherty, Partner and Co-Head of Sport**; **Andrew Osborne, Partner and Head of Immigration**; **Pip Hague, Senior Knowledge Lawyer, Manchester**. Their line: "The sports sector is significantly affected by the expanded regime because of the way work is structured."
+
+**Why it clears the bar:** In force today, with a hard date and no grace period in any of the guidance. And it lands on the exact population Andy has more standing on than anyone else in the leadership space: the self-employed coaching workforce. Grassroots clubs, swim schools, holiday camps, PE providers sending someone into a primary school. That sector is built almost entirely on people who invoice rather than get paid through payroll, which is precisely the group that moved into scope this morning. A specialist firm thought it worth its own sport briefing three days ago. Nobody in Andy's feed will connect it to coach quality.
+
+**The angle, and why it is differentiated:** The feed will be compliance content written by people selling compliance. Run your checks, paper your contracts, add audit clauses. Andy concedes the paperwork in one line and then moves it somewhere none of them go: **the right to work check is the lowest bar there is, and most organisations in this sector cannot clear the bar above it.** If you do not know whether the person on your pitch has the right to work here, you certainly do not know whether anyone has ever watched them coach. Underneath that sits the real point, which is cultural rather than legal: "not really ours" was always a management choice dressed up as a legal fact. A parent at drop-off on a Saturday does not see a subcontractor, they see the badge on his coat. That turns a compliance deadline into a duty-of-care and workforce-quality argument, which is Andy's ground and the seam CQI sits on. Credits Stephen O'Flaherty by name rather than lifting the sport framing unattributed.
+
+**Deliberately NOT the angle:** anything at all about immigration policy, the Act's politics, borders, or whether the change is right or wrong. His profile has a hard refusal on party politics and news takes, and this is the most politically charged peg the bank has carried. The law is treated purely as a dated fact that landed, and the whole post lives in management. **The £45,000 penalty is deliberately left out of the draft** — leading on the fine is exactly the fear lever he refuses, and it would make the post read like an ad for an HR firm. Keep both of those out if editing.
+
+**Overlap check:** The bank has **nothing** on right to work, immigration checks, or contractor status. Nearest neighbour is 22 August (zero hours consultation), which ran the casual-workforce-and-delivery-quality seam pointing at CQI, so the coaching workforce is not fresh ground, but the argument there was rota notice and workforce design. This one is about not knowing who your people are at all. Different question.
+
+**POSTED:** went out as `052-right-to-work-checks-reach-past-employee.txt` at **18:34 on 1 October**, about a minute after being queued, because the poster run landed right then and immediate items jump the queue. 1124 chars, clean text, no editorial notes leaked. No action needed.
+
+**Honest flag for Andy:** this is the **second employment-law peg in three days**. The 29 September tribunal item already went out as `036-the-tribunal-window-doubles-on-1-october.txt` on 29 September, and its evergreen companion (`045-invoice-for-a-conversation.txt`, the "somebody is quietly failing right now" version) is **still waiting in the queue**. Two law-date posts have now run inside four days. If 045 goes out soon as well, three of them cluster and the feed starts reading like a compliance newsletter, which is the opposite of the point. Worth holding 045 back a week or two: its argument is about the avoided conversation, not the deadline, so it loses nothing by waiting. `npm run linkedin -- --drop <n>` if it should come out altogether.
+
+**Persona/target:** **JOHN** hardest. The owner who uses contractors precisely so he is not an employer, and has just discovered that the arrangement he chose to stay light now carries a duty he has never performed once. Very strong secondary pull across **sport, coaching and education** providers, which is where Andy's standing and the CQI seam live. Little relevance to DAN.
+
+**Sources:**
+- Lewis Silkin, sport-specific briefing, 28 September 2026 — https://www.lewissilkin.com/insights/2026/09/28/sports-get-ready-for-the-uks-new-right-to-work-scheme
+- Blake Morgan, scope, penalties and extended liability — https://www.blakemorgan.co.uk/right-to-work-reforms-from-1-october-2026-what-employers-should-know/
+- Personnel Today, quick guide to the changes — https://www.personneltoday.com/hr/right-to-work-changes-october-2026-quick-guide/
+- Macfarlanes, extended liability for organisations — https://www.macfarlanes.com/insights/102o34e/right-to-work-checks-extended-liability-for-organisations-from-1-october-2026/
+
+**Date check:** Drafted Thursday 1 October, the commencement date. The draft deliberately says **"changed on 1 October"** in the **past tense with the literal date**, not "today", "this week" or "from Thursday", so it reads true whether the poster sends it at 13:00 today, 18:00 today, or 07:00 tomorrow, and it stays true for the rest of October. "In the last month" is rolling rather than fixed, so it cannot go stale. "On Monday" is an instruction to the reader, not a factual claim. No countdown language anywhere. Nothing here needs rewording before it goes out.
+
+**Voice check:** passed (207 words).
+
+**Format note for future radar runs:** the queue extractor in `scripts/linkedin/queue.mjs` cuts the LinkedIn draft at a line starting `**Folds into` or at `---`. It does **not** recognise `**Blog fold:**`. Using that heading silently appends the whole blog-fold paragraph to the public post body, which happened on the first attempt here (2270 chars instead of 1150) and was caught only by reading the queued file back. Always use **"Folds into Friday's blog:"** as the heading, and always check the queued character count looks like the draft alone.
+
+**LinkedIn draft:**
+
+The right to work rules changed on 1 October, and I would bet most of our sector has not noticed.
+
+They now reach past employees. If someone provides a service to you personally, a freelance coach, a casual you just invoice, you are expected to have checked them.
+
+What interests me is not the paperwork.
+
+I have worked with over 2,000 coaches. What always struck me was how often a club called the person on its own pitch not really ours. Self-employed. There at nine, gone by eleven.
+
+A parent dropping their kid off on a Saturday does not see a subcontractor. They see your badge on his coat.
+
+The law has asked the easiest question there is. Does this person have the right to work here. Most places cannot answer the harder one underneath, which is whether anybody has ever watched them coach.
+
+Stephen O'Flaherty at Lewis Silkin has set out how widely this lands on sport.
+
+So try this on Monday. List everyone who did work for you in the last month who is not on payroll. Next to each name, write what you actually know about them. Not the invoice. What you know.
+
+How long is your list, and how short are the notes?
+
+**Folds into Friday's blog:** The strongest CQI-adjacent blog the bank has thrown up. Working title: **"Not really ours."** Open on the phrase itself, because every provider in this sector says it and nobody hears how it sounds. Then the honest middle: the casual workforce was never a cost dodge, it was how a sector with seasonal demand and term-time delivery actually survives, so do not moralise about it. The problem is what came free with it, which is a workforce nobody owns, nobody observes and nobody develops. Use the 1 October change as the proof that the arrangement was always a fiction, since the law has now looked straight through the contract label to ask who actually does the work. Land on the practical structure: the four things you should be able to say about every person who represents you, which are who they are, what they are qualified to do, who last watched them work, and what you agreed would get better. That final one is the CQI argument without selling it, and the piece can close with a single line pointing at /cqi for anyone who wants the full framework. Avoid any mention of fines in the blog too, same reason as the post.
+
+---
+
 ## 2026-09-29 — The tribunal window doubles on 1 October, and the story is the conversation nobody had
 
 **Item:** From **1 October 2026**, the time limit for bringing most employment tribunal claims **doubles from three months to six**, under the Employment Rights Act. Confirmed on GOV.UK's own employment changes page: "Employment Tribunal time limits for bringing a claim to the Employment Tribunal will increase from 3 to 6 months." It applies only where the incident date falls on or after 1 October. Scotland's breach of contract claims follow on 9 November. A second, bigger package lands **30 October**: employers must take **"all reasonable steps"** to prevent sexual harassment (up from "reasonable steps"), and become liable for **third-party harassment** by customers, clients, contractors and suppliers, plus trade union access and recognition reforms. People Management, 24 September, quoted **Francesca Wild, partner at Morr & Co**: there will be "a longer period of uncertainty for employers once an employee has left or been dismissed", and **Elizabeth Maxwell, senior associate solicitor at Morr & Co**: "Employers will have to take statements and accounts of issues more quickly."

@@ -2,7 +2,7 @@
 title: 'Somebody Said Your Name Last Week. Or They Didn''t.'
 description: "Most work is handed out in a thirty second conversation in a car park, and you are not in the car park. What I got wrong about qualifications, why weak ties beat close mates, and the twenty minutes a week that fixes it."
 pubDate: 'Oct 9 2026'
-# heroImage: '../assets/somebody-said-your-name.png'
+heroImage: '../assets/somebody-said-your-name.png'
 ---
 
 There is a conversation happening about you that you will never hear.

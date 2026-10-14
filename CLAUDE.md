@@ -134,19 +134,31 @@ A weekly blog post, separate from the monthly newsletter. Published every Friday
 - **Weekly draft**: a scheduled Claude task (`sportivity-weekly-blog`) runs every **Wednesday at 09:00**. It reads existing posts to avoid repeats, suggests 3 to 4 blog ideas for the week, writes ONE full post from the strongest idea in Andy's voice, and notifies him. This task lives in Claude's scheduled tasks, not in the repo.
 - **The task publishes it itself.** The post goes straight into `src/blog/`, gets committed and pushed. Andy does not want to be the bottleneck moving files around. A future-dated post stays invisible on the live site until the Friday rebuild releases it, so pushing early is safe and he has until that Friday to change or pull anything. Only the Substack version stays in `blog-drafts/`, because publishing to Substack needs his login.
 
-### Hero images never block a publish
+### Every post ships with an image. Generate it, never comment it out.
 
-`heroImage` is **optional** in `src/content.config.ts` (`z.optional(image())`), and every use in `BlogPost.astro` and the blog index is guarded with `heroImage &&`. A post with no `heroImage` line builds and renders perfectly well; the social share image falls back to `/logo.png`.
+**Rule: no post goes live bare.** Andy checks the live blog and a post with no image looks half finished. The whole point of the weekly post is to pull people to the site, and a bare post does not get shared.
 
-What breaks the build is a `heroImage` line pointing at a file that is **not** in `src/assets/`. That is a hard build failure, which means the Friday rebuild fails and that week's post never goes live. It has already happened once: `whose-monkey-is-it.md` was committed pointing at an image that was never saved.
+A `heroImage` line pointing at a file that is **not** in `src/assets/` is a hard build failure, which kills the Friday rebuild and that week's release. The old workaround was to write the line commented out and let Andy uncomment it later. **That was wrong and has been removed.** Nobody ever went back and uncommented them, so five posts published with no image (`whose-monkey-is-it`, `somebody-said-your-name`, `promote-what-you-cannot-describe`, `invoice-for-a-conversation`, `practise-on-somebody-elses-business`). Fixed October 2026.
 
-So write the line commented out, and let Andy uncomment it when the image exists:
+The fix is to generate a real image at publish time:
 
 ```
-# heroImage: '../assets/your-slug.png'
+npm run hero -- <slug>          # reads the title from src/blog/<slug>.md
+npm run hero -- --all           # fill in anything missing
+npm run hero:check              # fails if any post would publish bare
 ```
 
-**Always run `npm run build` before pushing.** It catches exactly this.
+`scripts/hero-image.mjs` renders a branded 1200x630 title card (near-black, red accent rule, white logo, domain) straight from the post title, writes it to `src/assets/<slug>.png`, and sets the `heroImage` frontmatter live. The same size works as the social share card.
+
+These are title cards, not photographs. Andy can swap any of them for a real photo whenever he has one: keep the filename and the frontmatter needs no change.
+
+**Before pushing, always run both:**
+
+```
+npm run hero:check && npm run build
+```
+
+`heroImage` is still `z.optional(image())` in `src/content.config.ts` and every use is guarded, so the site tolerates a missing image. That is a safety net, not the plan.
 
 ## Roadmap / open items
 

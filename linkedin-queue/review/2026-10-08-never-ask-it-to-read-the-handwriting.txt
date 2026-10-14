@@ -1,0 +1,23 @@
+We stopped asking the machine to do the hard bit. That is when it started working.
+
+Here is what people get wrong about AI, and I got it wrong too for about a year.
+
+You hand it the mess. The scribbled form, the wandering voice note, the pile of paperwork with coffee on it. Then you judge it on whether it can read the mess.
+
+Sometimes it can. Often it cannot, and on handwriting it will be wrong just often enough that nobody trusts it again. One bad read and the whole idea goes in the bin.
+
+Then somebody pointed something out to me that I keep coming back to.
+
+Your bookkeeping software is very good at reading a receipt from a supplier it has seen a thousand times. It is much worse with a crumpled one from a shop it has never met. Same machine, same photo. The difference is how much of the answer it already held before it looked.
+
+So we flipped it round.
+
+Instead of teaching it to read bad handwriting, we printed the form with the names already on it, in the same place every time. All that was left to write by hand were numbers and ticks, in boxes. The machine is not reading anything hard any more. It is choosing from a short list it already has.
+
+The hard problem did not get solved. It got removed.
+
+That move works nearly everywhere. Before you ask what AI can do with your mess, ask what you could stop handing it. Pre-fill what you already know. Fix the layout so it never moves. Turn an open question into a choice of four.
+
+You are not making the tool cleverer. You are making the question easier, and that is the half of it nobody posts about.
+
+Where are you handing it a mess and calling the result disappointing?

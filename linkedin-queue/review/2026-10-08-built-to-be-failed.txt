@@ -1,0 +1,23 @@
+Nobody is refusing to do it.
+
+That took me a long time to see properly.
+
+Here is the pattern, and I have now watched it in a few different places. There is a return that has to come in regularly, from a lot of different people. It is always late. It gets chased every time. A few weeks in, somebody is on a final warning, and somebody senior is spending their best hours being a postman.
+
+The easy read is that people are not bothered. So you tighten it up. Remind them. Add a consequence.
+
+Then you look at what you are actually asking somebody to do.
+
+Fill in a form by hand. Get it signed. Photograph it. Send it to the right address, by a specific time, on a specific day, on top of the actual job they were hired to do.
+
+Nobody is refusing. The thing is built to be failed.
+
+The test I use now is a simple one. If one person misses the deadline, that is a person. If most of them miss it, that is a design fault, and all that chasing is just the noise a bad process makes while it runs.
+
+So count the steps. How many fields, how many taps, how many chances to forget. Then take some out.
+
+Start with anything you are asking people to tell you that you already hold somewhere else. That is usually half of it, and admitting it out loud is uncomfortable, because it means you built the chase yourself.
+
+The consequence never fixed it. Taking most of the steps out did.
+
+What are you chasing every single week that you could have just made easier?

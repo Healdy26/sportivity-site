@@ -2,7 +2,7 @@
 title: 'You Cannot Promote What You Cannot Describe'
 description: "Thirty percent of UK workers think being in the office gets you promoted. The same thirty percent think delivering revenue does. That is not a working from home row. It is a much more uncomfortable problem, and it is the reason you cannot get out of your own business."
 pubDate: 'Oct 16 2026'
-# heroImage: '../assets/promote-what-you-cannot-describe.png'
+heroImage: '../assets/promote-what-you-cannot-describe.png'
 ---
 
 I have sat in a lot of promotion conversations over the years. Different rooms, different sectors, same script.

@@ -2,7 +2,7 @@
 title: 'Practise on Somebody Else''s Business First'
 description: "Everybody online is telling you to jump. A thousand business owners have just admitted they did not understand the basics when they started. Here is how to learn the second job while somebody else is still carrying the risk."
 pubDate: 'Oct 30 2026'
-# heroImage: '../assets/practise-on-somebody-elses-business.png'
+heroImage: '../assets/practise-on-somebody-elses-business.png'
 ---
 
 A lad I was talking to recently told me he is about eighteen months off going out on his own.

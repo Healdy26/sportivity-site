@@ -1,0 +1,25 @@
+The column said there was a problem. It turned out to mean five different things.
+
+This is the least glamorous lesson I have had all year and probably the most useful one.
+
+I had built myself a weekly check. Pull a list out of somebody else's system, look at the column that flags trouble, act on whatever it says. Quick, clean, and free, because the data already existed.
+
+It ran for a fortnight before I found out what that column actually meant. Not what I had assumed, nowhere near it. It was catching several unrelated situations at once, and one of the cases it flagged was really just a bit of paperwork sat waiting to be renewed. Then the person who looks after that system told me, quite cheerfully, that the flag is wrong more often than it is right.
+
+So my clean weekly check was not a check at all. It was a prompt to go and look properly somewhere else.
+
+I had to write that correction into my own notes, above the version where I had called it reliable. Not a nice morning.
+
+Here is the transferable part, and it lands on any business pulling numbers out of a system it did not build. Which is all of us now.
+
+A field name is a guess. Active customer. Qualified lead. Complaint resolved. At risk. Somebody picked those words years ago for a reason that made sense at the time, and the meaning has drifted ever since. Nobody renamed it, because the name was never the point.
+
+So before you build anything on top of a column, find the human who maintains it and ask them one question.
+
+What has to be true for this to say yes?
+
+Two minutes of that saves a fortnight of acting confidently on nonsense.
+
+Then write the answer down next to your numbers. Not for you. For whoever inherits your spreadsheet and assumes the words mean what they say.
+
+What is the one number in your business that everybody quotes and nobody can define?

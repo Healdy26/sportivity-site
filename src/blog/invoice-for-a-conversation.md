@@ -2,7 +2,7 @@
 title: 'The Invoice for a Conversation Nobody Had'
 description: "The window for an employment tribunal claim doubled this month. But a claim never starts at the dismissal. It starts months earlier, with the thing you decided not to say, and I know exactly why you didn't say it."
 pubDate: 'Oct 23 2026'
-# heroImage: '../assets/invoice-for-a-conversation.png'
+heroImage: '../assets/invoice-for-a-conversation.png'
 ---
 
 Somebody in your business is quietly failing right now, and they do not know it.
