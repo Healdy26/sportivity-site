@@ -21,7 +21,16 @@ Two things before you hit send. The draft flags that the £4,500 household bursa
 
 This one is the priority. The grant is still claimable and the issue was written to land while it is.
 
-**Once it has actually sent, tell me and I will do two things:** cross-post it to the website as `the-monthly-edge-eight-grand.md` dated 14 October, and attach the live issue URL to the LinkedIn post that is already queued for it.
+**Once it is actually live on Substack**, two things happen, and both are staged and waiting:
+
+- `STAGED-the-monthly-edge-eight-grand.md` moves into `src/blog/` dated 14 October, with the live issue URL dropped in over `SUBSTACK_URL_GOES_HERE`.
+- `STAGED-linkedin-issue5.txt` goes into the queue and posts with the URL attached.
+
+Check it is live before either happens. Cross-posting into `src/blog/` is the signal that an issue actually sent, and the LinkedIn link checker depends on that being true.
+
+**A correction to an earlier version of this sheet:** there was never a LinkedIn post queued for Issue 5. That draft predates the convention and has no LinkedIn section, unlike Issues 6 and 7. One is written now and staged.
+
+Worth knowing before it goes out: two posts off this issue already went out on 9 October. `046-nobody-to-sit-with-him` is Step 3, naming one person rather than the team. `047-guessing-at-your-standard` is Step 4. So the staged post deliberately takes the money mechanics instead, which is the only angle from this issue not already spent on that audience.
 
 ---
 
