@@ -4,6 +4,97 @@ Daily bank of timely, on-brand items Andy could react to. Drafts only — Andy r
 
 ---
 
+## 2026-10-20 — "HR whitewashing": 53% say the wellbeing policy does not match the place, and the real loss is your written word
+
+**Item:** Press-released **Monday 19 October 2026**. Researchers at **Nottingham Business School** (Nottingham Trent University) surveyed **1,178 UK employees** in medium and large organisations across healthcare, education, finance and public services, asking whether formal policy matched their lived experience of the place. The peer-reviewed paper is in **Employee Relations** (Emerald), titled *HR whitewashing: employee perceptions of policy-practice alignment in UK organisations* (DOI 10.1108/ER-01-2026-0016). Authors include **Professor Zara Whysall** (business psychology) and **Professor Nadia K. Kougiannou** (work and employment relations).
+
+Headline numbers: **53%** reported a strong contrast or some inconsistency between their employer's **wellbeing** policies and everyday behaviour, the largest gap of any area measured. **44%** reported the same on diversity and inclusion. **19%** said the culture did not reflect the values the organisation promoted. The study's central finding is the useful bit: employees judge whether a commitment is credible through **what managers and senior leaders actually do** (conduct, recruitment calls, who gets promoted), not through the policy document. Whysall is explicit that this "doesn't mean that organisations are deliberately misleading people", and Kougiannou's line is that a policy "has limited credibility if employees encounter workplace practices that contradict it".
+
+**Why it clears the bar:** This is **strategy as people and culture rather than frameworks**, which is Andy's whole thesis, arriving with UK peer-reviewed numbers attached and a name that sticks ("HR whitewashing"). It sits directly on his core lens from `ai-context.md`: systems as policies → process → humans. He designs quality-assurance systems for a living across 2,000+ coaches, so he is talking about his own trade rather than commentating. The sample covers **education and healthcare**, both his sectors. Fresh as of yesterday, and the paper gives it a longer tail than a one-day survey story.
+
+**The angle, and why it is differentiated:** The generic post writes itself and the feed will be full of it today: "walk the talk", "culture is what you do not what you say". Anyone can say that and nobody can act on it. Andy's additions are three sharper moves. First, he **grants good faith and means it**, quoting the researchers' own point that nobody is setting out to mislead. That takes employer-bashing off the table and makes the next line land instead of preach. Second, the **mechanism**: writing it down feels like doing it, so the document becomes the achievement. That names why decent owners end up here. Third, and this is the line that earns the post, **the real loss is not wellbeing, it is your written word**. A policy your people have stopped believing teaches them to discount everything else you put in writing, the values, the strategy, the plan. That is a much more expensive problem than a wellbeing gap, and it is a claim nobody else in the thread is making. Then a concrete action rather than a platitude: take one line out of the policy and name the behaviour it implies when somebody is struggling. If you cannot name it, the line is decoration.
+
+**Deliberately NOT the angle:** No HR-bashing and no "policies are pointless" (Andy builds policy-led systems, that would contradict him). No naming or shaming any employer. No politics. No CQI, 360 or newsletter pitch and **no link**, so the post cannot trip the link check.
+
+**Overlap check:** Grepped the full bank, `linkedin-queue/ready/` (9 items) and `linkedin-queue/review/` for wellbeing policy, policy-practice gap, Nottingham, DEI and values-on-the-wall. **No matches.** Nearest neighbours are the **15 Oct** entry (fear of AI and moral disengagement) and **12 Oct** (Ofsted's wellbeing numbers as a design fault). Both touch wellbeing, but this one is about the credibility of anything a leader writes down, which is a different claim and a different action. No clash.
+
+**Persona/target:** Primary **JOHN**, the owner who has a handbook and a values page and assumes that settles it. Secondary **DAN**, the employed one who read the policy and then watched what happened at four o'clock. Also lands with his SME, NGB and education buyers, and sets up the Leadership 360 thinking, since "what do your people actually experience" is exactly what a 360 measures.
+
+**Friday blog fold-in:** Strong full post on the distance between the handbook and the corridor. Spine: the phrase "HR whitewashing", then the numbers, then the good-faith mechanism (writing it down feels like doing it), then the real cost, which is that your written word stops carrying weight, then the practical exercise (take three lines from your policies and name the observable behaviour for each, then go and ask two people what they have seen). Lands on policies → process → humans, and bridges naturally to the 360.
+
+**Sources:**
+- HR Review, 19 October 2026 — https://hrreview.co.uk/hr-news/wellbeing-news/more-than-half-of-workers-see-gap-between-wellbeing-policies-and-reality/391822
+- Phys.org coverage, October 2026 — https://phys.org/news/2026-10-employees-leaders-gap-workplace-employee.html
+- Paper: *Employee Relations*, DOI 10.1108/ER-01-2026-0016
+
+**Date check:** Done before queueing. Today is **Tuesday 20 October 2026**; the release was **Monday 19 October**. The post goes out at **07:00 Wednesday 21 October**. Draft says "a new piece of research", which is still true then. No "yesterday", "today" or "this morning". The action line was changed from "try this Monday" to "try this before the week is out", because a Wednesday post telling people to act on Monday sends them five days away.
+
+**Voice check:** passed (191 words).
+
+**LinkedIn draft:**
+
+HR whitewashing.
+
+That's a phrase from a new piece of research, and I cannot shake it off.
+
+Nottingham Business School asked 1,178 UK workers whether what their employer writes down matches what they actually live. On wellbeing, 53% said no.
+
+Here's the part that matters. The researchers, Professor Zara Whysall and Professor Nadia Kougiannou, are clear that firms are not setting out to mislead anybody. I believe them. Nobody writes a wellbeing policy in bad faith.
+
+But writing it down feels like doing it. The document becomes the achievement. And people judge you on what their manager does at four o'clock on a Tuesday, not on page four of the handbook.
+
+The real damage is not wellbeing. It is that you have quietly taught your team not to believe anything you write down. Your values. Your strategy. All of it, filed under things we say.
+
+So try this before the week is out. Take one line out of your wellbeing policy and ask what it looks like when somebody is struggling. If you cannot name the behaviour, that line is decoration.
+
+What have you written down that your people stopped believing?
+
+---
+
+## 2026-10-15 — Fear of AI makes people cut corners, and the damage lands before you switch anything on
+
+**Item:** Published **Tuesday 14 October 2026** by Washington State University, reporting a peer-reviewed study in the journal **Occupational Health Science**. Lead author **Professor Tahira M. Probst** (WSU Vancouver), with co-author Rebecca Lindgren and collaborators in Italy and Belgium. Survey-based, covering workers across **18 industries**, using the AI Industry Exposure index to sort industries by disruption risk, then measuring occupation insecurity, moral disengagement and counterproductive workplace behaviours.
+
+The finding: workers who believe AI will make their occupation obsolete show increased **moral disengagement**, and from there, more counterproductive behaviour (cutting corners, petty theft, slacking). Effects were **strongest in high-exposure industries** like finance and insurance, and **minimal in low-exposure ones** like forestry and agriculture, which is what makes it a dose-response finding rather than a correlation anyone could hand-wave. Probst's own recommendation to employers is to "pay attention to how they discuss and implement the technology".
+
+**Why it clears the bar:** **Practical AI for leaders** is explicitly in the radar filter, and this is the rare AI study that is about **people and culture rather than tooling**, which is Andy's whole thesis. It runs straight into his core lens: psychological safety, "safe enough to be challenged", adult-to-adult over command-and-control. Published yesterday, so genuinely fresh. And it is peer-reviewed rather than a vendor survey, which matters because the AI-and-work space is thick with marketing dressed as research.
+
+**The angle, and why it is differentiated:** The obvious post is "be transparent about AI and support your people", which is free advice anybody can give and nobody can act on. Andy's addition is two sharper claims. First, the **mechanism is moral, not motivational**: frightened people do not simply underperform, they stop caring about doing right by the place, and they build a justification for it. That is a much harder thing to reverse than low morale. Second, and this is the line that earns the post, **the damage does not wait for deployment**. It lives in the gap between people hearing the word AI and anybody telling them the truth. Most leaders think they have time because they have not switched anything on yet. The study says they have not. Then the practical turn: reassurance you cannot back ("nobody's job is at risk") is worse than silence, because people can smell it, and the adult-to-adult alternative is to say what you know, what you do not, and what gets decided together.
+
+**Deliberately NOT the angle:** No AI doom, and no anti-AI framing. Andy is pro-AI and anti AI-slop, so a "see, AI is damaging workplaces" post would misrepresent him. No politics, no employer-bashing, and no naming of any company. No CQI or 360 pitch and **no link**, so the post cannot trip the link check.
+
+**Overlap check:** Grepped `linkedin-queue/ready/` (14 items), `linkedin-queue/review/` (13 items) and the full bank for moral disengagement, job insecurity and fear of AI. **No matches.** Nearest neighbours are the **19 Aug** entry (Gallup: the manager decides whether AI changes anything) and **18 Aug** (CHROs trust AI strategy, not their managers), both about managers driving adoption, not about what fear does to the workforce. The review draft `2026-10-08-tell-them-you-used-ai.txt` is about disclosing **your own** AI use to a client, a different subject. No clash.
+
+**Persona/target:** Primary **JOHN**, the owner running the business like a job, who has mentioned AI in passing and assumes the team are fine because nobody has complained. Secondary **DAN**, the employed one who may well be the person quietly doing the fearing. Also lands with Andy's SME and NGB leadership buyers.
+
+**Friday blog fold-in:** Good full post on the silence between announcement and action. Spine: the study, then the moral disengagement mechanism explained in plain terms, then the "reassurance you cannot back" trap and why leaders reach for it, then a practical exercise (list every person who has heard the word AI from you this year, and write down what you think they heard, then go and check). Lands on the adult-to-adult script. Bridges naturally to the Leadership 360 thinking, since "what did they actually hear" is exactly what a 360 surfaces.
+
+**Sources:**
+- WSU press release, 14 October 2026 — https://news.wsu.edu/press-release/2026/10/14/workers-who-fear-ai-replacement-show-worse-workplace-behavior/
+- Published in *Occupational Health Science* (Probst, Lindgren et al.)
+
+**Date check:** Done before queueing. Today is **Thursday 15 October 2026**; the release is **Tuesday 14 October**. The post goes out at **07:00 Friday 16 October**, when "new research this week" is still accurate. Deliberately no "yesterday", "today" or "out this morning", all of which would be wrong by the time it posts. No countdowns, no deadlines, nothing that rots.
+
+**Voice check:** passed (190 words).
+
+**LinkedIn draft:**
+
+"Nobody's job is at risk here."
+
+If you have said that about AI this year, did you actually know it was true?
+
+New research this week from Professor Tahira Probst and her team at Washington State University found something I cannot put down. Workers who believe AI is coming for their occupation do not just get anxious. They disengage morally. They cut corners, they justify it, they stop caring about doing right by the place. The effects were strongest in the industries where AI is already in the building.
+
+Here is the bit that should stop you. That damage does not wait for you to switch anything on. It happens in the gap between people hearing the word AI and somebody telling them the truth. Most leaders think they have time. You have not.
+
+Reassurance you cannot back is worse than silence. People can smell it.
+
+So try the adult version. Here is what we are looking at. Here is what I do not know yet. Here is what we decide together, and when.
+
+What have your people been told about AI, and when did you last check what they heard?
+
+---
+
 ## 2026-10-12 — Ofsted's own research: 88% of schools say inspection harmed staff wellbeing, and that is a design fault
 
 **Item:** Published **Friday 9 October 2026**. Ofsted commissioned **IFF Research** to independently evaluate its renewed Education Inspection Framework. The interim findings surveyed **699 providers** inspected between January and May 2026, plus focus groups and interviews with around 80 providers. Just over 250 schools took part, roughly 23% of those inspected in that window. Headline numbers: **88% of schools said the inspection negatively affected their or their staff's wellbeing**, with **half reporting a significant impact**. **29%** said wellbeing was hit "a lot", **18%** "a fair amount", and only **11%** reported no negative impact at all. **50% said the inspection workload was not manageable.** Only **65%** of schools felt inspectors understood their context, dropping to **47% of secondary schools**. **69%** of schools agreed inspectors worked collaboratively, against **86% of colleges**, so the FE experience is measurably better than the schools one.
